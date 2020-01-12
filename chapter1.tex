@@ -1,5 +1,127 @@
-\section{Section}  
+\section{Integers}  
+\subsection{Divisors}
+%7 9 13 15 17
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+1.    Let $m,n.r.s\in \Z$. If $m^2+n^2=r^2+s^2=mr+ns$, prove that $m=r$ and 
+$n=r$.
+\end{mdframed}
 
-I <3 my Wayne State Libraries! Do you? 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer]
+Joe Starr\\
+We select $m,n.r.s\in \Z$, given $m^2+n^2=r^2+s^2=mr+ns$ which can write
+as $m^2+n^2-mr-ns=r^2+s^2-mr-ns$. From here we can simplify:
+\begin{align*}
+m^2+n^2-mr-ns=r^2+s^2-mr-ns &\Rightarrow 
+m\lrp{m-r}+n\lrp{n-s}=r\lrp{r-m}+s\lrp{s-n} \\
+&\Rightarrow m\lrp{m-r}+n\lrp{n-s}-r\lrp{r-m}-s\lrp{s-n}=0 \\
+&\Rightarrow m\lrp{m-r}+r\lrp{m-r}+n\lrp{n-s}+s\lrp{n-s}=0 \\
+&\Rightarrow \lrp{m-r}\lrp{m+r}+\lrp{n-s}\lrp{n+s}=0 \\
+\end{align*}
+from here we can see that in order for $\lrp{m-r}\lrp{m+r}+\lrp{n-s}\lrp{n+s}=0$
+to be true $m=r$ and $n=s$
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+3.    Find the quotient and reminder when $a$ id divided by $b$. 
+\begin{itemize}
+    \item [a] {$a=99$, $b=17$}
+    \item [b] {$a=-99$, $b=17$}
+    \item [c] {$a=17$, $b=99$}
+    \item [d] {$a=-1017$, $b=99$}
+\end{itemize}
 
-\subsection{A Subsection}
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer]
+Joe Starr\\
+\begin{itemize}
+    \item [a] {$99=17q+r\Rightarrow q=5, r=14$}
+    \item [b] {$-99=17q+r\Rightarrow q=-6, r=3$}
+    \item [c] {$17=99q+r\Rightarrow q=0, r=17$}
+    \item [d] {$-1017=99q+r\Rightarrow q=-11, r=72$}
+\end{itemize}
+\end{mdframed}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+5.    Use the Euclidean algorithm to find the following greatest common divisors
+\begin{itemize}
+    \item [a] {$\lrp{6643,2873}$}
+    \item [b] {$\lrp{7684,4148}$}
+    \item [c] {$\lrp{26460,12600}$}
+    \item [d] {$\lrp{6540,1206}$}
+    \item [e] {$\lrp{12091,8439}$}
+\end{itemize}
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer]
+Joe Starr\\
+\begin{itemize}
+    \item [a] {$\lrp{6643,2873}$
+    \begin{align*}
+        6643&=2873*2+897\\
+        2873&=897*3+182\\
+        897&=182*4+169\\
+        182&=169*1+13\\
+        169&=13*13\\
+    \end{align*}
+    }
+    \item [b] {$\lrp{7684,4148}$
+    \begin{align*}
+        7684&=4148*1+3536\\
+        4148&=3536*1+612\\
+        3536&=612*5+476\\
+        612&=476*1+136\\
+        476&=136*3+68\\
+        136&=68*68\\
+    \end{align*}
+    }
+    \item [c] {$\lrp{26460,12600}$
+    \begin{align*}
+        26460&=12600*2+1260\\
+        12600&=1260*10\\
+    \end{align*}
+    }
+    \item [d] {$\lrp{6540,1206}$
+    \begin{align*}
+        6540&=1206*5+510\\
+        1206&=510*2+186\\
+        510&=186*2+138\\
+        186&=138*1+48\\
+        138&=48*2+42\\
+        48&=42*1+6\\
+        42&=6*7\\
+    \end{align*}
+    }
+    \item [e] {$\lrp{12091,8439}$
+    \begin{align*}
+        12091&=8439*1+3652\\
+        8439&=3652*2+1135\\
+        3652&=1135*3+247\\
+        1135&=247*4+147\\
+        247&=147*1+100\\
+        147&=100*1+47\\
+        100&=47*2+6\\
+        47&=6*7+5\\
+        6&=5*1+1\\
+        5&=1*5\\
+    \end{align*}
+    }
+\end{itemize}
+\end{mdframed}

@@ -18,12 +18,20 @@
 \newcommand{\setbackgroundcolour}{\pagecolor{backgroundcolorDef}}  
 \newcommand{\settextcolour}{\color{textcolorDef}}   
 \newcommand{\invertbackgroundtext}{\setbackgroundcolour\settextcolour}
-\newenvironment{darkframe}
-%{\begin{mdframed}[backgroundcolor=backgroundcolorDef,fontcolor=textcolorDef,linecolor=textcolorDef]}
-{\begin{mdframed}}{\end{mdframed}}
-%Command execution. 
+\mdfdefinestyle{darkAnswer}{%
+    fontcolor=textcolorDef,
+    backgroundcolor=backgroundcolorDef,
+    linecolor=textcolorDef
+    }
+\mdfdefinestyle{darkQuesion}{%
+    fontcolor=textcolorDef,
+    backgroundcolor=backgroundcolorDef,
+    linecolor=textcolorDef,
+    linewidth=1pt
+    }
+
 %If this line is commented, then the appearance remains as usual.
-%\invertbackgroundtext
+\invertbackgroundtext
 \newcommand{\lrb}[1]{\left[#1\right]}
 \newcommand{\lrp}[1]{\left(#1\right)}
 \newcommand{\lrs}[1]{\left\{#1\right\}}
