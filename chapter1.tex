@@ -1,6 +1,5 @@
 \section{Integers}  
 \subsection{Divisors}
-%7 9 13 15 17
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -11,8 +10,7 @@ $n=s$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer]
-Joe Starr\\
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
 We select $m,n.r.s\in \Z$, given $m^2+n^2=r^2+s^2=mr+ns$ which can write
 as $m^2+n^2-mr-ns=r^2+s^2-mr-ns$. From here we can simplify:
 \begin{align*}
@@ -42,8 +40,7 @@ to be true $m=r$ and $n=s$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer]
-Joe Starr\\
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
 \begin{itemize}
     \item [a] {$99=17q+r\Rightarrow q=5, r=14$}
     \item [b] {$-99=17q+r\Rightarrow q=-6, r=3$}
@@ -70,10 +67,9 @@ Joe Starr\\
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer]
-Joe Starr\\
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
 \begin{itemize}
-    \item [a] {$\lrp{6643,2873}$
+    \item [(a)] {$\lrp{6643,2873}$
     \begin{align*}
         6643&=2873*2+897\\
         2873&=897*3+182\\
@@ -82,7 +78,7 @@ Joe Starr\\
         169&=13*13\\
     \end{align*}
     }
-    \item [b] {$\lrp{7684,4148}$
+    \item [(b)] {$\lrp{7684,4148}$
     \begin{align*}
         7684&=4148*1+3536\\
         4148&=3536*1+612\\
@@ -92,13 +88,13 @@ Joe Starr\\
         136&=68*68\\
     \end{align*}
     }
-    \item [c] {$\lrp{26460,12600}$
+    \item [(c)] {$\lrp{26460,12600}$
     \begin{align*}
         26460&=12600*2+1260\\
         12600&=1260*10\\
     \end{align*}
     }
-    \item [d] {$\lrp{6540,1206}$
+    \item [(d)] {$\lrp{6540,1206}$
     \begin{align*}
         6540&=1206*5+510\\
         1206&=510*2+186\\
@@ -109,7 +105,7 @@ Joe Starr\\
         42&=6*7\\
     \end{align*}
     }
-    \item [e] {$\lrp{12091,8439}$
+    \item [(e)] {$\lrp{12091,8439}$
     \begin{align*}
         12091&=8439*1+3652\\
         8439&=3652*2+1135\\
@@ -137,23 +133,22 @@ $\lrp{a,b}$ is expressed in the form $ma+nb$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer]
-    Joe Starr\\
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
 \begin{itemize}
-    \item [a] {$\lrp{6643,2873}$
-    
+    \item [(a)] {$\lrp{6643,2873}$\\
+        $\lrp{6643}-16+\lrp{2873}37=13$
     }
-    \item [b] {$\lrp{7684,4148}$
-    
+    \item [(b)] {$\lrp{7684,4148}$\\
+    $\lrp{7684}27+\lrp{4148}-50=68$
     }
-    \item [c] {$\lrp{26460,12600}$
-    
+    \item [(c)] {$\lrp{26460,12600}$
+    $\lrp{26460}1+\lrp{12600}-2=1260$
     }
-    \item [d] {$\lrp{6540,1206}$
-   
+    \item [(d)] {$\lrp{6540,1206}$
+   $\lrp{6540}-26+\lrp{1206}141=6$
     }
-    \item [e] {$\lrp{12091,8439}$
-    
+    \item [(e)] {$\lrp{12091,8439}$
+    $\lrp{12091}1435+\lrp{8439}-2056=1$
     }
 \end{itemize}
 \end{mdframed}
@@ -170,11 +165,89 @@ the third.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer]
-Joe Starr\\
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
 Select $a,b,c\in \Z$ to satisfy $a+b+c=0$, WLOG let $n\in \Z$ such that 
 $n\vert a$ and $n\vert b$. Since $\lrp{a+b}+c=0$ it must be that $\lrp{a+b}=-c$.
 From here we must show $n\vert\lrp{a+b}$, or $a+b=nq$. Since $n\vert a$ and 
 $n\vert b$ we may write $a=nq_1$ and $b=nq_2$, yielding, 
 $nq_1+nq_2=n\lrp{q_1+q_2}=nq$ thus $n\vert c$, as desired.$\square$ 
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+13.  Show that if $n$ is any integer, then $\lrp{10n_3,5n+2}=1$
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+We begin with the Euclidean algorithm, 
+\begin{align*}
+    10n+3&=\lrp{5n+2}1+\lrp{5n+1}\\
+    5n+2&=\lrp{5n+1}1+1\\
+\end{align*}
+from here we have $\lrp{10n+3,5n+2}=\lrp{5n+2,5n+1}=1$, as desired.
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+15.  For what positive integers $n$ is it true that $\lrp{n,n+2}=2$? Prove your
+claim.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+The conjecture is that the statement is true for even values of $n$.
+We begin with rewriting $n$ in terms of $k$, $n=2k$the Euclidean algorithm, 
+\begin{align*}
+    \lrp{2k}+2&=\lrp{2k}1+\lrp{2}\\
+    2k&=\lrp{2}{k}\\
+\end{align*}
+from here we have $\lrp{n+2,n}=\lrp{2k+2,2k}=2$, as desired.
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+17.  Show that the positive integer $k$ is the difference of two odd squares if 
+and only if $k$ is divisible by $8$.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+
+We begin by writing $k=a^2-b^2$, since $a$ and $b$ are odd we can write, 
+\begin{align*}
+    a&=2r+1\\
+    b&=2s+1
+\end{align*} 
+from here we have $q^2-b^2=4\lrp{r+s+1}\lrp{r-s}$. Since $k>0$ we must consider 
+two cases $r-s=2m+1$ and $r-s=2m$. 
+\begin{itemize}[align=left]
+    \item [$r-s=2m$:]{\hspace{.5in}\newline
+        In this case we have $q^2-b^2=4\lrp{r+s+1}2m=8\lrp{r+s+1}m$ and we are 
+        done. 
+    }
+    \item [$r-s=2m+1$:]{\hspace{.5in}\newline
+        In this case we have $r-s=2m+1$ and $r+s=r-s+2s=2m+1+2s$
+        \begin{align*}
+            q^2-b^2&=4\lrp{r+s+1}\lrp{2m+1}\\
+            &=4\lrp{2m\lrp{r+s+1}+\lrp{r+s+1}}\\            
+            &=4\lrp{\lrp{2mr+2ms+2m}+\lrp{r+s+1}}\\            
+            &=4\lrp{2mr+2ms+2m+r+s+1}\\         
+            &=4\lrp{2mr+2ms+2m+2m+1+2s+1}\\         
+            &=4\lrp{2mr+2ms+2m+2m+2s+2}\\         
+            &=8\lrp{mr+ms+m+m+s+1}\\         
+        \end{align*}
+        as desired.
+    }
+\end{itemize}
+
 \end{mdframed}

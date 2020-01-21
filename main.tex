@@ -15,13 +15,20 @@
 %Commands definitions
 \definecolor{backgroundcolorDef}{rgb}{0.1,0.1,0.12}
 \definecolor{textcolorDef}{rgb}{0.77,0.77,0.77}
+\definecolor{waynegreen}{RGB}{0,89,79}
 \newcommand{\setbackgroundcolour}{\pagecolor{backgroundcolorDef}}  
 \newcommand{\settextcolour}{\color{textcolorDef}}   
 \newcommand{\invertbackgroundtext}{\setbackgroundcolour\settextcolour}
 \mdfdefinestyle{darkAnswer}{%
     fontcolor=textcolorDef,
     backgroundcolor=backgroundcolorDef,
-    linecolor=textcolorDef
+    linecolor=textcolorDef,
+    % ----------------------------------
+    frametitlebackgroundcolor=backgroundcolorDef,
+    frametitlefontcolor=textcolorDef,
+    frametitlerulecolor=waynegreen,
+    frametitlerule=true, 
+    frametitlerulewidth=2pt
     }
 \mdfdefinestyle{darkQuesion}{%
     fontcolor=textcolorDef,
