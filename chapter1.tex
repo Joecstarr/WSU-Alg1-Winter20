@@ -251,3 +251,349 @@ two cases $r-s=2m+1$ and $r-s=2m$.
 \end{itemize}
 
 \end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Primes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+1. Find the prime factorizations of each of the following numbers, and use the 
+them to compute the greatest common divisor and least common multiple of the 
+given pairs of numbers. 
+\begin{multicols}{3}
+\begin{itemize}
+    \item [(a)] {$\lrp{35,14}$
+    }
+    \item [(b)] {$\lrp{15,11}$
+    }
+    \item [(c)] {$\lrp{252,11}$
+    }
+    \item [(d)] {$\lrp{7684,4148}$
+    }
+    \item [(e)] {$\lrp{6643,2873}$
+    }
+\end{itemize}
+\end{multicols}
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+    \begin{multicols}{2}
+    \begin{itemize}
+        \item [(a)] {
+        \begin{multicols}{2}
+        $\lrp{35,14}$\\
+        $35: 5,7$ \\
+        $14: 2,7$ \\
+        gcd: $7$ \\
+        lcm: $70$ 
+        \end{multicols}
+        }
+        \item [(b)] {
+            \begin{multicols}{2}
+        $\lrp{15,11}$ \\
+        $15: 3,5$ \\
+        $11: 11$ \\
+        gcd: $1$ \\
+        lcm: $165$ 
+    \end{multicols}
+        }
+        \item [(c)] {
+            \begin{multicols}{2}
+        $\lrp{252,180}$ \\
+        $252: 2,2,3,3,7$ \\
+        $180: 2,2,3,3,5$ \\
+        gcd: $36$ \\
+        lcm: $1260$ 
+    \end{multicols}
+        }
+        \item [(d)] {
+            \begin{multicols}{2}
+        $\lrp{7684,4148}$ \\
+        $7684: 2,2,17,113$ \\
+        $4148: 2,2,17,61$ \\
+        gcd: $68$ \\
+        lcm: $468724$ 
+    \end{multicols}
+        }
+        \item [(e)] {
+            \begin{multicols}{2}
+        $\lrp{6643,2873}$ \\
+        $6643: 7,13,73$ \\
+        $2873: 13,13,17$ \\
+        gcd: $13$ \\
+        lcm: $1468103$ 
+    \end{multicols}
+        }
+    \end{itemize}
+\end{multicols}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+2. US the sieve of Eratosthenes to find all prime numbers less than 200.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+    \begin{center}
+        \begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
+        \hline
+        $ $ & $2$ & $3$ & $\msout{4}$ & $5$ & $\msout{6}$ & $7$ & $\msout{8}$ & $\msout{9}$ & $\msout{10}$ \\
+        \hline
+        $11$ & $\msout{12}$ & $13$ & $\msout{14}$ & $\msout{15}$ & $\msout{16}$ & $17$ & $\msout{18}$ & $19$ & $\msout{20}$ \\
+        \hline
+        $\msout{21}$ & $\msout{22}$ & $23$ & $\msout{24}$ & $\msout{25}$ & $\msout{26}$ & $\msout{27}$ & $\msout{28}$ & $29$ & $\msout{30}$ \\
+        \hline
+        $31$ & $\msout{32}$ & $\msout{33}$ & $\msout{34}$ & $\msout{35}$ & $\msout{36}$ & $37$ & $\msout{38}$ & $\msout{39}$ & $\msout{40}$ \\
+        \hline
+        $41$ & $\msout{42}$ & $43$ & $\msout{44}$ & $\msout{45}$ & $\msout{46}$ & $47$ & $\msout{48}$ & $\msout{49}$ & $\msout{50}$ \\
+        \hline
+        $\msout{51}$ & $\msout{52}$ & $53$ & $\msout{54}$ & $\msout{55}$ & $\msout{56}$ & $\msout{57}$ & $\msout{58}$ & $59$ & $\msout{60}$ \\
+        \hline
+        $61$ & $\msout{62}$ & $\msout{63}$ & $\msout{64}$ & $\msout{65}$ & $\msout{66}$ & $67$ & $\msout{68}$ & $\msout{69}$ & $\msout{70}$ \\
+        \hline
+        $71$ & $\msout{72}$ & $73$ & $\msout{74}$ & $\msout{75}$ & $\msout{76}$ & $\msout{77}$ & $\msout{78}$ & $79$ & $\msout{80}$ \\
+        \hline
+        $\msout{81}$ & $\msout{82}$ & $83$ & $\msout{84}$ & $\msout{85}$ & $\msout{86}$ & $\msout{87}$ & $\msout{88}$ & $89$ & $\msout{90}$ \\
+        \hline
+        $\msout{91}$ & $\msout{92}$ & $\msout{93}$ & $\msout{94}$ & $\msout{95}$ & $\msout{96}$ & $97$ & $\msout{98}$ & $\msout{99}$ & $\msout{100}$ \\
+        \hline
+        $101$ & $\msout{102}$ & $103$ & $\msout{104}$ & $\msout{105}$ & $\msout{106}$ & $107$ & $\msout{108}$ & $109$ & $\msout{110}$ \\
+        \hline
+        $\msout{111}$ & $\msout{112}$ & $113$ & $\msout{114}$ & $\msout{115}$ & $\msout{116}$ & $\msout{117}$ & $\msout{118}$ & $\msout{119}$ & $\msout{120}$ \\
+        \hline
+        $\msout{121}$ & $\msout{122}$ & $\msout{123}$ & $\msout{124}$ & $\msout{125}$ & $\msout{126}$ & $127$ & $\msout{128}$ & $\msout{129}$ & $\msout{130}$ \\
+        \hline
+        $131$ & $\msout{132}$ & $\msout{133}$ & $\msout{134}$ & $\msout{135}$ & $\msout{136}$ & $137$ & $\msout{138}$ & $139$ & $\msout{140}$ \\
+        \hline
+        $\msout{141}$ & $\msout{142}$ & $\msout{143}$ & $\msout{144}$ & $\msout{145}$ & $\msout{146}$ & $\msout{147}$ & $\msout{148}$ & $149$ & $\msout{150}$ \\
+        \hline
+        $151$ & $\msout{152}$ & $\msout{153}$ & $\msout{154}$ & $\msout{155}$ & $\msout{156}$ & $157$ & $\msout{158}$ & $\msout{159}$ & $\msout{160}$ \\
+        \hline
+        $\msout{161}$ & $\msout{162}$ & $163$ & $\msout{164}$ & $\msout{165}$ & $\msout{166}$ & $167$ & $\msout{168}$ & $\msout{169}$ & $\msout{170}$ \\
+        \hline
+        $\msout{171}$ & $\msout{172}$ & $173$ & $\msout{174}$ & $\msout{175}$ & $\msout{176}$ & $\msout{177}$ & $\msout{178}$ & $179$ & $\msout{180}$ \\
+        \hline
+        $181$ & $\msout{182}$ & $\msout{183}$ & $\msout{184}$ & $\msout{185}$ & $\msout{186}$ & $\msout{187}$ & $\msout{188}$ & $\msout{189}$ & $\msout{190}$ \\
+        \hline
+        $191$ & $\msout{192}$ & $193$ & $\msout{194}$ & $\msout{195}$ & $\msout{196}$ & $197$ & $\msout{198}$ & $199$ & $\msout{200}$\\
+        \hline
+        \end{tabular}
+        \end{center}    
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+3. For each composite number $a$. with $4\leq a\leq 20$, find all positive 
+numbers less than $a$ that are relatively prime to $a$.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+\begin{multicols}{1}
+\begin{itemize}
+    \item[$4:$]  {$2, 3$}
+    \item[$6:$]  {$2, 3, 5$}
+    \item[$8:$]  {$2, 3, 5, 7$}
+    \item[$9:$]  {$2, 3, 4, 5, 7, 8$}
+    \item[$10:$] {$2, 3, 5, 7, 9$}
+    \item[$12:$] {$2, 3, 5, 7, 11$}
+    \item[$14:$] {$2, 3, 5, 7, 9, 11, 13$}
+    \item[$15:$] {$2, 3, 4, 5, 7, 8, 11, 13, 14$}
+    \item[$16:$] {$2, 3, 5, 7, 9, 11, 13, 15$}
+    \item[$18:$] {$2, 3, 5, 7, 11, 13, 17$}
+    \item[$20:$] {$2, 3, 5, 7, 9, 11, 13, 17, 19$}
+\end{itemize}
+\end{multicols}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+4. Find all positve integers less than 60 and relatively prime to $60$.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+\begin{itemize}
+    \item[$60:$] {$2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 49, 53, 59 $}
+\end{itemize}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+\begin{itemize}
+        \item [9. (a)] {For which $n\in \Z^{\text{+}}$ is $n^{3}-1$ a prime number?}
+        \item [(b)] {For which $n\in \Z^{\text{+}}$ is $n^{3}+1$ a prime number?}
+        \item [(c)] {For which $n\in \Z^{\text{+}}$ is $n^{2}-1$ a prime number?}
+        \item [(d)] {For which $n\in \Z^{\text{+}}$ is $n^{2}+1$ a prime number?}
+    \end{itemize}
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+    \begin{itemize}
+        \item [(a)] {For which $n\in \Z^{\text{+}}$ is $n^{3}-1$ a prime number?}
+        \item [(b)] {For which $n\in \Z^{\text{+}}$ is $n^{3}+1$ a prime number?}
+        \item [(c)] {For which $n\in \Z^{\text{+}}$ is $n^{2}-1$ a prime number?}
+        \item [(d)] {For which $n\in \Z^{\text{+}}$ is $n^{2}+1$ a prime number?}
+    \end{itemize}
+\end{mdframed}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+11. Prove that $n^4+4^n$ is composite if $n>1$.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+    
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+13. Let $a,b,c$  be positive integers, and let $d=\lrp{a,b}$. Since $d\vert a$, 
+there exists an integer $h$ with $a=dh$. Show that $a\vert bc$, then $h\vert c$. 
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+    
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+14. Show that $a\Z \cap b\Z=\lrb{a,b}\Z$.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+    
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+17. Let $a,b$ be nonzero integers. Prove $\lrp{a,b}=1$ if and only if 
+$\lrp{a+b,ab}=1$. 
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+    
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+18. Let $a,b$ be nonzero integers with $\lrp{a,b}=1$. Compute $\lrp{a+b,a-b}$. 
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+    
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+19. Let $a$ and $b$ be positive integers, and let $m$ be an integer such that 
+$ab=m\lrp{a,b}$. Without using the prime factorization theorem, prove that 
+$\lrp{a,b}\lrb{a,b}=ab$ by verifying that $m$ satisfies the necessary properties
+of $\lrb{a,b}$.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+    
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+20. A positive integer $a$ is called a square if $a=n^2$ for some $n\in \Z$. 
+Show that the integer $a>1$ is a square if and only if every exponent in its 
+prime factorization is even. 
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+    
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+23. Let $p$ and $q$ be prime numbers. Prove that $pq+1$ is a square if and only 
+if $p$ and $q$ are twin primes.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+    
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+26. Prove that if $a>1$, then there is a prime $p$ with $a<p\leq a!+1$.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+    
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+29. Show that $\log{2}/\log{3}$ is not a rational number. 
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+    
+\end{mdframed}
+
+
