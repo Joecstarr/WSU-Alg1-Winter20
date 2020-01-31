@@ -56,18 +56,20 @@ to be true $m=r$ and $n=s$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
 5.    Use the Euclidean algorithm to find the following greatest common divisors
-\begin{itemize}
-    \item [a] {$\lrp{6643,2873}$}
-    \item [b] {$\lrp{7684,4148}$}
-    \item [c] {$\lrp{26460,12600}$}
-    \item [d] {$\lrp{6540,1206}$}
-    \item [e] {$\lrp{12091,8439}$}
-\end{itemize}
-
+\begin{multicols}{2}
+    \begin{itemize}
+        \item [a] {$\lrp{6643,2873}$}
+        \item [b] {$\lrp{7684,4148}$}
+        \item [c] {$\lrp{26460,12600}$}
+        \item [d] {$\lrp{6540,1206}$}
+        \item [e] {$\lrp{12091,8439}$}
+    \end{itemize}
+\end{multicols}
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+\begin{multicols}{2}
 \begin{itemize}
     \item [(a)] {$\lrp{6643,2873}$
     \begin{align*}
@@ -94,6 +96,10 @@ to be true $m=r$ and $n=s$.
         12600&=1260*10\\
     \end{align*}
     }
+\end{itemize}
+\end{multicols}
+    \begin{multicols}{2}
+        \begin{itemize}
     \item [(d)] {$\lrp{6540,1206}$
     \begin{align*}
         6540&=1206*5+510\\
@@ -120,6 +126,7 @@ to be true $m=r$ and $n=s$.
     \end{align*}
     }
 \end{itemize}
+\end{multicols}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -424,7 +431,7 @@ numbers less than $a$ that are relatively prime to $a$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-4. Find all positve integers less than 60 and relatively prime to $60$.
+4. Find all positive integers less than 60 and relatively prime to $60$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -440,17 +447,19 @@ numbers less than $a$ that are relatively prime to $a$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
 \begin{itemize}
-        \item [9. (a)] {For which $n\in \Z^{\text{+}}$ is $n^{3}-1$ a prime number?}
-        \item [(b)] {For which $n\in \Z^{\text{+}}$ is $n^{3}+1$ a prime number?}
-        \item [(c)] {For which $n\in \Z^{\text{+}}$ is $n^{2}-1$ a prime number?}
-        \item [(d)] {For which $n\in \Z^{\text{+}}$ is $n^{2}+1$ a prime number?}
+    \item [9. (a)] {For which $n\in \Z^{\text{+}}$ is $n^{3}-1$ a prime number?}
+    \item [(b)] {For which $n\in \Z^{\text{+}}$ is $n^{3}+1$ a prime number?}
+    \item [(c)] {For which $n\in \Z^{\text{+}}$ is $n^{2}-1$ a prime number?}
+    \item [(d)] {For which $n\in \Z^{\text{+}}$ is $n^{2}+1$ a prime number?}
     \end{itemize}
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
     \begin{itemize}
-        \item [(a)] {For which $n\in \Z^{\text{+}}$ is $n^{3}-1$ a prime number?}
+        \item [(a)] {For which $n\in \Z^{\text{+}}$ is $n^{3}-1$ a prime number?
+        
+        }
         \item [(b)] {For which $n\in \Z^{\text{+}}$ is $n^{3}+1$ a prime number?}
         \item [(c)] {For which $n\in \Z^{\text{+}}$ is $n^{2}-1$ a prime number?}
         \item [(d)] {For which $n\in \Z^{\text{+}}$ is $n^{2}+1$ a prime number?}
@@ -468,7 +477,29 @@ numbers less than $a$ that are relatively prime to $a$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    
+We are presented with two potability's, $n$ is even or $n$ is odd.
+\begin{itemize}[align=left]
+    \item [$n$ even]{\hspace{.5in}\newline
+        It's obvious that $n^4+4^n$ is an even not $2$ and can't be prime. 
+    }
+    \item [$n$ odd]{\hspace{.5in}\newline
+    We begin by completing the square 
+    \begin{align*}
+        n^4+4^n&= n^4+4^n\\
+        &=\lrp{n^2}^2+\lrp{2^n}^2\\
+        &=\lrp{n^2+2^n}^2-2n^2 2^n
+    \end{align*}
+    We from here we observe that $2^n2=2^{n+1}$, since $n$ is odd $n+1$ is even 
+    yielding $2^{n+1}=2^{2k}$. We can see we have a difference of squares
+    \begin{align*}
+        \lrp{n^2+2^n}^2-2n^2 2^n&=\lrp{n^2+2^n}^2-\lrp{2^nn}^2\\
+        &=\lrp{n^2+2^n+2^nn}\lrp{n^2+2^n-2^nn}
+    \end{align*}
+    since we are restricted to $n>1$ we can see that both $\lrp{n^2+2^n+2^nn}>1$
+    and $\lrp{n^2+2^n-2^nn}>1$ for all $n$. Making $n^4+4^n$ composite as 
+    desired. 
+    }
+\end{itemize}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
