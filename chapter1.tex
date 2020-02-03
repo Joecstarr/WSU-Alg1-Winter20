@@ -457,12 +457,21 @@ numbers less than $a$ that are relatively prime to $a$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
     \begin{itemize}
-        \item [(a)] {For which $n\in \Z^{\text{+}}$ is $n^{3}-1$ a prime number?
-        
+        \item [(a)] {We can factor $n^{3}-1$ into $(n - 1) (n^2 + n + 1)$. We 
+        have then $n-1\vert n^{3}-1$, for $n^{3}-1$ to be prime $n-1$ must be 
+        $1$. This happens only for $n=2$.
         }
-        \item [(b)] {For which $n\in \Z^{\text{+}}$ is $n^{3}+1$ a prime number?}
-        \item [(c)] {For which $n\in \Z^{\text{+}}$ is $n^{2}-1$ a prime number?}
-        \item [(d)] {For which $n\in \Z^{\text{+}}$ is $n^{2}+1$ a prime number?}
+        \item [(b)] {We can factor $n^{3}+1$ into $(n + 1) (n^2 - n + 1)$. We 
+        have then $(n^2 - n + 1)\vert n^{3}+1$, 
+        for $n^{3}+1$ to be prime $(n^2 - n + 1)$ must be $1$. 
+        This happens only for $n=1$. }
+        \item [(c)] {We can factor $n^{2}-1$ into $(n - 1) (n + 1)$. We 
+        have then $(n 1 1)\vert n^{2}-1$, 
+        for $n^{2}-1$ to be prime $(n - 1)$ must be $1$. 
+        This happens only for $n=2$.
+        For which $n\in \Z^{\text{+}}$ is $n^{2}-1$ a prime number?}
+        \item [(d)] {????
+        }
     \end{itemize}
 \end{mdframed}
 
@@ -521,12 +530,17 @@ there exists an integer $h$ with $a=dh$. Show that $a\vert bc$, then $h\vert c$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-14. Show that $a\Z \cap b\Z=\lrb{a,b}\Z$.
+14. Show that $a\Z \cap b\Z=\lrb{a,b}$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    
+    Let $x\in \lrp{a\Z \cap b\Z}$, since $x\in a\Z$ we have $x=aq_1$, similarly 
+    since $x\in b\Z$ we have$x=bq_2$. We can see that $x=abq$, this means $x$ 
+    is a multiple of $\lrb{a,b}$ putting $x\in \lrb{a,b}$. Next, we let 
+    $x\in \lrb{a,b}\Z$, this means $x$ is of the form $x=\lrb{a,b}q$. We can see
+    that $a\vert x$ and $b\vert x$ since $a\vert \lrb{a,b}$, This makes 
+    $x\in a\Z$ and $x\in b\Z$, as desired. 
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
