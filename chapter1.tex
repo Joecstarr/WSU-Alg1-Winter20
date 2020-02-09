@@ -547,7 +547,13 @@ there exists an integer $h$ with $a=dh$. Show that $a\vert bc$, then $h\vert c$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    
+We will proceed with a transitive proof:
+\begin{align*}
+    a\vert abc &\rightarrow a\vert \lrp{a,b}c \\
+    &\rightarrow a\vert dc\\
+    &\rightarrow dh\vert dc\\
+    &\rightarrow h\vert c
+\end{align*}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -608,7 +614,11 @@ $\lrp{a+b,ab}=1$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    
+We know that $d=\lrp{a+b,a-b}$, this means that $d\vert a+b$ and $d\vert a-b$. 
+From here we have that $d\vert \lrp{a+b}+\lrp{a-b} \rightarrow d\vert 2a$ and 
+$d\vert \lrp{a+b}-\lrp{a-b} \rightarrow d\vert 2b$. Since $d$ divides both $2a$
+and $2b$, $d$ must also divide $2\lrp{a,b}$. Since $\lrp{a,b}=1$ we have 
+$\lrp{a+b,a-b}=2$.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -624,7 +634,18 @@ of $\lrb{a,b}$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    
+We let $d=\lrp{a,b}$, this means that $ab=md$. We first show $a|m$ and $b|m$, 
+\begin{align*}
+    ab=md   &\rightarrow a\lrp{dq}=md \\
+            &\rightarrow adq-md=0 \\
+            &\rightarrow d(aq-m)=0 & (by def d>0)\\
+            &\rightarrow aq=m \\
+            &\rightarrow a|m \\
+\end{align*}
+similarly for  $b$. \\
+Next we will show that if $a|c$ and $b|c$ then $m|c$. We have that $c=aq_1=bq_2$
+or $c^2=abq$. We can multiply $ab=md$ by $q$ giving $abq=mdq$, this means we 
+have $c^2=mdq$, which is true only if $c=mdq$, $m|c$ as desired. 
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -640,7 +661,7 @@ prime factorization is even.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
 Let $a\in \Z$ be a square. Since $a$ is a square by definiton there exists 
-a $n$ such that $nn=a$. Now by the fundamental theorem of arythmic we know $n$
+a $n$ such that $nn=a$. Now by the fundamental theorem of arithmetic we know $n$
 has a prime factorization,written $p_1^{n_1}\cdots p_k^{n_k}$. If we consider 
 $nn$, we have $nn = \lrp{p_1^{n_1}\cdots p_k^{n_k}}
                     \lrp{p_1^{n_1}\cdots p_k^{n_k}}$
@@ -659,7 +680,23 @@ if $p$ and $q$ are twin primes.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    
+    We begin by letting selecting $p$ a prime and $q$ a prime such that $q=p+2$. 
+    Now we consider $pq$, 
+    \begin{align*}
+        pq  &\rightarrow p\lrp{p+2}\\
+            &\rightarrow p^2+p2\\
+    \end{align*}
+    We now consider $p+1$, if we take $\lrp{p+1}^2$, we get $p^2+2p+1$. It's 
+    obvious that $pq+1=p^2+p2+1=\lrp{p+1}^2$, so $pq+1$ is a square when $p$ and $q$ are 
+    twin primes. 
+    We can now consider $p$ a prime, and $q$ a prime such that $q=p+n$ with 
+    $n>2$. If we calculate $pq$ we see that,
+    \begin{align*}
+        pq  &\rightarrow p\lrp{p+n}\\
+            &\rightarrow p^2+pn\\
+    \end{align*}
+    we then have that $pq+1=p^2+pn+1$ with $n>2$, this is not a square, showing 
+    when $p$ and $q$ aren't twin primes $pq+1$ is not a square. 
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -672,7 +709,15 @@ if $p$ and $q$ are twin primes.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    
+    We observe that $a!+1$ is either prime or composite, if $ a!+1$ is prime
+    we are done, if $ a!+1$ is composite we know by the fundamental theorem
+    of arithmetic that $ a!+1$ has prime factors. Now if all prime factors $p$
+    are such that $p\leq a$ since $p\vert a!$ we see that if we divide $a!+1$ by
+    any of these we get a remainder of $1$, a contradiction so there must be 
+    a prime factor $p$ with $a<p$.
+
+    \textit{Note: this is basically the same argument as euclid's proof of 
+    infinite primes}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -685,7 +730,13 @@ if $p$ and $q$ are twin primes.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    
+    We observe this is an application of the change of base formula, making 
+    $\frac{\log{2}}{\log{3}}=\log_{3}2$. From here we have 
+    $x=\log_{3}2 \rightarrow 3^x=2$, if $x$ is rational then there exist $m$ and 
+    $n$ such that $\frac{m}{n}=x$. We now have 
+    $3^{\frac{m}{n}}=2\rightarrow 3^m=2^n $, a contradiction since there is no 
+    $m$ and $n$ that satisfy this equivalence, making $\log{2}/\log{3}$ 
+    irrational as desired.
 \end{mdframed}
 
 
