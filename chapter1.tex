@@ -1,27 +1,27 @@
-\section{Integers}  
+\section{Integers}
 \subsection{Divisors}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-1.    Let $m,n.r.s\in \Z$. If $m^2+n^2=r^2+s^2=mr+ns$, prove that $m=r$ and 
-$n=s$.
+  1.    Let $m,n.r.s\in \Z$. If $m^2+n^2=r^2+s^2=mr+ns$, prove that $m=r$ and
+  $n=s$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-We select $m,n.r.s\in \Z$, given $m^2+n^2=r^2+s^2=mr+ns$ which can write
-as $m^2+n^2-mr-ns=r^2+s^2-mr-ns$. From here we can simplify:
-\begin{align*}
-m^2+n^2-mr-ns=r^2+s^2-mr-ns &\Rightarrow 
-m\lrp{m-r}+n\lrp{n-s}=r\lrp{r-m}+s\lrp{s-n} \\
-&\Rightarrow m\lrp{m-r}+n\lrp{n-s}-r\lrp{r-m}-s\lrp{s-n}=0 \\
-&\Rightarrow m\lrp{m-r}+r\lrp{m-r}+n\lrp{n-s}+s\lrp{n-s}=0 \\
-&\Rightarrow \lrp{m-r}\lrp{m+r}+\lrp{n-s}\lrp{n+s}=0 \\
-\end{align*}
-from here we can see that in order for $\lrp{m-r}\lrp{m+r}+\lrp{n-s}\lrp{n+s}=0$
-to be true $m=r$ and $n=s$.
+  We select $m,n.r.s\in \Z$, given $m^2+n^2=r^2+s^2=mr+ns$ which can write
+  as $m^2+n^2-mr-ns=r^2+s^2-mr-ns$. From here we can simplify:
+  \begin{align*}
+    m^2+n^2-mr-ns=r^2+s^2-mr-ns & \Rightarrow
+    m\lrp{m-r}+n\lrp{n-s}=r\lrp{r-m}+s\lrp{s-n}                                             \\
+                                & \Rightarrow m\lrp{m-r}+n\lrp{n-s}-r\lrp{r-m}-s\lrp{s-n}=0 \\
+                                & \Rightarrow m\lrp{m-r}+r\lrp{m-r}+n\lrp{n-s}+s\lrp{n-s}=0 \\
+                                & \Rightarrow \lrp{m-r}\lrp{m+r}+\lrp{n-s}\lrp{n+s}=0       \\
+  \end{align*}
+  from here we can see that in order for $\lrp{m-r}\lrp{m+r}+\lrp{n-s}\lrp{n+s}=0$
+  to be true $m=r$ and $n=s$.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -29,24 +29,24 @@ to be true $m=r$ and $n=s$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-3.    Find the quotient and reminder when $a$ id divided by $b$. 
-\begin{itemize}
+  3.    Find the quotient and reminder when $a$ id divided by $b$.
+  \begin{itemize}
     \item [a] {$a=99$, $b=17$}
     \item [b] {$a=-99$, $b=17$}
     \item [c] {$a=17$, $b=99$}
     \item [d] {$a=-1017$, $b=99$}
-\end{itemize}
+  \end{itemize}
 
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-\begin{itemize}
+  \begin{itemize}
     \item [a] {$99=17q+r\Rightarrow q=5, r=14$}
     \item [b] {$-99=17q+r\Rightarrow q=-6, r=3$}
     \item [c] {$17=99q+r\Rightarrow q=0, r=17$}
     \item [d] {$-1017=99q+r\Rightarrow q=-11, r=72$}
-\end{itemize}
+  \end{itemize}
 \end{mdframed}
 
 \newpage
@@ -55,78 +55,78 @@ to be true $m=r$ and $n=s$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-5.    Use the Euclidean algorithm to find the following greatest common divisors
-\begin{multicols}{2}
+  5.    Use the Euclidean algorithm to find the following greatest common divisors
+  \begin{multicols}{2}
     \begin{itemize}
-        \item [a] {$\lrp{6643,2873}$}
-        \item [b] {$\lrp{7684,4148}$}
-        \item [c] {$\lrp{26460,12600}$}
-        \item [d] {$\lrp{6540,1206}$}
-        \item [e] {$\lrp{12091,8439}$}
+      \item [a] {$\lrp{6643,2873}$}
+      \item [b] {$\lrp{7684,4148}$}
+      \item [c] {$\lrp{26460,12600}$}
+      \item [d] {$\lrp{6540,1206}$}
+      \item [e] {$\lrp{12091,8439}$}
     \end{itemize}
-\end{multicols}
+  \end{multicols}
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-\begin{multicols}{2}
-\begin{itemize}
-    \item [(a)] {$\lrp{6643,2873}$
-    \begin{align*}
-        6643&=2873*2+897\\
-        2873&=897*3+182\\
-        897&=182*4+169\\
-        182&=169*1+13\\
-        169&=13*13\\
-    \end{align*}
-    }
-    \item [(b)] {$\lrp{7684,4148}$
-    \begin{align*}
-        7684&=4148*1+3536\\
-        4148&=3536*1+612\\
-        3536&=612*5+476\\
-        612&=476*1+136\\
-        476&=136*3+68\\
-        136&=68*68\\
-    \end{align*}
-    }
-    \item [(c)] {$\lrp{26460,12600}$
-    \begin{align*}
-        26460&=12600*2+1260\\
-        12600&=1260*10\\
-    \end{align*}
-    }
-\end{itemize}
-\end{multicols}
-    \begin{multicols}{2}
-        \begin{itemize}
-    \item [(d)] {$\lrp{6540,1206}$
-    \begin{align*}
-        6540&=1206*5+510\\
-        1206&=510*2+186\\
-        510&=186*2+138\\
-        186&=138*1+48\\
-        138&=48*2+42\\
-        48&=42*1+6\\
-        42&=6*7\\
-    \end{align*}
-    }
-    \item [(e)] {$\lrp{12091,8439}$
-    \begin{align*}
-        12091&=8439*1+3652\\
-        8439&=3652*2+1135\\
-        3652&=1135*3+247\\
-        1135&=247*4+147\\
-        247&=147*1+100\\
-        147&=100*1+47\\
-        100&=47*2+6\\
-        47&=6*7+5\\
-        6&=5*1+1\\
-        5&=1*5\\
-    \end{align*}
-    }
-\end{itemize}
-\end{multicols}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item [(a)] {$\lrp{6643,2873}$
+            \begin{align*}
+              6643 & =2873*2+897 \\
+              2873 & =897*3+182  \\
+              897  & =182*4+169  \\
+              182  & =169*1+13   \\
+              169  & =13*13      \\
+            \end{align*}
+            }
+      \item [(b)] {$\lrp{7684,4148}$
+            \begin{align*}
+              7684 & =4148*1+3536 \\
+              4148 & =3536*1+612  \\
+              3536 & =612*5+476   \\
+              612  & =476*1+136   \\
+              476  & =136*3+68    \\
+              136  & =68*68       \\
+            \end{align*}
+            }
+      \item [(c)] {$\lrp{26460,12600}$
+            \begin{align*}
+              26460 & =12600*2+1260 \\
+              12600 & =1260*10      \\
+            \end{align*}
+            }
+    \end{itemize}
+  \end{multicols}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item [(d)] {$\lrp{6540,1206}$
+            \begin{align*}
+              6540 & =1206*5+510 \\
+              1206 & =510*2+186  \\
+              510  & =186*2+138  \\
+              186  & =138*1+48   \\
+              138  & =48*2+42    \\
+              48   & =42*1+6     \\
+              42   & =6*7        \\
+            \end{align*}
+            }
+      \item [(e)] {$\lrp{12091,8439}$
+            \begin{align*}
+              12091 & =8439*1+3652 \\
+              8439  & =3652*2+1135 \\
+              3652  & =1135*3+247  \\
+              1135  & =247*4+147   \\
+              247   & =147*1+100   \\
+              147   & =100*1+47    \\
+              100   & =47*2+6      \\
+              47    & =6*7+5       \\
+              6     & =5*1+1       \\
+              5     & =1*5         \\
+            \end{align*}
+            }
+    \end{itemize}
+  \end{multicols}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -134,30 +134,30 @@ to be true $m=r$ and $n=s$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-    7.    For each part of Exercise 5, find integers $m$ and $n$ such that 
-$\lrp{a,b}$ is expressed in the form $ma+nb$. 
+  7.    For each part of Exercise 5, find integers $m$ and $n$ such that
+  $\lrp{a,b}$ is expressed in the form $ma+nb$.
 
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-\begin{itemize}
+  \begin{itemize}
     \item [(a)] {$\lrp{6643,2873}$\\
-        $\lrp{6643}-16+\lrp{2873}37=13$
-    }
+          $\lrp{6643}-16+\lrp{2873}37=13$
+          }
     \item [(b)] {$\lrp{7684,4148}$\\
-    $\lrp{7684}27+\lrp{4148}-50=68$
-    }
+          $\lrp{7684}27+\lrp{4148}-50=68$
+          }
     \item [(c)] {$\lrp{26460,12600}$
-    $\lrp{26460}1+\lrp{12600}-2=1260$
-    }
+          $\lrp{26460}1+\lrp{12600}-2=1260$
+          }
     \item [(d)] {$\lrp{6540,1206}$
-   $\lrp{6540}-26+\lrp{1206}141=6$
-    }
+          $\lrp{6540}-26+\lrp{1206}141=6$
+          }
     \item [(e)] {$\lrp{12091,8439}$
-    $\lrp{12091}1435+\lrp{8439}-2056=1$
-    }
-\end{itemize}
+          $\lrp{12091}1435+\lrp{8439}-2056=1$
+          }
+  \end{itemize}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -165,19 +165,19 @@ $\lrp{a,b}$ is expressed in the form $ma+nb$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-9.  let $a,b,c$ be integers such that $a+b+c=0$. Show that if $n$ is an integer
-which is a divisor of two of the three integers, then it is also a divisor of 
-the third. 
+  9.  let $a,b,c$ be integers such that $a+b+c=0$. Show that if $n$ is an integer
+  which is a divisor of two of the three integers, then it is also a divisor of
+  the third.
 
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-Select $a,b,c\in \Z$ to satisfy $a+b+c=0$, WLOG let $n\in \Z$ such that 
-$n\vert a$ and $n\vert b$. Since $\lrp{a+b}+c=0$ it must be that $\lrp{a+b}=-c$.
-From here we must show $n\vert\lrp{a+b}$, or $a+b=nq$. Since $n\vert a$ and 
-$n\vert b$ we may write $a=nq_1$ and $b=nq_2$, yielding, 
-$nq_1+nq_2=n\lrp{q_1+q_2}=nq$ thus $n\vert c$, as desired.$\square$ 
+  Select $a,b,c\in \Z$ to satisfy $a+b+c=0$, WLOG let $n\in \Z$ such that
+  $n\vert a$ and $n\vert b$. Since $\lrp{a+b}+c=0$ it must be that $\lrp{a+b}=-c$.
+  From here we must show $n\vert\lrp{a+b}$, or $a+b=nq$. Since $n\vert a$ and
+  $n\vert b$ we may write $a=nq_1$ and $b=nq_2$, yielding,
+  $nq_1+nq_2=n\lrp{q_1+q_2}=nq$ thus $n\vert c$, as desired.$\square$
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -185,17 +185,17 @@ $nq_1+nq_2=n\lrp{q_1+q_2}=nq$ thus $n\vert c$, as desired.$\square$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-13.  Show that if $n$ is any integer, then $\lrp{10n_3,5n+2}=1$
+  13.  Show that if $n$ is any integer, then $\lrp{10n_3,5n+2}=1$
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-We begin with the Euclidean algorithm, 
-\begin{align*}
-    10n+3&=\lrp{5n+2}1+\lrp{5n+1}\\
-    5n+2&=\lrp{5n+1}1+1\\
-\end{align*}
-from here we have $\lrp{10n+3,5n+2}=\lrp{5n+2,5n+1}=1$, as desired.
+  We begin with the Euclidean algorithm,
+  \begin{align*}
+    10n+3 & =\lrp{5n+2}1+\lrp{5n+1} \\
+    5n+2  & =\lrp{5n+1}1+1          \\
+  \end{align*}
+  from here we have $\lrp{10n+3,5n+2}=\lrp{5n+2,5n+1}=1$, as desired.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -203,19 +203,19 @@ from here we have $\lrp{10n+3,5n+2}=\lrp{5n+2,5n+1}=1$, as desired.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-15.  For what positive integers $n$ is it true that $\lrp{n,n+2}=2$? Prove your
-claim.
+  15.  For what positive integers $n$ is it true that $\lrp{n,n+2}=2$? Prove your
+  claim.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-The conjecture is that the statement is true for even values of $n$.
-We begin with rewriting $n$ in terms of $k$, $n=2k$the Euclidean algorithm, 
-\begin{align*}
-    \lrp{2k}+2&=\lrp{2k}1+\lrp{2}\\
-    2k&=\lrp{2}{k}\\
-\end{align*}
-from here we have $\lrp{n+2,n}=\lrp{2k+2,2k}=2$, as desired.
+  The conjecture is that the statement is true for even values of $n$.
+  We begin with rewriting $n$ in terms of $k$, $n=2k$the Euclidean algorithm,
+  \begin{align*}
+    \lrp{2k}+2 & =\lrp{2k}1+\lrp{2} \\
+    2k         & =\lrp{2}{k}        \\
+  \end{align*}
+  from here we have $\lrp{n+2,n}=\lrp{2k+2,2k}=2$, as desired.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -223,39 +223,39 @@ from here we have $\lrp{n+2,n}=\lrp{2k+2,2k}=2$, as desired.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-17.  Show that the positive integer $k$ is the difference of two odd squares if 
-and only if $k$ is divisible by $8$.
+  17.  Show that the positive integer $k$ is the difference of two odd squares if
+  and only if $k$ is divisible by $8$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
 
-We begin by writing $k=a^2-b^2$, since $a$ and $b$ are odd we can write, 
-\begin{align*}
-    a&=2r+1\\
-    b&=2s+1
-\end{align*} 
-from here we have $q^2-b^2=4\lrp{r+s+1}\lrp{r-s}$. Since $k>0$ we must consider 
-two cases $r-s=2m+1$ and $r-s=2m$. 
-\begin{itemize}[align=left]
+  We begin by writing $k=a^2-b^2$, since $a$ and $b$ are odd we can write,
+  \begin{align*}
+    a & =2r+1 \\
+    b & =2s+1
+  \end{align*}
+  from here we have $q^2-b^2=4\lrp{r+s+1}\lrp{r-s}$. Since $k>0$ we must consider
+  two cases $r-s=2m+1$ and $r-s=2m$.
+  \begin{itemize}[align=left]
     \item [$r-s=2m$:]{\hspace{.5in}\newline
-        In this case we have $q^2-b^2=4\lrp{r+s+1}2m=8\lrp{r+s+1}m$ and we are 
-        done. 
-    }
+          In this case we have $q^2-b^2=4\lrp{r+s+1}2m=8\lrp{r+s+1}m$ and we are
+          done.
+          }
     \item [$r-s=2m+1$:]{\hspace{.5in}\newline
-        In this case we have $r-s=2m+1$ and $r+s=r-s+2s=2m+1+2s$
-        \begin{align*}
-            q^2-b^2&=4\lrp{r+s+1}\lrp{2m+1}\\
-            &=4\lrp{2m\lrp{r+s+1}+\lrp{r+s+1}}\\            
-            &=4\lrp{\lrp{2mr+2ms+2m}+\lrp{r+s+1}}\\            
-            &=4\lrp{2mr+2ms+2m+r+s+1}\\         
-            &=4\lrp{2mr+2ms+2m+2m+1+2s+1}\\         
-            &=4\lrp{2mr+2ms+2m+2m+2s+2}\\         
-            &=8\lrp{mr+ms+m+m+s+1}\\         
-        \end{align*}
-        as desired.
-    }
-\end{itemize}
+          In this case we have $r-s=2m+1$ and $r+s=r-s+2s=2m+1+2s$
+          \begin{align*}
+            q^2-b^2 & =4\lrp{r+s+1}\lrp{2m+1}              \\
+                    & =4\lrp{2m\lrp{r+s+1}+\lrp{r+s+1}}    \\
+                    & =4\lrp{\lrp{2mr+2ms+2m}+\lrp{r+s+1}} \\
+                    & =4\lrp{2mr+2ms+2m+r+s+1}             \\
+                    & =4\lrp{2mr+2ms+2m+2m+1+2s+1}         \\
+                    & =4\lrp{2mr+2ms+2m+2m+2s+2}           \\
+                    & =8\lrp{mr+ms+m+m+s+1}                \\
+          \end{align*}
+          as desired.
+          }
+  \end{itemize}
 
 \end{mdframed}
 \newpage
@@ -269,157 +269,76 @@ two cases $r-s=2m+1$ and $r-s=2m$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-1. Find the prime factorizations of each of the following numbers, and use the 
-them to compute the greatest common divisor and least common multiple of the 
-given pairs of numbers. 
-\begin{multicols}{3}
-\begin{itemize}
-    \item [(a)] {$\lrp{35,14}$
-    }
-    \item [(b)] {$\lrp{15,11}$
-    }
-    \item [(c)] {$\lrp{252,11}$
-    }
-    \item [(d)] {$\lrp{7684,4148}$
-    }
-    \item [(e)] {$\lrp{6643,2873}$
-    }
-\end{itemize}
-\end{multicols}
-\end{mdframed}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    \begin{multicols}{2}
+  1. Find the prime factorizations of each of the following numbers, and use the
+  them to compute the greatest common divisor and least common multiple of the
+  given pairs of numbers.
+  \begin{multicols}{3}
     \begin{itemize}
-        \item [(a)] {
-        \begin{multicols}{2}
-        $\lrp{35,14}$\\
-        $35: 5,7$ \\
-        $14: 2,7$ \\
-        gcd: $7$ \\
-        lcm: $70$ 
-        \end{multicols}
-        }
-        \item [(b)] {
-            \begin{multicols}{2}
-        $\lrp{15,11}$ \\
-        $15: 3,5$ \\
-        $11: 11$ \\
-        gcd: $1$ \\
-        lcm: $165$ 
-    \end{multicols}
-        }
-        \item [(c)] {
-            \begin{multicols}{2}
-        $\lrp{252,180}$ \\
-        $252: 2,2,3,3,7$ \\
-        $180: 2,2,3,3,5$ \\
-        gcd: $36$ \\
-        lcm: $1260$ 
-    \end{multicols}
-        }
-        \item [(d)] {
-            \begin{multicols}{2}
-        $\lrp{7684,4148}$ \\
-        $7684: 2,2,17,113$ \\
-        $4148: 2,2,17,61$ \\
-        gcd: $68$ \\
-        lcm: $468724$ 
-    \end{multicols}
-        }
-        \item [(e)] {
-            \begin{multicols}{2}
-        $\lrp{6643,2873}$ \\
-        $6643: 7,13,73$ \\
-        $2873: 13,13,17$ \\
-        gcd: $13$ \\
-        lcm: $1468103$ 
-    \end{multicols}
-        }
+      \item [(a)] {$\lrp{35,14}$
+            }
+      \item [(b)] {$\lrp{15,11}$
+            }
+      \item [(c)] {$\lrp{252,11}$
+            }
+      \item [(d)] {$\lrp{7684,4148}$
+            }
+      \item [(e)] {$\lrp{6643,2873}$
+            }
     \end{itemize}
-\end{multicols}
-\end{mdframed}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-2. US the sieve of Eratosthenes to find all prime numbers less than 200.
+  \end{multicols}
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    \begin{center}
-        \begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
-        \hline
-        $ $ & $2$ & $3$ & $\msout{4}$ & $5$ & $\msout{6}$ & $7$ & $\msout{8}$ & 
-        $\msout{9}$ & $\msout{10}$ \\
-        \hline
-        $11$ & $\msout{12}$ & $13$ & $\msout{14}$ & $\msout{15}$ & $\msout{16}$ 
-        & $17$ & $\msout{18}$ & $19$ & $\msout{20}$ \\
-        \hline
-        $\msout{21}$ & $\msout{22}$ & $23$ & $\msout{24}$ & $\msout{25}$ & 
-        $\msout{26}$ & $\msout{27}$ & $\msout{28}$ & $29$ & $\msout{30}$ \\
-        \hline
-        $31$ & $\msout{32}$ & $\msout{33}$ & $\msout{34}$ & $\msout{35}$ & 
-        $\msout{36}$ & $37$ & $\msout{38}$ & $\msout{39}$ & $\msout{40}$ \\
-        \hline
-        $41$ & $\msout{42}$ & $43$ & $\msout{44}$ & $\msout{45}$ & $\msout{46}$ 
-        & $47$ & $\msout{48}$ & $\msout{49}$ & $\msout{50}$ \\
-        \hline
-        $\msout{51}$ & $\msout{52}$ & $53$ & $\msout{54}$ & $\msout{55}$ & 
-        $\msout{56}$ & $\msout{57}$ & $\msout{58}$ & $59$ & $\msout{60}$ \\
-        \hline
-        $61$ & $\msout{62}$ & $\msout{63}$ & $\msout{64}$ & $\msout{65}$ & 
-        $\msout{66}$ & $67$ & $\msout{68}$ & $\msout{69}$ & $\msout{70}$ \\
-        \hline
-        $71$ & $\msout{72}$ & $73$ & $\msout{74}$ & $\msout{75}$ & $\msout{76}$ 
-        & $\msout{77}$ & $\msout{78}$ & $79$ & $\msout{80}$ \\
-        \hline
-        $\msout{81}$ & $\msout{82}$ & $83$ & $\msout{84}$ & $\msout{85}$ & 
-        $\msout{86}$ & $\msout{87}$ & $\msout{88}$ & $89$ & $\msout{90}$ \\
-        \hline
-        $\msout{91}$ & $\msout{92}$ & $\msout{93}$ & $\msout{94}$ & $\msout{95}$
-        & $\msout{96}$ & $97$ & $\msout{98}$ & $\msout{99}$ & $\msout{100}$ \\
-        \hline
-        $101$ & $\msout{102}$ & $103$ & $\msout{104}$ & $\msout{105}$ & 
-        $\msout{106}$ & $107$ & $\msout{108}$ & $109$ & $\msout{110}$ \\
-        \hline
-        $\msout{111}$ & $\msout{112}$ & $113$ & $\msout{114}$ & $\msout{115}$ & 
-        $\msout{116}$ & $\msout{117}$ & $\msout{118}$ & $\msout{119}$ & 
-        $\msout{120}$ \\
-        \hline
-        $\msout{121}$ & $\msout{122}$ & $\msout{123}$ & $\msout{124}$ & 
-        $\msout{125}$ & $\msout{126}$ & $127$ & $\msout{128}$ & $\msout{129}$ & 
-        $\msout{130}$ \\
-        \hline
-        $131$ & $\msout{132}$ & $\msout{133}$ & $\msout{134}$ & $\msout{135}$ & 
-        $\msout{136}$ & $137$ & $\msout{138}$ & $139$ & $\msout{140}$ \\
-        \hline
-        $\msout{141}$ & $\msout{142}$ & $\msout{143}$ & $\msout{144}$ & 
-        $\msout{145}$ & $\msout{146}$ & $\msout{147}$ & $\msout{148}$ & $149$ & 
-        $\msout{150}$ \\
-        \hline
-        $151$ & $\msout{152}$ & $\msout{153}$ & $\msout{154}$ & $\msout{155}$ & 
-        $\msout{156}$ & $157$ & $\msout{158}$ & $\msout{159}$ & $\msout{160}$ \\
-        \hline
-        $\msout{161}$ & $\msout{162}$ & $163$ & $\msout{164}$ & $\msout{165}$ & 
-        $\msout{166}$ & $167$ & $\msout{168}$ & $\msout{169}$ & $\msout{170}$ \\
-        \hline
-        $\msout{171}$ & $\msout{172}$ & $173$ & $\msout{174}$ & $\msout{175}$ & 
-        $\msout{176}$ & $\msout{177}$ & $\msout{178}$ & $179$ & $\msout{180}$ \\
-        \hline
-        $181$ & $\msout{182}$ & $\msout{183}$ & $\msout{184}$ & $\msout{185}$ & 
-        $\msout{186}$ & $\msout{187}$ & $\msout{188}$ & $\msout{189}$ & 
-        $\msout{190}$ \\
-        \hline
-        $191$ & $\msout{192}$ & $193$ & $\msout{194}$ & $\msout{195}$ & 
-        $\msout{196}$ & $197$ & $\msout{198}$ & $199$ & $\msout{200}$\\
-        \hline
-        \end{tabular}
-        \end{center}    
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item [(a)] {
+            \begin{multicols}{2}
+              $\lrp{35,14}$\\
+              $35: 5,7$ \\
+              $14: 2,7$ \\
+              gcd: $7$ \\
+              lcm: $70$
+            \end{multicols}
+            }
+      \item [(b)] {
+            \begin{multicols}{2}
+              $\lrp{15,11}$ \\
+              $15: 3,5$ \\
+              $11: 11$ \\
+              gcd: $1$ \\
+              lcm: $165$
+            \end{multicols}
+            }
+      \item [(c)] {
+            \begin{multicols}{2}
+              $\lrp{252,180}$ \\
+              $252: 2,2,3,3,7$ \\
+              $180: 2,2,3,3,5$ \\
+              gcd: $36$ \\
+              lcm: $1260$
+            \end{multicols}
+            }
+      \item [(d)] {
+            \begin{multicols}{2}
+              $\lrp{7684,4148}$ \\
+              $7684: 2,2,17,113$ \\
+              $4148: 2,2,17,61$ \\
+              gcd: $68$ \\
+              lcm: $468724$
+            \end{multicols}
+            }
+      \item [(e)] {
+            \begin{multicols}{2}
+              $\lrp{6643,2873}$ \\
+              $6643: 7,13,73$ \\
+              $2873: 13,13,17$ \\
+              gcd: $13$ \\
+              lcm: $1468103$
+            \end{multicols}
+            }
+    \end{itemize}
+  \end{multicols}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -427,27 +346,80 @@ given pairs of numbers.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-3. For each composite number $a$. with $4\leq a\leq 20$, find all positive 
-numbers less than $a$ that are relatively prime to $a$.
+  2. US the sieve of Eratosthenes to find all prime numbers less than 200.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-\begin{multicols}{1}
-\begin{itemize}
-    \item[$4:$]  {$2, 3$}
-    \item[$6:$]  {$2, 3, 5$}
-    \item[$8:$]  {$2, 3, 5, 7$}
-    \item[$9:$]  {$2, 3, 4, 5, 7, 8$}
-    \item[$10:$] {$2, 3, 5, 7, 9$}
-    \item[$12:$] {$2, 3, 5, 7, 11$}
-    \item[$14:$] {$2, 3, 5, 7, 9, 11, 13$}
-    \item[$15:$] {$2, 3, 4, 5, 7, 8, 11, 13, 14$}
-    \item[$16:$] {$2, 3, 5, 7, 9, 11, 13, 15$}
-    \item[$18:$] {$2, 3, 5, 7, 11, 13, 17$}
-    \item[$20:$] {$2, 3, 5, 7, 9, 11, 13, 17, 19$}
-\end{itemize}
-\end{multicols}
+  \begin{center}
+    \begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
+      \hline
+      $ $           & $2$           & $3$           & $\msout{4}$   & $5$           & $\msout{6}$   & $7$ & $\msout{8}$ &
+      $\msout{9}$   & $\msout{10}$                                                                                        \\
+      \hline
+      $11$          & $\msout{12}$  & $13$          & $\msout{14}$  & $\msout{15}$  & $\msout{16}$
+                    & $17$          & $\msout{18}$  & $19$          & $\msout{20}$                                        \\
+      \hline
+      $\msout{21}$  & $\msout{22}$  & $23$          & $\msout{24}$  & $\msout{25}$  &
+      $\msout{26}$  & $\msout{27}$  & $\msout{28}$  & $29$          & $\msout{30}$                                        \\
+      \hline
+      $31$          & $\msout{32}$  & $\msout{33}$  & $\msout{34}$  & $\msout{35}$  &
+      $\msout{36}$  & $37$          & $\msout{38}$  & $\msout{39}$  & $\msout{40}$                                        \\
+      \hline
+      $41$          & $\msout{42}$  & $43$          & $\msout{44}$  & $\msout{45}$  & $\msout{46}$
+                    & $47$          & $\msout{48}$  & $\msout{49}$  & $\msout{50}$                                        \\
+      \hline
+      $\msout{51}$  & $\msout{52}$  & $53$          & $\msout{54}$  & $\msout{55}$  &
+      $\msout{56}$  & $\msout{57}$  & $\msout{58}$  & $59$          & $\msout{60}$                                        \\
+      \hline
+      $61$          & $\msout{62}$  & $\msout{63}$  & $\msout{64}$  & $\msout{65}$  &
+      $\msout{66}$  & $67$          & $\msout{68}$  & $\msout{69}$  & $\msout{70}$                                        \\
+      \hline
+      $71$          & $\msout{72}$  & $73$          & $\msout{74}$  & $\msout{75}$  & $\msout{76}$
+                    & $\msout{77}$  & $\msout{78}$  & $79$          & $\msout{80}$                                        \\
+      \hline
+      $\msout{81}$  & $\msout{82}$  & $83$          & $\msout{84}$  & $\msout{85}$  &
+      $\msout{86}$  & $\msout{87}$  & $\msout{88}$  & $89$          & $\msout{90}$                                        \\
+      \hline
+      $\msout{91}$  & $\msout{92}$  & $\msout{93}$  & $\msout{94}$  & $\msout{95}$
+                    & $\msout{96}$  & $97$          & $\msout{98}$  & $\msout{99}$  & $\msout{100}$                       \\
+      \hline
+      $101$         & $\msout{102}$ & $103$         & $\msout{104}$ & $\msout{105}$ &
+      $\msout{106}$ & $107$         & $\msout{108}$ & $109$         & $\msout{110}$                                       \\
+      \hline
+      $\msout{111}$ & $\msout{112}$ & $113$         & $\msout{114}$ & $\msout{115}$ &
+      $\msout{116}$ & $\msout{117}$ & $\msout{118}$ & $\msout{119}$ &
+      $\msout{120}$                                                                                                       \\
+      \hline
+      $\msout{121}$ & $\msout{122}$ & $\msout{123}$ & $\msout{124}$ &
+      $\msout{125}$ & $\msout{126}$ & $127$         & $\msout{128}$ & $\msout{129}$ &
+      $\msout{130}$                                                                                                       \\
+      \hline
+      $131$         & $\msout{132}$ & $\msout{133}$ & $\msout{134}$ & $\msout{135}$ &
+      $\msout{136}$ & $137$         & $\msout{138}$ & $139$         & $\msout{140}$                                       \\
+      \hline
+      $\msout{141}$ & $\msout{142}$ & $\msout{143}$ & $\msout{144}$ &
+      $\msout{145}$ & $\msout{146}$ & $\msout{147}$ & $\msout{148}$ & $149$         &
+      $\msout{150}$                                                                                                       \\
+      \hline
+      $151$         & $\msout{152}$ & $\msout{153}$ & $\msout{154}$ & $\msout{155}$ &
+      $\msout{156}$ & $157$         & $\msout{158}$ & $\msout{159}$ & $\msout{160}$                                       \\
+      \hline
+      $\msout{161}$ & $\msout{162}$ & $163$         & $\msout{164}$ & $\msout{165}$ &
+      $\msout{166}$ & $167$         & $\msout{168}$ & $\msout{169}$ & $\msout{170}$                                       \\
+      \hline
+      $\msout{171}$ & $\msout{172}$ & $173$         & $\msout{174}$ & $\msout{175}$ &
+      $\msout{176}$ & $\msout{177}$ & $\msout{178}$ & $179$         & $\msout{180}$                                       \\
+      \hline
+      $181$         & $\msout{182}$ & $\msout{183}$ & $\msout{184}$ & $\msout{185}$ &
+      $\msout{186}$ & $\msout{187}$ & $\msout{188}$ & $\msout{189}$ &
+      $\msout{190}$                                                                                                       \\
+      \hline
+      $191$         & $\msout{192}$ & $193$         & $\msout{194}$ & $\msout{195}$ &
+      $\msout{196}$ & $197$         & $\msout{198}$ & $199$         & $\msout{200}$                                       \\
+      \hline
+    \end{tabular}
+  \end{center}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -455,15 +427,27 @@ numbers less than $a$ that are relatively prime to $a$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-4. Find all positive integers less than 60 and relatively prime to $60$.
+  3. For each composite number $a$. with $4\leq a\leq 20$, find all positive
+  numbers less than $a$ that are relatively prime to $a$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-\begin{itemize}
-    \item[$60:$] {$2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 
-                    37, 41, 43, 47, 49, 53, 59 $}
-\end{itemize}
+  \begin{multicols}{1}
+    \begin{itemize}
+      \item[$4:$]  {$2, 3$}
+      \item[$6:$]  {$2, 3, 5$}
+      \item[$8:$]  {$2, 3, 5, 7$}
+      \item[$9:$]  {$2, 3, 4, 5, 7, 8$}
+      \item[$10:$] {$2, 3, 5, 7, 9$}
+      \item[$12:$] {$2, 3, 5, 7, 11$}
+      \item[$14:$] {$2, 3, 5, 7, 9, 11, 13$}
+      \item[$15:$] {$2, 3, 4, 5, 7, 8, 11, 13, 14$}
+      \item[$16:$] {$2, 3, 5, 7, 9, 11, 13, 15$}
+      \item[$18:$] {$2, 3, 5, 7, 11, 13, 17$}
+      \item[$20:$] {$2, 3, 5, 7, 9, 11, 13, 17, 19$}
+    \end{itemize}
+  \end{multicols}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -471,33 +455,49 @@ numbers less than $a$ that are relatively prime to $a$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-\begin{itemize}
+  4. Find all positive integers less than 60 and relatively prime to $60$.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  \begin{itemize}
+    \item[$60:$] {$2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31,
+            37, 41, 43, 47, 49, 53, 59 $}
+  \end{itemize}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  \begin{itemize}
     \item [9. (a)] {For which $n\in \Z^{\text{+}}$ is $n^{3}-1$ a prime number?}
     \item [(b)] {For which $n\in \Z^{\text{+}}$ is $n^{3}+1$ a prime number?}
     \item [(c)] {For which $n\in \Z^{\text{+}}$ is $n^{2}-1$ a prime number?}
     \item [(d)] {For which $n\in \Z^{\text{+}}$ is $n^{2}+1$ a prime number?}
-    \end{itemize}
+  \end{itemize}
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    \begin{itemize}
-        \item [(a)] {We can factor $n^{3}-1$ into $(n - 1) (n^2 + n + 1)$. We 
-        have then $n-1\vert n^{3}-1$, for $n^{3}-1$ to be prime $n-1$ must be 
-        $1$. This happens only for $n=2$.
-        }
-        \item [(b)] {We can factor $n^{3}+1$ into $(n + 1) (n^2 - n + 1)$. We 
-        have then $(n^2 - n + 1)\vert n^{3}+1$, 
-        for $n^{3}+1$ to be prime $(n^2 - n + 1)$ must be $1$. 
-        This happens only for $n=1$. }
-        \item [(c)] {We can factor $n^{2}-1$ into $(n - 1) (n + 1)$. We 
-        have then $(n 1 1)\vert n^{2}-1$, 
-        for $n^{2}-1$ to be prime $(n - 1)$ must be $1$. 
-        This happens only for $n=2$.
-        For which $n\in \Z^{\text{+}}$ is $n^{2}-1$ a prime number?}
-        \item [(d)] {????
-        }
-    \end{itemize}
+  \begin{itemize}
+    \item [(a)] {We can factor $n^{3}-1$ into $(n - 1) (n^2 + n + 1)$. We
+          have then $n-1\vert n^{3}-1$, for $n^{3}-1$ to be prime $n-1$ must be
+          $1$. This happens only for $n=2$.
+          }
+    \item [(b)] {We can factor $n^{3}+1$ into $(n + 1) (n^2 - n + 1)$. We
+          have then $(n^2 - n + 1)\vert n^{3}+1$,
+          for $n^{3}+1$ to be prime $(n^2 - n + 1)$ must be $1$.
+          This happens only for $n=1$. }
+    \item [(c)] {We can factor $n^{2}-1$ into $(n - 1) (n + 1)$. We
+          have then $(n 1 1)\vert n^{2}-1$,
+          for $n^{2}-1$ to be prime $(n - 1)$ must be $1$.
+          This happens only for $n=2$.
+          For which $n\in \Z^{\text{+}}$ is $n^{2}-1$ a prime number?}
+    \item [(d)] {????
+          }
+  \end{itemize}
 \end{mdframed}
 
 \newpage
@@ -506,34 +506,34 @@ numbers less than $a$ that are relatively prime to $a$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-11. Prove that $n^4+4^n$ is composite if $n>1$.
+  11. Prove that $n^4+4^n$ is composite if $n>1$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-We are presented with two potability's, $n$ is even or $n$ is odd.
-\begin{itemize}[align=left]
+  We are presented with two potability's, $n$ is even or $n$ is odd.
+  \begin{itemize}[align=left]
     \item [$n$ even]{\hspace{.5in}\newline
-        It's obvious that $n^4+4^n$ is an even not $2$ and can't be prime. 
-    }
+          It's obvious that $n^4+4^n$ is an even not $2$ and can't be prime.
+          }
     \item [$n$ odd]{\hspace{.5in}\newline
-    We begin by completing the square 
-    \begin{align*}
-        n^4+4^n&= n^4+4^n\\
-        &=\lrp{n^2}^2+\lrp{2^n}^2\\
-        &=\lrp{n^2+2^n}^2-2n^2 2^n
-    \end{align*}
-    We from here we observe that $2^n2=2^{n+1}$, since $n$ is odd $n+1$ is even 
-    yielding $2^{n+1}=2^{2k}$. We can see we have a difference of squares
-    \begin{align*}
-        \lrp{n^2+2^n}^2-2n^2 2^n&=\lrp{n^2+2^n}^2-\lrp{2^nn}^2\\
-        &=\lrp{n^2+2^n+2^nn}\lrp{n^2+2^n-2^nn}
-    \end{align*}
-    since we are restricted to $n>1$ we can see that both $\lrp{n^2+2^n+2^nn}>1$
-    and $\lrp{n^2+2^n-2^nn}>1$ for all $n$. Making $n^4+4^n$ composite as 
-    desired. 
-    }
-\end{itemize}
+          We begin by completing the square
+          \begin{align*}
+            n^4+4^n & = n^4+4^n                 \\
+                    & =\lrp{n^2}^2+\lrp{2^n}^2  \\
+                    & =\lrp{n^2+2^n}^2-2n^2 2^n
+          \end{align*}
+          We from here we observe that $2^n2=2^{n+1}$, since $n$ is odd $n+1$ is even
+          yielding $2^{n+1}=2^{2k}$. We can see we have a difference of squares
+          \begin{align*}
+            \lrp{n^2+2^n}^2-2n^2 2^n & =\lrp{n^2+2^n}^2-\lrp{2^nn}^2         \\
+                                     & =\lrp{n^2+2^n+2^nn}\lrp{n^2+2^n-2^nn}
+          \end{align*}
+          since we are restricted to $n>1$ we can see that both $\lrp{n^2+2^n+2^nn}>1$
+          and $\lrp{n^2+2^n-2^nn}>1$ for all $n$. Making $n^4+4^n$ composite as
+          desired.
+          }
+  \end{itemize}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -541,19 +541,19 @@ We are presented with two potability's, $n$ is even or $n$ is odd.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-13. Let $a,b,c$  be positive integers, and let $d=\lrp{a,b}$. Since $d\vert a$, 
-there exists an integer $h$ with $a=dh$. Show that $a\vert bc$, then $h\vert c$. 
+  13. Let $a,b,c$  be positive integers, and let $d=\lrp{a,b}$. Since $d\vert a$,
+  there exists an integer $h$ with $a=dh$. Show that $a\vert bc$, then $h\vert c$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-We will proceed with a transitive proof:
-\begin{align*}
-    a\vert abc &\rightarrow a\vert \lrp{a,b}c \\
-    &\rightarrow a\vert dc\\
-    &\rightarrow dh\vert dc\\
-    &\rightarrow h\vert c
-\end{align*}
+  We will proceed with a transitive proof:
+  \begin{align*}
+    a\vert abc & \rightarrow a\vert \lrp{a,b}c \\
+               & \rightarrow a\vert dc         \\
+               & \rightarrow dh\vert dc        \\
+               & \rightarrow h\vert c
+  \end{align*}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -561,17 +561,17 @@ We will proceed with a transitive proof:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-14. Show that $a\Z \cap b\Z=\lrb{a,b}$.
+  14. Show that $a\Z \cap b\Z=\lrb{a,b}$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    Let $x\in \lrp{a\Z \cap b\Z}$, since $x\in a\Z$ we have $x=aq_1$, similarly 
-    since $x\in b\Z$ we have$x=bq_2$. We can see that $x=abq$, this means $x$ 
-    is a multiple of $\lrb{a,b}$ putting $x\in \lrb{a,b}$. Next, we let 
-    $x\in \lrb{a,b}\Z$, this means $x$ is of the form $x=\lrb{a,b}q$. We can see
-    that $a\vert x$ and $b\vert x$ since $a\vert \lrb{a,b}$, This makes 
-    $x\in a\Z$ and $x\in b\Z$, as desired. 
+  Let $x\in \lrp{a\Z \cap b\Z}$, since $x\in a\Z$ we have $x=aq_1$, similarly
+  since $x\in b\Z$ we have$x=bq_2$. We can see that $x=abq$, this means $x$
+  is a multiple of $\lrb{a,b}$ putting $x\in \lrb{a,b}$. Next, we let
+  $x\in \lrb{a,b}\Z$, this means $x$ is of the form $x=\lrb{a,b}q$. We can see
+  that $a\vert x$ and $b\vert x$ since $a\vert \lrb{a,b}$, This makes
+  $x\in a\Z$ and $x\in b\Z$, as desired.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -579,29 +579,29 @@ We will proceed with a transitive proof:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-17. Let $a,b$ be nonzero integers. Prove $\lrp{a,b}=1$ if and only if 
-$\lrp{a+b,ab}=1$. 
+  17. Let $a,b$ be nonzero integers. Prove $\lrp{a,b}=1$ if and only if
+  $\lrp{a+b,ab}=1$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-\begin{itemize}[align=left]
+  \begin{itemize}[align=left]
     \item [$\Rightarrow$]{
-    We let $\lrp{a,b}=1$, then consider the $\lrp{a+b,ab}$. We assume 
-    $\lrp{a+b,ab}=d$, with $d>1$. Since $d>1$ there must exist $p$ a prime such that
-    $p\vert d$. This means that $p\vert a+b$ and $p \vert ab$. Consequently, either
-    $p\vert a$ or $p\vert b$. WOLG we have $p\vert a$, and since $p\vert a+b$ it 
-    must be that $p\vert b$. Finally, since $p\vert a $ and $p\vert b$, 
-    $p\vert \lrp{a,b}$ a contradiction. So $\lrp{a+b,ab}=1$.
-    }
+          We let $\lrp{a,b}=1$, then consider the $\lrp{a+b,ab}$. We assume
+          $\lrp{a+b,ab}=d$, with $d>1$. Since $d>1$ there must exist $p$ a prime such that
+          $p\vert d$. This means that $p\vert a+b$ and $p \vert ab$. Consequently, either
+          $p\vert a$ or $p\vert b$. WOLG we have $p\vert a$, and since $p\vert a+b$ it
+          must be that $p\vert b$. Finally, since $p\vert a $ and $p\vert b$,
+          $p\vert \lrp{a,b}$ a contradiction. So $\lrp{a+b,ab}=1$.
+          }
     \item [$\Leftarrow$]{
-    We let $\lrp{a+b,ab}=1$, then consider the $\lrp{a,b}$. We assume 
-    $\lrp{a,b}=d$, with $d>1$. Since $d>1$ there must exist $p$ a prime such that
-    $p\vert d$. This means that $p\vert a$ and $p\vert b$, further $p \vert ab$. 
-    Since $p$ divides $a$ and $b$, we have $p\vert a+b$. Finally, since $p\vert ab$, 
-    and $p\vert a+b$, $p\vert \lrp{a+b,ab}$, a contradiction so $\lrp{a,b}=1$.
-    }
-\end{itemize}
+          We let $\lrp{a+b,ab}=1$, then consider the $\lrp{a,b}$. We assume
+          $\lrp{a,b}=d$, with $d>1$. Since $d>1$ there must exist $p$ a prime such that
+          $p\vert d$. This means that $p\vert a$ and $p\vert b$, further $p \vert ab$.
+          Since $p$ divides $a$ and $b$, we have $p\vert a+b$. Finally, since $p\vert ab$,
+          and $p\vert a+b$, $p\vert \lrp{a+b,ab}$, a contradiction so $\lrp{a,b}=1$.
+          }
+  \end{itemize}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -609,16 +609,16 @@ $\lrp{a+b,ab}=1$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-18. Let $a,b$ be nonzero integers with $\lrp{a,b}=1$. Compute $\lrp{a+b,a-b}$. 
+  18. Let $a,b$ be nonzero integers with $\lrp{a,b}=1$. Compute $\lrp{a+b,a-b}$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-We know that $d=\lrp{a+b,a-b}$, this means that $d\vert a+b$ and $d\vert a-b$. 
-From here we have that $d\vert \lrp{a+b}+\lrp{a-b} \rightarrow d\vert 2a$ and 
-$d\vert \lrp{a+b}-\lrp{a-b} \rightarrow d\vert 2b$. Since $d$ divides both $2a$
-and $2b$, $d$ must also divide $2\lrp{a,b}$. Since $\lrp{a,b}=1$ we have 
-$\lrp{a+b,a-b}=2$.
+  We know that $d=\lrp{a+b,a-b}$, this means that $d\vert a+b$ and $d\vert a-b$.
+  From here we have that $d\vert \lrp{a+b}+\lrp{a-b} \rightarrow d\vert 2a$ and
+  $d\vert \lrp{a+b}-\lrp{a-b} \rightarrow d\vert 2b$. Since $d$ divides both $2a$
+  and $2b$, $d$ must also divide $2\lrp{a,b}$. Since $\lrp{a,b}=1$ we have
+  $\lrp{a+b,a-b}=2$.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -626,26 +626,26 @@ $\lrp{a+b,a-b}=2$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-19. Let $a$ and $b$ be positive integers, and let $m$ be an integer such that 
-$ab=m\lrp{a,b}$. Without using the prime factorization theorem, prove that 
-$\lrp{a,b}\lrb{a,b}=ab$ by verifying that $m$ satisfies the necessary properties
-of $\lrb{a,b}$.
+  19. Let $a$ and $b$ be positive integers, and let $m$ be an integer such that
+  $ab=m\lrp{a,b}$. Without using the prime factorization theorem, prove that
+  $\lrp{a,b}\lrb{a,b}=ab$ by verifying that $m$ satisfies the necessary properties
+  of $\lrb{a,b}$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-We let $d=\lrp{a,b}$, this means that $ab=md$. We first show $a|m$ and $b|m$, 
-\begin{align*}
-    ab=md   &\rightarrow a\lrp{dq}=md \\
-            &\rightarrow adq-md=0 \\
-            &\rightarrow d(aq-m)=0 & (by def d>0)\\
-            &\rightarrow aq=m \\
-            &\rightarrow a|m \\
-\end{align*}
-similarly for  $b$. \\
-Next we will show that if $a|c$ and $b|c$ then $m|c$. We have that $c=aq_1=bq_2$
-or $c^2=abq$. We can multiply $ab=md$ by $q$ giving $abq=mdq$, this means we 
-have $c^2=mdq$, which is true only if $c=mdq$, $m|c$ as desired. 
+  We let $d=\lrp{a,b}$, this means that $ab=md$. We first show $a|m$ and $b|m$,
+  \begin{align*}
+    ab=md & \rightarrow a\lrp{dq}=md                \\
+          & \rightarrow adq-md=0                    \\
+          & \rightarrow d(aq-m)=0    & (by def d>0) \\
+          & \rightarrow aq=m                        \\
+          & \rightarrow a|m                         \\
+  \end{align*}
+  similarly for  $b$. \\
+  Next we will show that if $a|c$ and $b|c$ then $m|c$. We have that $c=aq_1=bq_2$
+  or $c^2=abq$. We can multiply $ab=md$ by $q$ giving $abq=mdq$, this means we
+  have $c^2=mdq$, which is true only if $c=mdq$, $m|c$ as desired.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -653,20 +653,20 @@ have $c^2=mdq$, which is true only if $c=mdq$, $m|c$ as desired.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-20. A positive integer $a$ is called a square if $a=n^2$ for some $n\in \Z$. 
-Show that the integer $a>1$ is a square if and only if every exponent in its 
-prime factorization is even. 
+  20. A positive integer $a$ is called a square if $a=n^2$ for some $n\in \Z$.
+  Show that the integer $a>1$ is a square if and only if every exponent in its
+  prime factorization is even.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-Let $a\in \Z$ be a square. Since $a$ is a square by definiton there exists 
-a $n$ such that $nn=a$. Now by the fundamental theorem of arithmetic we know $n$
-has a prime factorization,written $p_1^{n_1}\cdots p_k^{n_k}$. If we consider 
-$nn$, we have $nn = \lrp{p_1^{n_1}\cdots p_k^{n_k}}
-                    \lrp{p_1^{n_1}\cdots p_k^{n_k}}$
-, by combining terms we can see that $nn= \lrp{p_1^{2n_1}\cdots p_k^{2n_k}}$, as
-desired. 
+  Let $a\in \Z$ be a square. Since $a$ is a square by definiton there exists
+  a $n$ such that $nn=a$. Now by the fundamental theorem of arithmetic we know $n$
+  has a prime factorization,written $p_1^{n_1}\cdots p_k^{n_k}$. If we consider
+  $nn$, we have $nn = \lrp{p_1^{n_1}\cdots p_k^{n_k}}
+    \lrp{p_1^{n_1}\cdots p_k^{n_k}}$
+  , by combining terms we can see that $nn= \lrp{p_1^{2n_1}\cdots p_k^{2n_k}}$, as
+  desired.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -674,29 +674,29 @@ desired.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-23. Let $p$ and $q$ be prime numbers. Prove that $pq+1$ is a square if and only 
-if $p$ and $q$ are twin primes.
+  23. Let $p$ and $q$ be prime numbers. Prove that $pq+1$ is a square if and only
+  if $p$ and $q$ are twin primes.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    We begin by letting selecting $p$ a prime and $q$ a prime such that $q=p+2$. 
-    Now we consider $pq$, 
-    \begin{align*}
-        pq  &\rightarrow p\lrp{p+2}\\
-            &\rightarrow p^2+p2\\
-    \end{align*}
-    We now consider $p+1$, if we take $\lrp{p+1}^2$, we get $p^2+2p+1$. It's 
-    obvious that $pq+1=p^2+p2+1=\lrp{p+1}^2$, so $pq+1$ is a square when $p$ and $q$ are 
-    twin primes. 
-    We can now consider $p$ a prime, and $q$ a prime such that $q=p+n$ with 
-    $n>2$. If we calculate $pq$ we see that,
-    \begin{align*}
-        pq  &\rightarrow p\lrp{p+n}\\
-            &\rightarrow p^2+pn\\
-    \end{align*}
-    we then have that $pq+1=p^2+pn+1$ with $n>2$, this is not a square, showing 
-    when $p$ and $q$ aren't twin primes $pq+1$ is not a square. 
+  We begin by letting selecting $p$ a prime and $q$ a prime such that $q=p+2$.
+  Now we consider $pq$,
+  \begin{align*}
+    pq & \rightarrow p\lrp{p+2} \\
+       & \rightarrow p^2+p2     \\
+  \end{align*}
+  We now consider $p+1$, if we take $\lrp{p+1}^2$, we get $p^2+2p+1$. It's
+  obvious that $pq+1=p^2+p2+1=\lrp{p+1}^2$, so $pq+1$ is a square when $p$ and $q$ are
+  twin primes.
+  We can now consider $p$ a prime, and $q$ a prime such that $q=p+n$ with
+  $n>2$. If we calculate $pq$ we see that,
+  \begin{align*}
+    pq & \rightarrow p\lrp{p+n} \\
+       & \rightarrow p^2+pn     \\
+  \end{align*}
+  we then have that $pq+1=p^2+pn+1$ with $n>2$, this is not a square, showing
+  when $p$ and $q$ aren't twin primes $pq+1$ is not a square.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -704,19 +704,19 @@ if $p$ and $q$ are twin primes.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-26. Prove that if $a>1$, then there is a prime $p$ with $a<p\leq a!+1$.
+  26. Prove that if $a>1$, then there is a prime $p$ with $a<p\leq a!+1$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    We observe that $a!+1$ is either prime or composite, if $ a!+1$ is prime
-    we are done, if $ a!+1$ is composite we know by the fundamental theorem
-    of arithmetic that $ a!+1$ has prime factors. Now if all prime factors $p$
-    are such that $p\leq a$ since $p\vert a!$ we see that if we divide $a!+1$ by
-    any of these we get a remainder of $1$, a contradiction so there must be 
-    a prime factor $p$ with $a<p$.
+  We observe that $a!+1$ is either prime or composite, if $ a!+1$ is prime
+  we are done, if $ a!+1$ is composite we know by the fundamental theorem
+  of arithmetic that $ a!+1$ has prime factors. Now if all prime factors $p$
+  are such that $p\leq a$ since $p\vert a!$ we see that if we divide $a!+1$ by
+  any of these we get a remainder of $1$, a contradiction so there must be
+  a prime factor $p$ with $a<p$.
 
-    \textit{Note: this is basically the same argument as euclid's proof of 
+  \textit{Note: this is basically the same argument as euclid's proof of
     infinite primes}
 \end{mdframed}
 \newpage
@@ -725,18 +725,18 @@ if $p$ and $q$ are twin primes.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-29. Show that $\log{2}/\log{3}$ is not a rational number. 
+  29. Show that $\log{2}/\log{3}$ is not a rational number.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    We observe this is an application of the change of base formula, making 
-    $\frac{\log{2}}{\log{3}}=\log_{3}2$. From here we have 
-    $x=\log_{3}2 \rightarrow 3^x=2$, if $x$ is rational then there exist $m$ and 
-    $n$ such that $\frac{m}{n}=x$. We now have 
-    $3^{\frac{m}{n}}=2\rightarrow 3^m=2^n $, a contradiction since there is no 
-    $m$ and $n$ that satisfy this equivalence, making $\log{2}/\log{3}$ 
-    irrational as desired.
+  We observe this is an application of the change of base formula, making
+  $\frac{\log{2}}{\log{3}}=\log_{3}2$. From here we have
+  $x=\log_{3}2 \rightarrow 3^x=2$, if $x$ is rational then there exist $m$ and
+  $n$ such that $\frac{m}{n}=x$. We now have
+  $3^{\frac{m}{n}}=2\rightarrow 3^m=2^n $, a contradiction since there is no
+  $m$ and $n$ that satisfy this equivalence, making $\log{2}/\log{3}$
+  irrational as desired.
 \end{mdframed}
 
 

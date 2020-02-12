@@ -1,162 +1,162 @@
 
-\section{Functions}  
+\section{Functions}
 \subsection{Functions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  1.   In each of the following parts, determine whether the given function is 
-  1:1 and whether it is onto. 
-\begin{itemize}
-  \item [(a)]{
-    $f:\R\to \R; \fof{x}=x+3$
-  }
-  \item [(b)]{
-    $f:\C\to \C; \fof{x}=x^2+2x+1$
-  }
-  \item [(c]{
-    $f:\Z_n\to \Z_n; \fof{\lrb{x}_n}=\lrb{mx+b}_n, \text{where} m,b\in \Z$
-  }
-  \item [(d)]{
-    $f:\R^+\to \R; \fof{x}=\ln x$
-  }
-\end{itemize}
+  1.   In each of the following parts, determine whether the given function is
+  1:1 and whether it is onto.
+  \begin{itemize}
+    \item [(a)]{
+          $f:\R\to \R; \fof{x}=x+3$
+          }
+    \item [(b)]{
+          $f:\C\to \C; \fof{x}=x^2+2x+1$
+          }
+    \item [(c]{
+          $f:\Z_n\to \Z_n; \fof{\lrb{x}_n}=\lrb{mx+b}_n, \text{where} m,b\in \Z$
+          }
+    \item [(d)]{
+          $f:\R^+\to \R; \fof{x}=\ln x$
+          }
+  \end{itemize}
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
   \begin{itemize}
-    \item [(a)]{ We can see that $\fof{x}=x+3$ then $\fofinv{x}=x-3$, 
-    $\fof{\fofinv{x}}=\lrp{x-3}+3=x$. Showing $f$ is a bijection.
-    }
+    \item [(a)]{ We can see that $\fof{x}=x+3$ then $\fofinv{x}=x-3$,
+          $\fof{\fofinv{x}}=\lrp{x-3}+3=x$. Showing $f$ is a bijection.
+          }
     \item [(b)]{
-      \begin{itemize}
-        \item[1:1:]{\hspace{.5in}\newline
-          Assume $\fof{x}=25=\fof{y}$, we can see that if $x=4$, $\fof{x}=25$, 
-          and $y=-6$, $\fof{y}=25$, showing $f$ not injective. 
-        }
-        \item[onto:]{\hspace{.5in}\newline
-          Let $y\in \C$ we must now show there exists a $x \in \C$ such that
-          $\fof{x}=y$. Consider $x=\sqrt{y}-1$, we can then take:
-          \begin{align*}
-            \fof{x} &= x^2+2x+1\\
-            &= \lrp{\sqrt{y}-1}^2+2\lrp{\sqrt{y}-1}+1\\
-            &= \lrp{\sqrt{y}-1}^2+2\sqrt{y}-2+1\\
-            &= 1 - 2 \sqrt{y} + y+2\sqrt{y}-1\\
-            &=  y\\
-          \end{align*}
-          showing $f$ surjective.  
-        }
-      \end{itemize}
-    }
+          \begin{itemize}
+            \item[1:1:]{\hspace{.5in}\newline
+                  Assume $\fof{x}=25=\fof{y}$, we can see that if $x=4$, $\fof{x}=25$,
+                  and $y=-6$, $\fof{y}=25$, showing $f$ not injective.
+                  }
+            \item[onto:]{\hspace{.5in}\newline
+                  Let $y\in \C$ we must now show there exists a $x \in \C$ such that
+                  $\fof{x}=y$. Consider $x=\sqrt{y}-1$, we can then take:
+                  \begin{align*}
+                    \fof{x} & = x^2+2x+1                               \\
+                            & = \lrp{\sqrt{y}-1}^2+2\lrp{\sqrt{y}-1}+1 \\
+                            & = \lrp{\sqrt{y}-1}^2+2\sqrt{y}-2+1       \\
+                            & = 1 - 2 \sqrt{y} + y+2\sqrt{y}-1         \\
+                            & =  y                                     \\
+                  \end{align*}
+                  showing $f$ surjective.
+                  }
+          \end{itemize}
+          }
     \item [(c)]{
-    Consider $\fofinv{x}=\lrb{\lrp{y-b}m^{-1}}_n$, now taking 
-    $\fof{\fofinv{x}}$
-    \begin{align*}
-      \fof{\fofinv{x}} &= \lrb{m\lrp{x-b}m^{-1}+b}_n\\
-      &= \lrb{\lrp{x-b}+b}_n\\
-      &= \lrb{x}_n\\
-    \end{align*}
-    showing $f$ a bijection.
-    }
+          Consider $\fofinv{x}=\lrb{\lrp{y-b}m^{-1}}_n$, now taking
+          $\fof{\fofinv{x}}$
+          \begin{align*}
+            \fof{\fofinv{x}} & = \lrb{m\lrp{x-b}m^{-1}+b}_n \\
+                             & = \lrb{\lrp{x-b}+b}_n        \\
+                             & = \lrb{x}_n                  \\
+          \end{align*}
+          showing $f$ a bijection.
+          }
     \item [(d)]{
-      $f:\R^+\to \R; \fof{x}=\ln x$
-      If we take $\fofinv{x}=e^x$, $\fof{\fofinv{x}}=\ln e^x = x$, showing $f$
-      a bijection. 
-    }
+          $f:\R^+\to \R; \fof{x}=\ln x$
+          If we take $\fofinv{x}=e^x$, $\fof{\fofinv{x}}=\ln e^x = x$, showing $f$
+          a bijection.
+          }
   \end{itemize}
 \end{mdframed}
-  \newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-  3.   For each 1:1 and onto function in Exercise 1, find the inverse of the 
-  function
-\begin{itemize}
-  \item [(a)]{
-    $f:\R\to \R; \fof{x}=x+3$
-  }
-  \item [(b)]{
-    $f:\C\to \C; \fof{x}=x^2+2x+1$
-  }
-  \item [(c]{
-    $f:\Z_n\to \Z_n; \fof{\lrb{x}_n}=\lrb{mx+b}_n, \text{where} m,b\in \Z$
-  }
-  \item [(d)]{
-    $f:\R^+\to \R; \fof{x}=\ln x$
-  }
-\end{itemize}
-\end{mdframed}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-  \begin{multicols}{2}
-    \begin{itemize}
-    \item [(a)]{
-        see question 1
-    }
-    \item [(b)]{
-      not a bijection
-    }
-    \item [(c]{
-      see question 1
-      }
-      \item [(d)]{
-      see question 1
-      }
-    \end{itemize}
-  \end{multicols}
-  \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  4.   For each 1:1 and onto function in Exercise 2, find the inverse of the 
+  3.   For each 1:1 and onto function in Exercise 1, find the inverse of the
   function
-\begin{itemize}
-  \item [(a)]{
-    $f:\R\to \R; \fof{x}=x^2$
-  }
-  \item [(b)]{
-    $f:\C\to \C; \fof{x}=x^2$
-  }
-  \item [(c]{
-    $f:\R^+\to \R^+; \fof{x}=x^2$
-  }
-  \item [(d)]{
-    $f:\R^+\to \R^+; \fof{x}=
-    \begin{cases}
-      x &\text{if }x\text{ is rational}\\
-      x^2 &\text{if }x\text{ is irrational}\\
-    \end{cases}$
-  }
-\end{itemize}
+  \begin{itemize}
+    \item [(a)]{
+          $f:\R\to \R; \fof{x}=x+3$
+          }
+    \item [(b)]{
+          $f:\C\to \C; \fof{x}=x^2+2x+1$
+          }
+    \item [(c]{
+          $f:\Z_n\to \Z_n; \fof{\lrb{x}_n}=\lrb{mx+b}_n, \text{where} m,b\in \Z$
+          }
+    \item [(d)]{
+          $f:\R^+\to \R; \fof{x}=\ln x$
+          }
+  \end{itemize}
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item [(a)]{
+            see question 1
+            }
+      \item [(b)]{
+            not a bijection
+            }
+      \item [(c]{
+            see question 1
+            }
+      \item [(d)]{
+            see question 1
+            }
+    \end{itemize}
+  \end{multicols}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  4.   For each 1:1 and onto function in Exercise 2, find the inverse of the
+  function
+  \begin{itemize}
+    \item [(a)]{
+          $f:\R\to \R; \fof{x}=x^2$
+          }
+    \item [(b)]{
+          $f:\C\to \C; \fof{x}=x^2$
+          }
+    \item [(c]{
+          $f:\R^+\to \R^+; \fof{x}=x^2$
+          }
+    \item [(d)]{
+          $f:\R^+\to \R^+; \fof{x}=
+            \begin{cases}
+              x   & \text{if }x\text{ is rational}   \\
+              x^2 & \text{if }x\text{ is irrational} \\
+            \end{cases}$
+          }
+  \end{itemize}
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
   \begin{itemize}
     \item [(a)]{
-      Not a bijection
-    }
+          Not a bijection
+          }
     \item [(b)]{
-      Not a bijection 
-    }
+          Not a bijection
+          }
     \item [(c]{
-      $\fofinv{x}=+\sqrt{x}$
-    }
+          $\fofinv{x}=+\sqrt{x}$
+          }
     \item [(d)]{
-      $f:\R^+\to \R^+; \fofinv{x}=
-      \begin{cases}
-        x &\text{if }x\text{ is rational}\\
-        +\sqrt{x} &\text{if }x\text{ is irrational}\\
-      \end{cases}$
-    }
+          $f:\R^+\to \R^+; \fofinv{x}=
+            \begin{cases}
+              x         & \text{if }x\text{ is rational}   \\
+              +\sqrt{x} & \text{if }x\text{ is irrational} \\
+            \end{cases}$
+          }
   \end{itemize}
 \end{mdframed}
 \newpage
@@ -171,11 +171,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-Let $\fof{A}=B$, select $y\in B$, since $y\in B$ we have $y\in \fof{A}$, that 
-means there exists $a\in A$ such that $\fof{a}=y$. Showing $f$ surjective. 
-Let $\fof{A}\neq B$, let $y\in B$, such that $y\notin B \cap \fof{A}$. Since we
-have $y\notin \fof{A}$ we have no $a\in A$ that maps to $y$ showing $f$ not 
-surjective, as desired.  
+  Let $\fof{A}=B$, select $y\in B$, since $y\in B$ we have $y\in \fof{A}$, that
+  means there exists $a\in A$ such that $\fof{a}=y$. Showing $f$ surjective.
+  Let $\fof{A}\neq B$, let $y\in B$, such that $y\notin B \cap \fof{A}$. Since we
+  have $y\notin \fof{A}$ we have no $a\in A$ that maps to $y$ showing $f$ not
+  surjective, as desired.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -183,23 +183,23 @@ surjective, as desired.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  15. Let $f:A\to B$ and $g:B\to C$ be functions. Prove that if $g\circ f$ is 
+  15. Let $f:A\to B$ and $g:B\to C$ be functions. Prove that if $g\circ f$ is
   1:1, then $f$ is 1:1, and that if $g\circ f$ is onto $g$ is onto.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-Let $g\circ f$ be injective, but $f$ not injective. Since $f$ is not injective
-$\exists a,x\in A$ such tha $a\neq x$ but $\fof{x}=\fof{a}$. We consider 
-$g\circ f\lrp{a}$ and $g\circ f\lrp{x}$, since $\fof{x}=\fof{a}$ it must be that
-$\gof{\fof{x}}=\gof{\fof{a}}$. This means that with $a\neq b$, 
-$\gof{\fof{x}}=\gof{\fof{a}}$, making $g\circ f$ not injective a contradiction 
-so $f$ injective. 
+  Let $g\circ f$ be injective, but $f$ not injective. Since $f$ is not injective
+  $\exists a,x\in A$ such tha $a\neq x$ but $\fof{x}=\fof{a}$. We consider
+  $g\circ f\lrp{a}$ and $g\circ f\lrp{x}$, since $\fof{x}=\fof{a}$ it must be that
+  $\gof{\fof{x}}=\gof{\fof{a}}$. This means that with $a\neq b$,
+  $\gof{\fof{x}}=\gof{\fof{a}}$, making $g\circ f$ not injective a contradiction
+  so $f$ injective.
 
-Let $g\circ f$ be surjective, but $g$ not surjective. Since $g$ not surjective
-there exists some $c\in C$ such that $\gof{b}\neq c$ for all $b\in B$. However 
-since $g\circ f$ surjective there exists $g\circ f\lrp{a}=c$ a contradiction, 
-making $g$ surjective. 
+  Let $g\circ f$ be surjective, but $g$ not surjective. Since $g$ not surjective
+  there exists some $c\in C$ such that $\gof{b}\neq c$ for all $b\in B$. However
+  since $g\circ f$ surjective there exists $g\circ f\lrp{a}=c$ a contradiction,
+  making $g$ surjective.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -207,8 +207,8 @@ making $g$ surjective.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  17. Let $f:A\to B$ be a function. Prove that $f$ is onto if and only if 
-  $h\circ f = k \circ f$ implies $h=k$, for every set $C$ and all choices of 
+  17. Let $f:A\to B$ be a function. Prove that $f$ is onto if and only if
+  $h\circ f = k \circ f$ implies $h=k$, for every set $C$ and all choices of
   functions $h:B\to C$ and $k:B\to C$.
 \end{mdframed}
 
@@ -222,11 +222,11 @@ making $g$ surjective.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  19. Let $f:A\to B$ be a function. Prove that $f$ is 1:1 if and only if 
-  $f\circ h=f\circ k$ implies $h=k$, for every set $C$ and all choices of 
+  19. Let $f:A\to B$ be a function. Prove that $f$ is 1:1 if and only if
+  $f\circ h=f\circ k$ implies $h=k$, for every set $C$ and all choices of
   functions $h:C\to A$ and $k:C\to A$.
 \end{mdframed}
-  
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
 
@@ -254,61 +254,61 @@ making $g$ surjective.
 \begin{mdframed}[style=darkQuesion]
   1. Consider the following Permutations in $S_7$.
   \begin{multicols}{2}
-    $\sigma=  
-    \begin{pmatrix}
-      1 & 2 & 3 & 4 & 5 & 6 & 7\\
-      3 & 2 & 5 & 4 & 6 & 1 & 7\\
-    \end{pmatrix}$
-    $\tau=  
-    \begin{pmatrix}
-      1 & 2 & 3 & 4 & 5 & 6 & 7\\
-      2 & 1 & 5 & 7 & 4 & 6 & 3\\
-    \end{pmatrix}$
+    $\sigma=
+      \begin{pmatrix}
+        1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+        3 & 2 & 5 & 4 & 6 & 1 & 7 \\
+      \end{pmatrix}$
+    $\tau=
+      \begin{pmatrix}
+        1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+        2 & 1 & 5 & 7 & 4 & 6 & 3 \\
+      \end{pmatrix}$
   \end{multicols}
   \vspace{.25in}
   \begin{itemize}
     \item [(a)]{$\sigma\tau$
-      
-    }
+
+          }
     \item [(b)]{$\tau\sigma$
 
-    }
+          }
     \item [(c)]{$\tau^2\sigma$
 
-    }
+          }
     \item [(d)]{$\sigma^{-1}$
 
-    }
+          }
     \item [(e)]{$\sigma\tau\sigma^{-1}$
 
-    }
+          }
     \item [(f)]{$\tau^{-1}\sigma\tau$
 
-    }
+          }
   \end{itemize}
 \end{mdframed}
-  
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
   \begin{itemize}
     \item [(a)]{$\sigma\tau$
-      
-    }
+
+          }
     \item [(b)]{$\tau\sigma$
 
-    }
+          }
     \item [(c)]{$\tau^2\sigma$
 
-    }
+          }
     \item [(d)]{$\sigma^{-1}$
 
-    }
+          }
     \item [(e)]{$\sigma\tau\sigma^{-1}$
 
-    }
+          }
     \item [(f)]{$\tau^{-1}\sigma\tau$
 
-    }
+          }
   \end{itemize}
 \end{mdframed}
 \newpage
@@ -317,33 +317,33 @@ making $g$ surjective.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2. Write each of the permutations $\sigma\tau, \tau\sigma, \tau^2\sigma, 
-  \sigma^{-1}, \sigma\tau\sigma^{-1}, \text{ and } \tau^{-1}\sigma\tau$ in 
-  Exercise 1 as a product of disjoint cycles. Write $\sigma$ anf $\tau$ as 
-  products of transpositions. 
+  2. Write each of the permutations $\sigma\tau, \tau\sigma, \tau^2\sigma,
+    \sigma^{-1}, \sigma\tau\sigma^{-1}, \text{ and } \tau^{-1}\sigma\tau$ in
+  Exercise 1 as a product of disjoint cycles. Write $\sigma$ anf $\tau$ as
+  products of transpositions.
 \end{mdframed}
-  
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
   \begin{itemize}
     \item [(a)]{$\sigma\tau$
-      
-    }
+
+          }
     \item [(b)]{$\tau\sigma$
 
-    }
+          }
     \item [(c)]{$\tau^2\sigma$
 
-    }
+          }
     \item [(d)]{$\sigma^{-1}$
 
-    }
+          }
     \item [(e)]{$\sigma\tau\sigma^{-1}$
 
-    }
+          }
     \item [(f)]{$\tau^{-1}\sigma\tau$
 
-    }
+          }
   \end{itemize}
 \end{mdframed}
 \newpage
@@ -352,15 +352,15 @@ making $g$ surjective.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  3. Write 
-    $\begin{pmatrix}
-      1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10\\
-      3 & 4 & 10 & 5 & 7 & 8 & 2 & 6 & 9 & 1\\
-    \end{pmatrix}$ as the product of disjoint cycles and as a product of 
-    transpositions. Construct its associated diagram, find its inverse, and find 
-    it's order. 
+  3. Write
+  $\begin{pmatrix}
+      1 & 2 & 3  & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+      3 & 4 & 10 & 5 & 7 & 8 & 2 & 6 & 9 & 1  \\
+    \end{pmatrix}$ as the product of disjoint cycles and as a product of
+  transpositions. Construct its associated diagram, find its inverse, and find
+  it's order.
 \end{mdframed}
-  
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
 \end{mdframed}
@@ -370,63 +370,63 @@ making $g$ surjective.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  3. Find the oder of each of the following permutations. 
+  3. Find the oder of each of the following permutations.
   \begin{itemize}
     \item [(a)] {
-      $\begin{pmatrix}
-        1 & 2 & 3 & 4 & 5 & 6\\
-        6 & 4 & 5 & 3 & 2 & 1\\
-      \end{pmatrix}$
-    }
+          $\begin{pmatrix}
+              1 & 2 & 3 & 4 & 5 & 6 \\
+              6 & 4 & 5 & 3 & 2 & 1 \\
+            \end{pmatrix}$
+          }
     \item [(b)] {
-      $\begin{pmatrix}
-        1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
-        4 & 6 & 7 & 5 & 1 & 8 & 2 & 3\\
-      \end{pmatrix}$
-    }
+          $\begin{pmatrix}
+              1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+              4 & 6 & 7 & 5 & 1 & 8 & 2 & 3 \\
+            \end{pmatrix}$
+          }
     \item [(c)] {
-      $\begin{pmatrix}
-        1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\\
-        5 & 9 & 8 & 7 & 3 & 4 & 6 & 1 & 2\\
-      \end{pmatrix}$
-    }
+          $\begin{pmatrix}
+              1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+              5 & 9 & 8 & 7 & 3 & 4 & 6 & 1 & 2 \\
+            \end{pmatrix}$
+          }
     \item [(d)] {
-      $\begin{pmatrix}
-        1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
-        8 & 4 & 9 & 6 & 5 & 2 & 3 & 1 & 7\\
-      \end{pmatrix}$
-    }
-  \end{itemize} 
+          $\begin{pmatrix}
+              1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+              8 & 4 & 9 & 6 & 5 & 2 & 3 & 1 & 7 \\
+            \end{pmatrix}$
+          }
+  \end{itemize}
 \end{mdframed}
-  
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
   \begin{itemize}
     \item [(a)] {
-      $\begin{pmatrix}
-        1 & 2 & 3 & 4 & 5 & 6\\
-        6 & 4 & 5 & 3 & 2 & 1\\
-      \end{pmatrix}$
-    }
+          $\begin{pmatrix}
+              1 & 2 & 3 & 4 & 5 & 6 \\
+              6 & 4 & 5 & 3 & 2 & 1 \\
+            \end{pmatrix}$
+          }
     \item [(b)] {
-      $\begin{pmatrix}
-        1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
-        4 & 6 & 7 & 5 & 1 & 8 & 2 & 3\\
-      \end{pmatrix}$
-    }
+          $\begin{pmatrix}
+              1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+              4 & 6 & 7 & 5 & 1 & 8 & 2 & 3 \\
+            \end{pmatrix}$
+          }
     \item [(c)] {
-      $\begin{pmatrix}
-        1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\\
-        5 & 9 & 8 & 7 & 3 & 4 & 6 & 1 & 2\\
-      \end{pmatrix}$
-    }
+          $\begin{pmatrix}
+              1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+              5 & 9 & 8 & 7 & 3 & 4 & 6 & 1 & 2 \\
+            \end{pmatrix}$
+          }
     \item [(d)] {
-      $\begin{pmatrix}
-        1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
-        8 & 4 & 9 & 6 & 5 & 2 & 3 & 1 & 7\\
-      \end{pmatrix}$
-    }
-  \end{itemize} 
+          $\begin{pmatrix}
+              1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+              8 & 4 & 9 & 6 & 5 & 2 & 3 & 1 & 7 \\
+            \end{pmatrix}$
+          }
+  \end{itemize}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -434,10 +434,10 @@ making $g$ surjective.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  5. Let $3\leq m\leq n$. Calculate $\sigma\tau^{-1}$ for cycles 
+  5. Let $3\leq m\leq n$. Calculate $\sigma\tau^{-1}$ for cycles
   $\sigma= \lrp{1,2,\dots , m-1}$ and \\ $\tau= \lrp{1,2,\dots,m-1,m}$ in $S_n$.
 \end{mdframed}
-  
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
 \end{mdframed}
