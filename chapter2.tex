@@ -173,7 +173,8 @@
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
   Let $\fof{A}=B$, select $y\in B$, since $y\in B$ we have $y\in \fof{A}$, that
   means there exists $a\in A$ such that $\fof{a}=y$. Showing $f$ surjective.
-  Let $\fof{A}\neq B$, let $y\in B$, such that $y\notin B \cap \fof{A}$. Since we
+  Let $\fof{A}\neq B$, let $y\in B$, such that $y\notin B \cap \fof{A}$. Since
+  we
   have $y\notin \fof{A}$ we have no $a\in A$ that maps to $y$ showing $f$ not
   surjective, as desired.
 \end{mdframed}
@@ -191,8 +192,8 @@
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
   Let $g\circ f$ be injective, but $f$ not injective. Since $f$ is not injective
   $\exists a,x\in A$ such tha $a\neq x$ but $\fof{x}=\fof{a}$. We consider
-  $g\circ f\lrp{a}$ and $g\circ f\lrp{x}$, since $\fof{x}=\fof{a}$ it must be that
-  $\gof{\fof{x}}=\gof{\fof{a}}$. This means that with $a\neq b$,
+  $g\circ f\lrp{a}$ and $g\circ f\lrp{x}$, since $\fof{x}=\fof{a}$ it must be
+  that $\gof{\fof{x}}=\gof{\fof{a}}$. This means that with $a\neq b$,
   $\gof{\fof{x}}=\gof{\fof{a}}$, making $g\circ f$ not injective a contradiction
   so $f$ injective.
 
@@ -214,7 +215,19 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  Assume $f$ is surjective, that is for all $y\in B$ there exists $x\in A$ such
+  that $\fof{x}=y$. We know $\hof{\fof{x}}=\kof{\fof{x}}$, so
+  $\hof{y}=\kof{y}$ for all $y$ in the domain of $f$ as desired.
 
+  Next assume $f$ is not surjective, then for some $y\in B$ there exists no $x$
+  such that $\fof{x}=y$. We can select $C=\lrs{a,b}$. We say that $\hof{c}=a$
+  now we construct $k$,
+  $$\kof{x}=\begin{cases}
+      b & \text{if }x=y     \\
+      a & \text{if }x\neq y \\
+    \end{cases}$$
+  from here we have that when the input of $h$ and $k$ are in the domain of $f$
+  $h\neq k$, as desired.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -229,7 +242,21 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  Assume that $f$ is injective, this means that $\fof{x}=\fof{y}$ implies $x=y$.
+  Also assume $f\circ h=f\circ k$ for some $h,k$. We assume $h\neq k$ for some
+  $c\in C$. Since we know $f$ is injective we have
+  $\fof{\hof{c}}\neq \fof{\kof{c}}$, a contradiction from our assumption that
+  $f\circ h=f\circ k$ meaning $h=k$ as desired.
 
+  Assume $f\circ h=f\circ k$ implies $h=k$. suppose $f$ be not injective, this means
+  that there exists some $x,y$ such that $\fof{x}=\fof{y}$ but $x\neq y$.
+  We can select $C=\lrs{a,b}$, and define $h$, $k$:
+  \begin{align*}
+    \kof{a}=x & \hspace{.5in}  \hof{a}=y \\
+    \kof{b}=y & \hspace{.5in} \hof{b}=x
+  \end{align*}
+  We can see from here we have that for $\fof{\hof{a}}=\fof{\kof{a}}$ but
+  $h\neq k$ a contradiction making $f$ injective as desired.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
