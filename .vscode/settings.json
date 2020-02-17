@@ -1,4 +1,19 @@
 {
     "cSpell.words": [
-    ]
+    ],
+    "todo-tree.regex.regex": "((//|%|#|<!--|;|/\\*|^)\\s*($TAGS)|^\\s*- \\[ \\])",
+    "todo-tree.highlights.defaultHighlight": {
+      "icon": "unverified",
+      "type": "text-and-comment",
+      "foreground": "grey",
+      "background": "#CC5500",
+      "opacity": 50,
+      "iconColour": "#CC5500",
+      "rulerColour": "#CC5500"
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#500D57",
+    "titleBar.activeBackground": "#711279",
+    "titleBar.activeForeground": "#FEFCFF"
+  }
 }
