@@ -72,6 +72,10 @@
 \newcommand{\vhalfpg}{\vspace{5in}}
 \newcommand{\vthirdpg}{\vspace{3in}}
 \newcommand{\vquartpg}{\vspace{2in}}
+\newcommand{\Assoc}[1]{\item[Associativity:]{#1}}
+\newcommand{\Invs}[1]{\item[Inverses:]{#1}}
+\newcommand{\Clos}[1]{\item[Closure:]{#1}}
+\newcommand{\Ident}[1]{\item[Identity:]{#1}}
 \newcommand{\twocase}[2]{\begin{enumerate}
         \item[$ \implies$]{
             #1
@@ -277,7 +281,9 @@
 %Compile the title and jump to new page
 \input{title}
 \newpage
-\setcounter{page}{2}
+\tableofcontents
+\newpage
+\setcounter{page}{3}
 %Compile Chapter 1
 \input{chapter1}
 \clearpage
