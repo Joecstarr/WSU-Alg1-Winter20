@@ -50,50 +50,66 @@
     \begin{itemize}[align=left]
       \item[(a)]{
             \begin{itemize}[align=left]
-              \Assoc{$a\ast \lrp{b\ast c}=\lrp{a\ast b}\ast c$}
-              \Invs{}
-              \Clos{}
-              \Ident{}
+              \Invs{Let $a\in \Z$ but $a\neq 1$ and $a\neq 1$,
+                $\inv{a}\notin \Z$.}
             \end{itemize}
             }
       \item[(b)]{
             \begin{itemize}[align=left]
-              \Assoc{}
-              \Invs{}
-              \Clos{}
-              \Ident{}
+              \Ident{$\max{a,a-1}=a$ for all $a\in \Z$ this means there is no
+                $e$ with $\max{a,e}=a$ for all $a$. }
             \end{itemize}
             }
       \item[(c)]{
             \begin{itemize}[align=left]
-              \Assoc{}
-              \Invs{}
-              \Clos{}
-              \Ident{}
+              \Assoc{\begin{align*}
+                  \lrp{a\ast b}\ast c & =\lrp{a-b}\ast c     \\
+                                      & =\lrp{a-b}-c         \\
+                                      & =a-\lrp{b-c}         \\
+                                      & =a\ast \lrp{b\ast c}
+                \end{align*}}
+              \Invs{Select $a\in \Z$, $$a\ast a = a-a = 0$$}
+              \Clos{Obvious from closure of $\lrp{\Z,+}$}
+              \Ident{0 is the identity, Obvious from $\lrp{\Z,+}$}
             \end{itemize}
+
             }
       \item[(d)]{
             \begin{itemize}[align=left]
-              \Assoc{}
-              \Invs{}
-              \Clos{}
-              \Ident{}
+              \Invs{Let $a\in \Z$ but $a\neq 1$ and $a\neq 1$,
+                $\inv{a}\notin \Z$.}
             \end{itemize}
             }
       \item[(e)]{
             \begin{itemize}[align=left]
-              \Assoc{}
-              \Invs{}
-              \Clos{}
-              \Ident{}
+              \Assoc{\begin{align*}
+                  \lrp{a\ast b}\ast c & =\lrp{ab}\ast c      \\
+                                      & =\lrp{ab}c           \\
+                                      & =a\lrp{bc}           \\
+                                      & =a\ast \lrp{b\ast c}
+                \end{align*}}
+              \Invs{Select $a\in \R$, $$a\ast a = a\frac{1}{a} = 1$$}
+              \Clos{Obvious from closure of $\lrp{\R,\cdot}$}
+              \Ident{1 is the identity, Obvious from $\lrp{\R,\cdot}$}
             \end{itemize}
             }
       \item[(f)]{
             \begin{itemize}[align=left]
-              \Assoc{}
-              \Invs{}
-              \Clos{}
-              \Ident{}
+              \Assoc{\begin{align*}
+                  \lrp{a\ast b}\ast c & =\lrp{ab}\ast c      \\
+                                      & =\lrp{ab}c           \\
+                                      & =a\lrp{bc}           \\
+                                      & =a\ast \lrp{b\ast c}
+                \end{align*}}
+              \Invs{Select $a\in \Q$, $$a\ast \inv{a} = a\frac{1}{a} = 1$$}
+              \Clos{$a,b\in \Q$, $a=\frac{p_1}{q_1}$ $b=\frac{p_2}{q_2}$,
+                ${p_1},{q_1},{p_2},{q_2}\in \Z$, $q_1\neq0\neq q_2$.
+                \begin{align*}
+                  a\ast b & =ab
+                          & =                                 \\
+                          & =\frac{p_1{p_2}}{q_1{q_2}} \in \Q
+                \end{align*}}
+              \Ident{1 is the identity, Obvious from $\lrp{\R,\cdot}$}
             \end{itemize}
             }
     \end{itemize}
@@ -105,12 +121,59 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2.
+  3. Let $\grp{G}{\cdot}$ be a group. Define a new binary operation $\ast$ on
+  $G$ by the formula $a \ast b=b\cot a$, for all $a,b\in G$.
+  \begin{itemize}
+    \item[(a)]{Show that $\grp{G}{\cdot}$ is a group.}
+    \item[(b)]{Give examples to show that $\grp{G}{\cdot}$ may or may not be the
+          same as $\grp{G}{\ast}$.}
+  \end{itemize}
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  \begin{itemize}
+    \item[(a)]{
+          \begin{itemize}[align=left]
+            \Assoc{\begin{align*}
+                \lrp{a\ast b}\ast c & =\lrp{b\cdot a}\ast c     \\
+                                    & =c \cdot  \lrp{b \cdot a} \\
+                                    & =\lrp{c \cdot  b} \cdot a \\
+                                    & =\lrp{b\ast c} \cdot a    \\
+                                    & =a\ast \lrp{b\ast c}
+              \end{align*}}
+            \Invs{Let $a\in G$ since $\grp{G}{\cdot}$ is a group we know
+              $\inv{a}\in G$. Now $a\ast \inv{a}=\inv{a}\cdot a=1$.
+            }
+            \Clos{We select $a,b\in G$ consier $a\ast b=b\cdot a$ by closure of
+              $\grp{G}{\cdot}$, $a\ast b\in G$.
+            }
+            \Ident{Let $a\in G$, consider $1\ast a = a \cdot 1 = a$ and
+              $a\ast 1 = 1 \cdot a = a$.}
+          \end{itemize}
+          }
+    \item[(b)]{
+          Let $G=\begin{tabular}{|c|c|c|c|c|c|c|}
+              \hline
+              $\cdot$ & e & a & b & c & d & f \\
+              \hline
+              a       & a & e & d & f & b & c \\
+              \hline
+              b       & b & f & e & d & c & a \\
+              \hline
+              c       & c & d & f & e & a & b \\
+              \hline
+              d       & d & c & a & b & f & e \\
+              \hline
+              f       & f & b & c & a & e & d \\
+              \hline
+            \end{tabular}$ so
+          $a\ast b=b\cdot a = f$ but $a\cdot b=d$. In this case they are not equal.
 
+          If we let $G= \grp{\Z}{+}$, we have $a\ast b = b+a=a+b$. In this case they
+          are equal.
+          }
+  \end{itemize}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -118,12 +181,29 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2.
+  5. Is $\GL{n}{\R}$ an Abelian group? Support your answer by either proof or a
+  counter example.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+  No, select $$A=\begin{bmatrix}
+      2 & 3 \\
+      5 & 7 \\
+    \end{bmatrix}
+  B=\begin{bmatrix}
+      11 & 13 \\
+      17 & 19 \\
+    \end{bmatrix}$$
+    we calculate 
+  $$AB=\begin{bmatrix}
+      73  & 83  \\
+      174 & 198 \\
+    \end{bmatrix}
+  BA=\begin{bmatrix}
+      87  & 124 \\
+      129 & 184 \\
+    \end{bmatrix}$$
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -131,12 +211,59 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2.
+  8. Write out the multiplication table for the following set of matrices over 
+  $\Q$:
+  $$\begin{bmatrix}
+    1  & 0 \\
+    0 & 1 \\
+  \end{bmatrix},
+  \begin{bmatrix}
+    -1  & 0 \\
+    0 & 1 \\
+  \end{bmatrix},
+  \begin{bmatrix}
+    1  & 0 \\
+    0 & -1 \\
+  \end{bmatrix},
+  \begin{bmatrix}
+    -1  & 0 \\
+    0 & -1 \\
+  \end{bmatrix}$$
+
+  
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+Let $$i=\begin{bmatrix}
+  1  & 0 \\
+  0 & 1 \\
+\end{bmatrix},
+j=\begin{bmatrix}
+  -1  & 0 \\
+  0 & 1 \\
+\end{bmatrix},
+k=\begin{bmatrix}
+  1  & 0 \\
+  0 & -1 \\
+\end{bmatrix},
+l=\begin{bmatrix}
+  -1  & 0 \\
+  0 & -1 \\
+\end{bmatrix}$$
+$$\begin{tabular}{|c|c|c|c|c|}
+  \hline
+  $\cdot$ & i & j & k & l \\
+  \hline
+  i       & i & j & k & l \\
+  \hline
+  j       & j & i & l & k \\
+  \hline
+  k       & k & l & i & j \\
+  \hline
+  l       & l & k & j & i \\
+  \hline
+\end{tabular}$$
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -144,7 +271,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2.
+  9. Let $G=\lrs{x\in \R \vert x>0 \text{ and } x\neq 1}$. Define the operation
+  $\ast$ on $G$ by $a\ast b=a^{\ln{b}}$, for all $a,b\in G$. Prove that $G$ is 
+  an Abelian group under the operation $\ast$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
