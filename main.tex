@@ -36,9 +36,10 @@
     linecolor=textcolorDef,
     linewidth=1pt
     }
-
-%If this line is commented, then the appearance remains as usual.
+    
+    %If this line is commented, then the appearance remains as usual.
 \invertbackgroundtext
+\newcommand{\m}{\scalebox{0.25}[1.0]{$-$}}
 \newcommand{\lrb}[1]{\left[#1\right]}
 \newcommand{\lrp}[1]{\left(#1\right)}
 \newcommand{\lrs}[1]{\left\{#1\right\}}
@@ -55,6 +56,7 @@
 \newcommand{\ngcd}[2]{\text{gcd}\left(#1\,,\,#2\right)}
 \newcommand{\grp}[2]{\left(#1\,,\,#2\right)}
 \newcommand{\GL}[2]{GL_{#1}\left(#2\right)}
+\newcommand{\Mn}[2]{M_{#1}\left(#2\right)}
 \newcommand{\nord}[2]{\text{ord}_{#1}\left(#2\right)}
 \newcommand{\dom}[1]{\text{dom}\left(#1\right)}
 \newcommand{\ran}[1]{\text{ran}\left(#1\right)}
@@ -68,7 +70,7 @@
 \newcommand{\Zm}[1]{\mathbb{Z}_{#1}}
 \newcommand{\Zp}{\mathbb{Z}_p}
 \newcommand{\numb}[1]{\noindent{\bf #1)}}
-\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\inv}[1]{#1^{\m1}}
 \newcommand{\totient}[1]{\phi\left(#1\right)} 
 \newcommand{\vhalfpg}{\vspace{5in}}
 \newcommand{\vthirdpg}{\vspace{3in}}
@@ -87,7 +89,6 @@
         }
     \end{enumerate}}
 \newcommand{\msout}[1]{\text{\sout{\ensuremath{#1}}}}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Enhanced graphics support (https://ctan.org/pkg/graphicx?lang=en)
 \usepackage{graphicx}

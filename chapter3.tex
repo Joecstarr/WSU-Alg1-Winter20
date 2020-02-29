@@ -1,6 +1,6 @@
 \section{Groups}
 \subsection{Definition of a Group}
-%3.1: 1 2 3 5 8-18 22 24 25 26
+%3.1: 12-18 22 24 25 26
 %3.2: 1-4 6-20 22 23 26 27 28 29
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -191,16 +191,16 @@
       2 & 3 \\
       5 & 7 \\
     \end{bmatrix}
-  B=\begin{bmatrix}
+    B=\begin{bmatrix}
       11 & 13 \\
       17 & 19 \\
     \end{bmatrix}$$
-    we calculate 
+  we calculate
   $$AB=\begin{bmatrix}
       73  & 83  \\
       174 & 198 \\
     \end{bmatrix}
-  BA=\begin{bmatrix}
+    BA=\begin{bmatrix}
       87  & 124 \\
       129 & 184 \\
     \end{bmatrix}$$
@@ -211,59 +211,59 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  8. Write out the multiplication table for the following set of matrices over 
+  8. Write out the multiplication table for the following set of matrices over
   $\Q$:
   $$\begin{bmatrix}
-    1  & 0 \\
-    0 & 1 \\
-  \end{bmatrix},
-  \begin{bmatrix}
-    -1  & 0 \\
-    0 & 1 \\
-  \end{bmatrix},
-  \begin{bmatrix}
-    1  & 0 \\
-    0 & -1 \\
-  \end{bmatrix},
-  \begin{bmatrix}
-    -1  & 0 \\
-    0 & -1 \\
-  \end{bmatrix}$$
+      1 & 0 \\
+      0 & 1 \\
+    \end{bmatrix},
+    \begin{bmatrix}
+      \m1 & 0 \\
+      0   & 1 \\
+    \end{bmatrix},
+    \begin{bmatrix}
+      1 & 0   \\
+      0 & \m1 \\
+    \end{bmatrix},
+    \begin{bmatrix}
+      \m1 & 0   \\
+      0   & \m1 \\
+    \end{bmatrix}$$
 
-  
+
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-Let $$i=\begin{bmatrix}
-  1  & 0 \\
-  0 & 1 \\
-\end{bmatrix},
-j=\begin{bmatrix}
-  -1  & 0 \\
-  0 & 1 \\
-\end{bmatrix},
-k=\begin{bmatrix}
-  1  & 0 \\
-  0 & -1 \\
-\end{bmatrix},
-l=\begin{bmatrix}
-  -1  & 0 \\
-  0 & -1 \\
-\end{bmatrix}$$
-$$\begin{tabular}{|c|c|c|c|c|}
-  \hline
-  $\cdot$ & i & j & k & l \\
-  \hline
-  i       & i & j & k & l \\
-  \hline
-  j       & j & i & l & k \\
-  \hline
-  k       & k & l & i & j \\
-  \hline
-  l       & l & k & j & i \\
-  \hline
-\end{tabular}$$
+  Let $$i=\begin{bmatrix}
+      1 & 0 \\
+      0 & 1 \\
+    \end{bmatrix},
+    j=\begin{bmatrix}
+      \m1 & 0 \\
+      0   & 1 \\
+    \end{bmatrix},
+    k=\begin{bmatrix}
+      1 & 0   \\
+      0 & \m1 \\
+    \end{bmatrix},
+    l=\begin{bmatrix}
+      \m1 & 0   \\
+      0   & \m1 \\
+    \end{bmatrix}$$
+  $$\begin{tabular}{|c|c|c|c|c|}
+      \hline
+      $\cdot$ & i & j & k & l \\
+      \hline
+      i       & i & j & k & l \\
+      \hline
+      j       & j & i & l & k \\
+      \hline
+      k       & k & l & i & j \\
+      \hline
+      l       & l & k & j & i \\
+      \hline
+    \end{tabular}$$
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -272,13 +272,47 @@ $$\begin{tabular}{|c|c|c|c|c|}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
   9. Let $G=\lrs{x\in \R \vert x>0 \text{ and } x\neq 1}$. Define the operation
-  $\ast$ on $G$ by $a\ast b=a^{\ln{b}}$, for all $a,b\in G$. Prove that $G$ is 
+  $\ast$ on $G$ by $a\ast b=a^{\ln{b}}$, for all $a,b\in G$. Prove that $G$ is
   an Abelian group under the operation $\ast$.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+  \begin{itemize}[align=left]
+    \Assoc{\begin{align*}
+        \lrp{a\ast b}\ast c & =\lrp{a^{\ln{b}}}\ast c    \\
+                            & =\lrp{a^{\ln{b}}}^{\ln{c}} \\
+                            & ={a^{\ln{b}\ln{c}}}        \\
+                            & =a^{\ln{b^{\ln{c}}}}       \\
+                            & =a\ast \lrp{b\ast c}
+      \end{align*}}
+    \Invs{
+    Let $a\in G$, consider $\inv{a}=e^{\frac{1}{\ln{a}}}$.
+    \begin{multicols}{2}
+      \begin{align*}
+        a\ast\inv{a} & = a ^{\ln{\inv{a}}}             \\
+                     & = a^{\ln{e^{\frac{1}{\ln{a}}}}} \\
+                     & = a^{{{\frac{1}{\ln{a}}}}}      \\
+                     & = a^{{{\log_{a}{e}}}}           \\
+                     & = {e}                           \\
+      \end{align*}
+      \begin{align*}
+        \inv{a}\ast a & = \lrp{\inv{a}} ^{\ln{a}}              \\
+                      & = \lrp{e^{\frac{1}{\ln{a}}}} ^{\ln{a}} \\
+                      & = \lrp{e^{\log_{a}{e}}} ^{\ln{a}}      \\
+                      & = \lrp{e^{\ln{a}} } ^{\log_{a}{e}}     \\
+                      & = a ^{\log_{a}{e}}                     \\
+                      & = {e}                                  \\
+      \end{align*}
+    \end{multicols}
+    }
+    \Clos{Let $a,b\in G$, $a\ast b = a^{\ln{b}}$ we know that $b>0$ so
+      $\ln{b}$ exists, further since $1\notin G$ we have $\ln{b}\neq 0$.
+      We observe that for any $a\in G$ $a^{\ln{b}}>0$ since $a>0$ and since
+      $\ln{b}\neq 0$ $a^{\ln{b}}\neq 1$.}
+    \Ident{Our conjecture is that $e$ is the identity element.
+      Let $a\in G$, $e\ast a= e^{\ln{a}}=a$ and $a\ast e= a^{\ln{e}}=a$}
+  \end{itemize}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -286,12 +320,52 @@ $$\begin{tabular}{|c|c|c|c|c|}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2.
+  10. Show that the set $A=\lrs{f_{m,b}:\R \to \R\vert m\neq 0 \text{ and } f_{m,b}=mx+b}$.
+  of affine functions from $\R$ to $\R$ forms a group under function composition.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  \begin{itemize}[align=left]
+    \Assoc{We've proved this previously. }
+    \Invs{Let $f\in A$, $\fof{x}=mx+b$. Consider $I\lrp{x}=\frac{1}{m}\lrp{x-b}$
+      \begin{multicols}{2}
+        \begin{align*}
+          \fof{I\lrp{x}} & = m\lrp{\frac{1}{m}\lrp{x-b}}+b \\
+                         & = x-b+b                         \\
+                         & = x                             \\
+        \end{align*}
+        \begin{align*}
+          I\lrp{\fof{x}} & = \frac{1}{m}\lrp{\lrp{mx+b}-b} \\
+                         & = \frac{1}{m}\lrp{mx}           \\
+                         & = x                             \\
+        \end{align*}
+      \end{multicols}
+    }
+    \Clos{Let $f,g\in A$, so $\fof{x}=m_1x+b_1$ and $\gof{x}=m_2x+b_2$.
+      Now composing $f$ and $g$ $\fof{\gof{x}}$.
+      \begin{align*}
+        \fof{\gof{x}} & = m_1\lrp{m_2x+b_2}+b_1 \\
+                      & = {m_1m_2x+m_1b_2}+b_1  \\
+                      & = mx+m_1b_2+b_1         \\
+                      & = mx+b                  \\
+      \end{align*}
+    }
+    \Ident{Let $f\in A$, $\fof{x}=mx+b$. Conjecture $e\lrp{x}=x$
+      \begin{multicols}{2}
+        \begin{align*}
+          \fof{e\lrp{x}} & = m\lrp{x}+b \\
+                         & = mx+b       \\
+        \end{align*}
+        \vfill
+        \columnbreak
+        \begin{align*}
+          e\lrp{\fof{x}} & = mx+b \\
+        \end{align*}
+      \end{multicols}
+    }
 
+  \end{itemize}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -299,12 +373,53 @@ $$\begin{tabular}{|c|c|c|c|c|}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2.
+  11. Show that the set of all $2\times 2$ matrices over $\R$ of the form
+  $\begin{bmatrix}
+      m & b \\
+      0 & 1 \\
+    \end{bmatrix}$ with $m\neq 0$ forms a group under matrix multiplication.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  Let $G$ be the set of all $2\times 2$ matrices over $\R$ of the form
+  $\begin{bmatrix}
+      m & b \\
+      0 & 1 \\
+    \end{bmatrix}$ with $m\neq 0$.
+  \begin{itemize}[align=left]
+    \Assoc{Free from $\Mn{2}{\R}$}
+    \Invs{Let $a\in G$, so $a=\begin{bmatrix}
+          m & b \\
+          0 & 1 \\
+        \end{bmatrix}$ we can calculate the determinate of $a$. $m1-b0=m$ and by
+      definition of the set $m\neq 0$. So we have inverses.
+    }
+    \Clos{Let $a,b\in G$, so $a=\begin{bmatrix}
+          m_1 & b_1 \\
+          0   & 1   \\
+        \end{bmatrix}$ and $b=\begin{bmatrix}
+          m_2 & b_2 \\
+          0   & 1   \\
+        \end{bmatrix}$
+      \begin{align*}
+        ab & = \begin{bmatrix}
+          m_1 & b_1 \\
+          0   & 1   \\
+        \end{bmatrix} \begin{bmatrix}
+          m_2 & b_2 \\
+          0   & 1   \\
+        \end{bmatrix} \\
+           & = \begin{bmatrix}
+          m_2m_1 & b_1+m_1b_2 \\
+          0      & 1          \\
+        \end{bmatrix}                            \\
+      \end{align*}
+    }
+    \Ident{Free from $\Mn{2}{\R}$
+    }
 
+  \end{itemize}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
