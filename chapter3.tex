@@ -10,7 +10,6 @@
   1. Using ordinary addition of integers as the operation, show that the set of
   even integers is a group but the set of odd integers is not.
 \end{mdframed}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
   We begin considering the even integers, that is integers of the form $2k$. We
@@ -427,12 +426,63 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2.
+  12. In the group defined in question 11 find all elements that commute with 
+  $\begin{bmatrix}
+    2 & 0\\
+    0 & 1\\
+  \end{bmatrix}$
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+We can begin by letting $a\in G$ calculating $a\begin{bmatrix}
+  2 & 0\\
+  0 & 1\\
+\end{bmatrix}$ and $\begin{bmatrix}
+  2 & 0\\
+  0 & 1\\
+\end{bmatrix}a$. 
+\begin{multicols}{2}
+  \begin{align*}
+    a\begin{bmatrix}
+      2 & 0\\
+      0 & 1\\
+    \end{bmatrix} & = \begin{bmatrix}
+      m & b \\
+      0   & 1   \\
+    \end{bmatrix} \begin{bmatrix}
+      2 & 0\\
+      0 & 1\\
+    \end{bmatrix} \\
+       & = \begin{bmatrix}
+      2m & b \\
+      0      & 1          \\
+    \end{bmatrix}                            \\
+  \end{align*}
+  \begin{align*}
+    \begin{bmatrix}
+      2 & 0\\
+      0 & 1\\
+    \end{bmatrix}a & =  \begin{bmatrix}
+      2 & 0\\
+      0 & 1\\
+    \end{bmatrix} \begin{bmatrix}
+      m & b \\
+      0   & 1   \\
+    \end{bmatrix}\\
+       & = \begin{bmatrix}
+      2m & 2b \\
+      0      & 1          \\
+    \end{bmatrix}                            \\
+  \end{align*}
+\end{multicols}
+So for a matrix of to commute with $\begin{bmatrix}
+  2 & 0\\
+  0 & 1\\
+\end{bmatrix}$ it must be of the form $\begin{bmatrix}
+  m & 0\\
+  0 & 1\\
+\end{bmatrix}$.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -440,12 +490,41 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2.
+  13. Define $\ast$ on $\R$ by $a\ast b = a+b-1$, for all $a,b\in \R$. Show that
+  $\grp{\R}{\ast}$ is an Abelian group.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+  Let $\varphi:\grp{\R}{\ast}\to\grp{\R}{+}$, with $\pof{x}=x-1$, 
+  $\pof{a\ast b}= \lrp{a+b-1}-1=a-1+b-1=\pof{a}+\pof{b}$. 
+  \begin{itemize}[align=left]
+    \Assoc{\begin{align*}
+        \lrp{a\ast b}\ast c & =\lrp{a+b-1}\ast c     \\
+                            & =\lrp{a+b-1}+c-1 \\
+                            & =a+b+c-1-1 \\
+                            & =a+\lrp{b+c-1}-1 \\
+                            & =a\ast \lrp{b\ast c}
+      \end{align*}}
+    \Invs{ 
+    }
+    \Clos{Obvious from closure of $\grp{\R}{+}$. 
+    }
+    \Ident{ Conjecture is that $1$ is the identity element of $\grp{\R}{\ast}$. 
+    \begin{multicols}{2}
+      \begin{align*}
+        a\ast 1 & = a+1-1 \\
+                & = a \\
+      \end{align*}
+      \vfill
+      \columnbreak
+      \begin{align*}
+        1\ast a & = a+1-1 \\
+                & = a \\
+      \end{align*}
+    \end{multicols}
+    }
+  \end{itemize}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
