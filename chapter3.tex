@@ -1,6 +1,5 @@
 \section{Groups}
 \subsection{Definition of a Group}
-%3.1: 12-18 22 24 25 26
 %3.2: 1-4 6-20 22 23 26 27 28 29
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -426,63 +425,63 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  12. In the group defined in question 11 find all elements that commute with 
+  12. In the group defined in question 11 find all elements that commute with
   $\begin{bmatrix}
-    2 & 0\\
-    0 & 1\\
-  \end{bmatrix}$
+      2 & 0 \\
+      0 & 1 \\
+    \end{bmatrix}$
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-We can begin by letting $a\in G$ calculating $a\begin{bmatrix}
-  2 & 0\\
-  0 & 1\\
-\end{bmatrix}$ and $\begin{bmatrix}
-  2 & 0\\
-  0 & 1\\
-\end{bmatrix}a$. 
-\begin{multicols}{2}
-  \begin{align*}
-    a\begin{bmatrix}
-      2 & 0\\
-      0 & 1\\
-    \end{bmatrix} & = \begin{bmatrix}
-      m & b \\
-      0   & 1   \\
-    \end{bmatrix} \begin{bmatrix}
-      2 & 0\\
-      0 & 1\\
-    \end{bmatrix} \\
-       & = \begin{bmatrix}
-      2m & b \\
-      0      & 1          \\
-    \end{bmatrix}                            \\
-  \end{align*}
-  \begin{align*}
-    \begin{bmatrix}
-      2 & 0\\
-      0 & 1\\
-    \end{bmatrix}a & =  \begin{bmatrix}
-      2 & 0\\
-      0 & 1\\
-    \end{bmatrix} \begin{bmatrix}
-      m & b \\
-      0   & 1   \\
-    \end{bmatrix}\\
-       & = \begin{bmatrix}
-      2m & 2b \\
-      0      & 1          \\
-    \end{bmatrix}                            \\
-  \end{align*}
-\end{multicols}
-So for a matrix of to commute with $\begin{bmatrix}
-  2 & 0\\
-  0 & 1\\
-\end{bmatrix}$ it must be of the form $\begin{bmatrix}
-  m & 0\\
-  0 & 1\\
-\end{bmatrix}$.
+  We can begin by letting $a\in G$ calculating $a\begin{bmatrix}
+      2 & 0 \\
+      0 & 1 \\
+    \end{bmatrix}$ and $\begin{bmatrix}
+      2 & 0 \\
+      0 & 1 \\
+    \end{bmatrix}a$.
+  \begin{multicols}{2}
+    \begin{align*}
+      a\begin{bmatrix}
+        2 & 0 \\
+        0 & 1 \\
+      \end{bmatrix} & = \begin{bmatrix}
+        m & b \\
+        0 & 1 \\
+      \end{bmatrix} \begin{bmatrix}
+        2 & 0 \\
+        0 & 1 \\
+      \end{bmatrix} \\
+                                  & = \begin{bmatrix}
+        2m & b \\
+        0  & 1 \\
+      \end{bmatrix}                            \\
+    \end{align*}
+    \begin{align*}
+      \begin{bmatrix}
+        2 & 0 \\
+        0 & 1 \\
+      \end{bmatrix}a & =  \begin{bmatrix}
+        2 & 0 \\
+        0 & 1 \\
+      \end{bmatrix} \begin{bmatrix}
+        m & b \\
+        0 & 1 \\
+      \end{bmatrix} \\
+                                  & = \begin{bmatrix}
+        2m & 2b \\
+        0  & 1  \\
+      \end{bmatrix}                             \\
+    \end{align*}
+  \end{multicols}
+  So for a matrix of to commute with $\begin{bmatrix}
+      2 & 0 \\
+      0 & 1 \\
+    \end{bmatrix}$ it must be of the form $\begin{bmatrix}
+      m & 0 \\
+      0 & 1 \\
+    \end{bmatrix}$.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -496,34 +495,131 @@ So for a matrix of to commute with $\begin{bmatrix}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-  Let $\varphi:\grp{\R}{\ast}\to\grp{\R}{+}$, with $\pof{x}=x-1$, 
-  $\pof{a\ast b}= \lrp{a+b-1}-1=a-1+b-1=\pof{a}+\pof{b}$. 
   \begin{itemize}[align=left]
-    \Assoc{\begin{align*}
-        \lrp{a\ast b}\ast c & =\lrp{a+b-1}\ast c     \\
-                            & =\lrp{a+b-1}+c-1 \\
-                            & =a+b+c-1-1 \\
-                            & =a+\lrp{b+c-1}-1 \\
-                            & =a\ast \lrp{b\ast c}
-      \end{align*}}
-    \Invs{ 
-    }
-    \Clos{Obvious from closure of $\grp{\R}{+}$. 
-    }
-    \Ident{ Conjecture is that $1$ is the identity element of $\grp{\R}{\ast}$. 
-    \begin{multicols}{2}
-      \begin{align*}
-        a\ast 1 & = a+1-1 \\
-                & = a \\
-      \end{align*}
-      \vfill
-      \columnbreak
-      \begin{align*}
-        1\ast a & = a+1-1 \\
-                & = a \\
-      \end{align*}
-    \end{multicols}
-    }
+    \item[]{
+          \begin{multicols}{2}
+            \begin{itemize}[align=left]
+              \Abel{
+                \begin{align*}
+                  {a\ast b} & =a+b-1   \\
+                            & = b+a-1  \\
+                            & =b\ast a
+                \end{align*}
+
+              }
+              \Assoc{\begin{align*}
+                  \lrp{a\ast b}\ast c & =\lrp{a+b-1}\ast c   \\
+                                      & =\lrp{a+b-1}+c-1     \\
+                                      & =a+b+c-1-1           \\
+                                      & =a+\lrp{b+c-1}-1     \\
+                                      & =a\ast \lrp{b\ast c}
+                \end{align*}}
+            \end{itemize}
+          \end{multicols}
+          }
+          \Invs{ Let $a\in \grp{\R}{\ast} $, consider $\inv{a}=2-a$
+            \begin{multicols}{2}
+              \begin{align*}
+                a\ast \inv{a} & = a+\lrp{2-a}-1 \\
+                              & = 1             \\
+              \end{align*}
+              \vfill
+              \columnbreak
+              \begin{align*}
+                \inv{a}\ast a & = \lrp{2-a}+a-1 \\
+                              & = 1             \\
+              \end{align*}
+            \end{multicols}
+          }
+          \Clos{Obvious from closure of $\grp{\R}{+}$.
+          }
+          \Ident{ Conjecture is that $1$ is the identity element of $\grp{\R}{\ast}$.
+            \begin{multicols}{2}
+              \begin{align*}
+                a\ast 1 & = a+1-1 \\
+                        & = a     \\
+              \end{align*}
+              \vfill
+              \columnbreak
+              \begin{align*}
+                1\ast a & = a+1-1 \\
+                        & = a     \\
+              \end{align*}
+            \end{multicols}
+          }
+  \end{itemize}
+\end{mdframed}
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  Let $\varphi:\grp{\R}{\ast}\to\grp{\R}{+}$, with $\pof{x}=x-1$,
+  $\pof{a\ast b}= \lrp{a+b-1}-1=a-1+b-1=\pof{a}+\pof{b}$. Further
+  $\inv{\varphi}\lrp{x}=x+1$, $\pof{\inv{\varphi}\lrp{x}}=\lrp{x+1}-1=x$.
+  Showing a group structure isomorphic to $\grp{\R}{+}$.
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  14. Let $S= \R - \lrs{\m1}$. Define $\ast$ on $S$ by $a\ast b=a+b+ab$ for all
+  $a,b \in S$. Show that $\grp{S}{\ast}$ is an Abelian group.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  \begin{itemize}[align=left]
+
+    \item[] {
+          \begin{multicols}{2}
+            \begin{itemize}[align=left]
+
+              \Abel{
+                \begin{align*}
+                  {a\ast b} & =a+b+ab  \\
+                            & = b+a+ba \\
+                            & =b\ast a
+                \end{align*}
+              }
+              \Invs{ Consider $\inv{a}=\frac{\m a}{a+1}$
+                \begin{align*}
+                  a\ast \inv{a} & = a+\frac{\m a}{a+1}+a\frac{\m a}{a+1} \\
+                                & = a+\frac{\m a\lrp{a+1}}{a+1}          \\
+                                & = a+\m a                               \\
+                                & = 0                                    \\
+                \end{align*}
+                \vfill
+                \columnbreak
+              }
+              \Clos{Let $a,b\in \R$, if we take $a\ast b =a+b+ab$. Assume that
+                $a\ast b=\m1$
+                \begin{align*}
+                  \m1=a+b+ab & \Rightarrow  \m1-a=b+ab          \\
+                             & \Rightarrow  \m1-a=b\lrp{1+a}    \\
+                             & \Rightarrow  \m\frac{a+1}{1+a}=b \\
+                             & \Rightarrow  \m1=b               \\
+                \end{align*}
+                a contradiction.
+              }
+            \end{itemize}
+          \end{multicols}
+          }
+          \Ident{ Conjecture is that $0$ is the identity element of $\grp{S}{\ast}$.
+            \begin{align*}
+              a\ast 0 & = a+0+a0 \\
+                      & = a      \\
+            \end{align*}
+          }
+          \Assoc{\begin{align*}
+              \lrp{a\ast b}\ast c & =\lrp{a+b+ab}\ast c            \\
+                                  & = \lrp{a+b+ab}+c+\lrp{a+b+ab}c \\
+                                  & = \lrp{a+b+ab}+c+\lrp{a+b+ab}c \\
+                                  & = \lrp{a+b+ab}+c+\lrp{a+b+ab}c \\
+                                  & = a+b+ab+c+ca+cb+cab           \\
+                                  & = a+\lrp{b+c+bc}+a\lrp{b+c+bc} \\
+                                  & =a\ast\lrp{b+c+bc}             \\
+                                  & =a\ast \lrp{b\ast c}
+            \end{align*}}
+
   \end{itemize}
 \end{mdframed}
 \newpage
@@ -532,7 +628,120 @@ So for a matrix of to commute with $\begin{bmatrix}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2.
+  15. Let $G=\lrs{x\in \R\vert x>1}$. Define $\ast$ on $G$ by $a\ast b = ab-a-b+2$,
+  for all $a,b\in G$. Show that $\grp{G}{\ast}$ is an Abelian group. 
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  \begin{itemize}[align=left]
+
+    \item[] {
+          \begin{multicols}{2}
+            \begin{itemize}[align=left]
+              \Abel{
+                \begin{align*}
+                  {a\ast b} & =ab-a-b+2  \\
+                            & = ba-b-a+2 \\
+                            & =b\ast a
+                \end{align*}
+              }
+              \Invs{ Consider $\inv{a}=\frac{a}{a-1}$
+                \begin{align*}
+                  a\ast \inv{a} & = a\frac{a}{a-1}-a-\frac{a}{a-1}+2 \\
+                  & = \frac{a}{a-1}\lrp{a-1}-a+2 \\
+                  & = a-a+2 \\
+                                & = 2                                    \\
+                \end{align*}
+                \vfill
+                \columnbreak
+              }
+              \Clos{let $a,b\in G$, consider $a\ast b=ab-a-b+2$ we are left with
+              th
+              }
+            \end{itemize}
+          \end{multicols}
+          }
+          \Ident{ Conjecture is that $2$ is the identity element of $\grp{G}{\ast}$.
+            \begin{align*}
+              a\ast 2 & = a2-a-2+2 \\
+                      & = a      \\
+            \end{align*}
+          }
+          \Assoc{\begin{align*}
+              \lrp{a\ast b}\ast c & =\lrp{a+b+ab}\ast c            \\
+                                  & = \lrp{a+b+ab}+c+\lrp{a+b+ab}c \\
+                                  & = \lrp{a+b+ab}+c+\lrp{a+b+ab}c \\
+                                  & = \lrp{a+b+ab}+c+\lrp{a+b+ab}c \\
+                                  & = a+b+ab+c+ca+cb+cab           \\
+                                  & = a+\lrp{b+c+bc}+a\lrp{b+c+bc} \\
+                                  & =a\ast\lrp{b+c+bc}             \\
+                                  & =a\ast \lrp{b\ast c}
+            \end{align*}}
+
+  \end{itemize}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  16. Let $G$ be a group. We have shown that $\inv{\lrp{ab}}=\inv{b}\inv{a}$. 
+  Find a similar expression for $\lrp{\inv{abc}}$
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+We will use a transitive proof: 
+\begin{align*}
+  \inv{\lrp{abc}} &= \inv{c}\inv{\lrp{ab}}\\
+  &= \inv{c}\inv{b}\inv{a}
+\end{align*}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  17. Let $G$ be a group. If $g\in G$ and $g^2=g$,then prove that $g=e$.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+We begin with letting $g\in G$, such $g^2=g$ we then multiply by $\inv{g}$ on 
+the left:
+\begin{align*}
+  g^2=g &\rightarrow \inv{g}g^2=\inv{g}g\\
+  &\rightarrow g=e
+\end{align*}
+as desired. 
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  18. Show that a nonabelian group must have at least 5 elements. 
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+Let $G$ be a nonabelian group. Since $G$ a group then $e\in G$ the identity. $G$
+can't be the trivial group since the trivial group is Abelian, this puts 
+$a\in G$ with $a\neq e$ further $\inv{a}\in G$. With the same argument $G$ is 
+not a group of three elements, so $b,\inv{b}\in G$. This puts 
+$a,b,\inv{b},\inv{a},e\in G$ showing $G$ with at lest 5 elements.
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  22.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -545,12 +754,21 @@ So for a matrix of to commute with $\begin{bmatrix}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2.
+  24. Let $G$ be a group. Prove that $G$ is Abelian if and only if 
+  $\inv{\lrp{ab}}=\inv{a}\inv{b}$ for all $a,b\in G$. 
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+\twocase{
+  Let $G$ be an abelian group and $a,b\in G$. Consider $\inv{\lrp{ab}}$, we have
+  shown $\inv{\lrp{ab}}=\inv{b}\inv{a}$ since $G$ is abelian we have 
+  $\inv{\lrp{ab}}=\inv{a}\inv{b}$.
+}{
+  Let $\inv{\lrp{ab}}=\inv{a}\inv{b}$, we have shown 
+  $\inv{\lrp{ab}}=\inv{b}\inv{a}$ so $\inv{b}\inv{a}=\inv{a}\inv{b}$ showing $G$
+  abelian.
+}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -558,12 +776,21 @@ So for a matrix of to commute with $\begin{bmatrix}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2.
+  25. Let $G$ be a group. Prove that if $x^2=e$ for all $x\in G$, then $G$ is 
+  abelian. 
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+Let $G$ be a group with the given property $a,b\in G$. Observe that 
+$a^2=e \Rightarrow a=\inv{a}$. We have shown that 
+$\inv{\lrp{ab}}=\inv{b}\inv{a}$.
+We proceed with a transitive proof: 
+\begin{align*}
+  \inv{\lrp{ab}}=\inv{b}\inv{a} &\rightarrow \lrp{ab}=\inv{b}\inv{a}\\
+  &\rightarrow \lrp{ab}={b}{a}
+\end{align*}
+showing $G$ abelian as desired.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -571,77 +798,21 @@ So for a matrix of to commute with $\begin{bmatrix}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2.
+  26. Show that if $G$ is a finite group with an even number of elements, then 
+  there must exist an element $a\in G$ with $a\neq e$ such that $a^2=e$. 
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
-\end{mdframed}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-  2.
-\end{mdframed}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
-\end{mdframed}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-  2.
-\end{mdframed}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
-\end{mdframed}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-  2.
-\end{mdframed}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
-\end{mdframed}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-  2.
-\end{mdframed}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
-\end{mdframed}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-  2.
-\end{mdframed}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+Let $G$ be a group with the given property. Since $G$ a group $e\in G$. 
+Observe $G$ is not the trivial group since it has even cardinality. 
+If we consider the cardinality of $G/e$ it's $\abs{G}-1$ an odd number. 
+Let $a\in G$ with $a\neq e$, observe that since $G$ a group $\inv{a}\in G$. 
+We are left with two possibilities $a=\inv{a}$ or $a\neq \inv{a}$. 
+If $a=\inv{a}$ we are done, otherwise we can delete $a$ and $\inv{a}$ from $G$ 
+and select from the remaining elements of $G$. Since $G/e$ has odd cardinality 
+we can repeat this process until there is a single element remaining. It must 
+be that $a=\inv{a}$ as desired. 
 \end{mdframed}
 \newpage
 \subsection{Subgroups}

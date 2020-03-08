@@ -65,6 +65,7 @@
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\R}{\mathbb{R}}
+\newcommand{\Rp}{\mathbb{R}^{+}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\abs}[1]{\left\vert#1\right\vert}
 \newcommand{\Zm}[1]{\mathbb{Z}_{#1}}
@@ -79,6 +80,7 @@
 \newcommand{\Invs}[1]{\item[Inverses:]{#1}}
 \newcommand{\Clos}[1]{\item[Closure:]{#1}}
 \newcommand{\Ident}[1]{\item[Identity:]{#1}}
+\newcommand{\Abel}[1]{\item[Abelian:]{#1}}
 \newcommand{\twocase}[2]{\begin{enumerate}
         \item[$ \implies$]{
             #1
@@ -186,10 +188,10 @@
 
 \usepackage{etoolbox}
 \newcommand{\zerodisplayskips}{%
-  \setlength{\abovedisplayskip}{1pt}%
-  \setlength{\belowdisplayskip}{1pt}%
-  \setlength{\abovedisplayshortskip}{1pt}%
-  \setlength{\belowdisplayshortskip}{1pt}}
+  \setlength{\abovedisplayskip}{0pt}%
+  \setlength{\belowdisplayskip}{0pt}%
+  \setlength{\abovedisplayshortskip}{0pt}%
+  \setlength{\belowdisplayshortskip}{0pt}}
 \appto{\footnotesize}{\zerodisplayskips}
 \appto{\tiny}{\zerodisplayskips}
 \appto{\scriptsize}{\zerodisplayskips}
@@ -240,5 +242,7 @@
 %Compile Chapter 10
 \input{chapter10}
 \clearpage
-
+%Compile Chapter 10
+\input{GeneralProofs}
+\clearpage
 \end{document}
