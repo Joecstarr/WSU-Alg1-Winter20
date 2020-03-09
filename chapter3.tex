@@ -973,12 +973,21 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-  \begin{itemize}[align=left]
+  We begin by labeling each permutation
+    $$A=(1,2)(3,4)=$$$$B=(1,3)(2,4)$$$$C=(1,4)(2,3)$$
+    \begin{itemize}[align=left]
     \Invs{
-      
+    $$AA=(1,2)(3,4)(1,2)(3,4)=(1)$$
+    $$BB=(1,3)(2,4)(1,3)(2,4)=(1)$$
+    $$CC=(1,4)(2,3)(1,4)(2,3)=(1)$$
     }
     \Clos{
-      
+     $$AB= (1,4)(2,3)$$
+     $$BA= (1,4)(2,3)$$
+     $$AC= (1,3)(2,4)$$
+     $$CA= (1,3)(2,4)$$
+     $$CB= (1,2)(3,4)$$
+     $$BC= (1,2)(3,4)$$
     }
   \end{itemize}
 \end{mdframed}
@@ -989,14 +998,65 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
   6. Let $G=\mathrm{GL}_{2}(\mathbf{R})$
-  (a) Show that $T=\left\{\left[\begin{array}{ll}a & 0 \\ c & d\end{array}\right] | a d \neq 0\right\}$ is a subgroup of $G .$
-  (b) Show that $D=\left\{\left[\begin{array}{ll}a & 0 \\ 0 & d\end{array}\right] | a d \neq 0\right\}$ is a subgroup of $G .$
+  \begin{itemize}
+  \item [] {(a) Show that $T=\left\{\left[\begin{array}{ll}a & 0 \\ c & d\end{array}\right] | a d \neq 0\right\}$ is a subgroup of $G .$
+  }
+\item [] {(b) Show that $D=\left\{\left[\begin{array}{ll}a & 0 \\ 0 & d\end{array}\right] | a d \neq 0\right\}$ is a subgroup of $G .$
+  } 
+  \end{itemize}
     
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-    
+  \begin{itemize}[align=left]
+    \item [(a)]{
+      \begin{itemize}[align=left]
+        \Invs{We know by construction of $G$ there exist an inverse of the form $\begin{bmatrix}
+          \frac{1}{a} & 0\\
+          \frac{\m c}{ad} & \frac{1}{d}\\
+        \end{bmatrix}$, by taking $\frac{1}{a}\frac{1}{d}$ that this is not $0$ 
+        so the inverse is in $T$.
+        }
+        \Clos{
+          If we take $A,B\in T$ $$AB=\begin{bmatrix}
+            a & 0\\
+            c & d\\
+          \end{bmatrix}\begin{bmatrix}
+            w & 0\\
+            y & z\\
+          \end{bmatrix}=\begin{bmatrix}
+            aw & 0\\
+            cw+dy & zd\\
+          \end{bmatrix}$$ 
+          since both $ad\neq0$ and $wz\neq 0$ it holds $adwz\neq 0$.
+        }
+      \end{itemize}
+    }
+    \item [(b)]{
+      \begin{itemize}[align=left]
+        \Invs{We know by construction of $G$ there exist an inverse of the form $\begin{bmatrix}
+          \frac{1}{a} & 0\\
+          0 & \frac{1}{d}\\
+        \end{bmatrix}$, by taking $\frac{1}{a}\frac{1}{d}$ that this is not $0$ 
+        so the inverse is in $T$.
+        }
+        \Clos{
+          If we take $A,B\in T$ $$AB=\begin{bmatrix}
+            a & 0\\
+            0 & d\\
+          \end{bmatrix}\begin{bmatrix}
+            w & 0\\
+            0 & z\\
+          \end{bmatrix}=\begin{bmatrix}
+            aw & 0\\
+            0 & zd\\
+          \end{bmatrix}$$ 
+          since both $ad\neq0$ and $wz\neq 0$ it holds $adwz\neq 0$.
+        }
+      \end{itemize}
+    }
+  \end{itemize}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
