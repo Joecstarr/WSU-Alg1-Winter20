@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "d:\\Documents\\bitbucket\\WSU-Alg1-Winter20\\sieveoferatosthenes\\sieveoferatosthenes\\sieveoferatosthenes\\sieveoferatosthenes.csproj": {}
+  },
+  "projects": {
+    "d:\\Documents\\bitbucket\\WSU-Alg1-Winter20\\sieveoferatosthenes\\sieveoferatosthenes\\sieveoferatosthenes\\sieveoferatosthenes.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\Documents\\bitbucket\\WSU-Alg1-Winter20\\sieveoferatosthenes\\sieveoferatosthenes\\sieveoferatosthenes\\sieveoferatosthenes.csproj",
+        "projectName": "sieveoferatosthenes",
+        "projectPath": "d:\\Documents\\bitbucket\\WSU-Alg1-Winter20\\sieveoferatosthenes\\sieveoferatosthenes\\sieveoferatosthenes\\sieveoferatosthenes.csproj",
+        "packagesPath": "C:\\Users\\rallpwrfull\\.nuget\\packages\\",
+        "outputPath": "d:\\Documents\\bitbucket\\WSU-Alg1-Winter20\\sieveoferatosthenes\\sieveoferatosthenes\\sieveoferatosthenes\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rallpwrfull\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
