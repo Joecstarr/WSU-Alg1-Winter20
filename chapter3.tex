@@ -1161,45 +1161,45 @@ or not the subset is a subgroup of $G .$
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}] 
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
 \begin{itemize}[align=left]
-  \Invs{Let $\begin{bmatrix}
-    1 & 0 & 0 \\
-    a & 1 & 0 \\
-    b & c & 1 \\
-  \end{bmatrix}$ with the given properties. We consider the inverse of $\begin{bmatrix}
-    1 & 0 & 0 \\
-    a & 1 & 0 \\
-    b & c & 1 \\
-  \end{bmatrix}$ which is $\begin{bmatrix}
-    1 & 0 & 0 \\
-    \m a & 1 & 0 \\
-    ac-b & \m c & 1 \\
-  \end{bmatrix}$ which is in $H$;}
-  \Clos{Let $\begin{bmatrix}
-    1 & 0 & 0 \\
-    a & 1 & 0 \\
-    b & c & 1 \\
-  \end{bmatrix}$ and Let $\begin{bmatrix}
-    1 & 0 & 0 \\
-    x & 1 & 0 \\
-    y & z & 1 \\
-  \end{bmatrix}$ with the given properties. Consider
-      $$\begin{bmatrix}
-        1 & 0 & 0 \\
-        a & 1 & 0 \\
-        b & c & 0 \\
+\Invs{Let $\begin{bmatrix}
+      1 & 0 & 0 \\
+      a & 1 & 0 \\
+      b & c & 1 \\
+      \end{bmatrix}$ with the given properties. We consider the inverse of $\begin{bmatrix}
+      1 & 0 & 0 \\
+      a & 1 & 0 \\
+      b & c & 1 \\
+      \end{bmatrix}$ which is $\begin{bmatrix}
+      1 & 0 & 0 \\
+      \m a & 1 & 0 \\
+      ac-b & \m c & 1 \\
+      \end{bmatrix}$ which is in $H$;}
+\Clos{Let $\begin{bmatrix}
+      1 & 0 & 0 \\
+      a & 1 & 0 \\
+      b & c & 1 \\
+      \end{bmatrix}$ and Let $\begin{bmatrix}
+      1 & 0 & 0 \\
+      x & 1 & 0 \\
+      y & z & 1 \\
+      \end{bmatrix}$ with the given properties. Consider
+    $$\begin{bmatrix}
+      1 & 0 & 0 \\
+      a & 1 & 0 \\
+      b & c & 0 \\
       \end{bmatrix}\begin{bmatrix}
-        1 & 0 & 0 \\
-        x & 1 & 0 \\
-        y & z & 1 \\
+      1 & 0 & 0 \\
+      x & 1 & 0 \\
+      y & z & 1 \\
       \end{bmatrix}=\begin{bmatrix}
-        1 & 0 & 0 \\
-        a+x & 1 & 0 \\
-        b+cx+y & c+z & 1 \\
+      1 & 0 & 0 \\
+      a+x & 1 & 0 \\
+      b+cx+y & c+z & 1 \\
       \end{bmatrix}$$
-    }
-  \end{itemize}
+  }
+\end{itemize}
 \end{mdframed}
 \newpage%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1211,7 +1211,13 @@ or not the subset is a subgroup of $G .$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+We will first show that $m$ and $n$ are in $d\Z$. Let $m,n\in \Z$ with the given
+properties. Since $\gcd\lrp{m,n}=d$ we observe that $dq_1=m$ and $dq_2=n$
+making $m,n\in d\Z$ as desired.
 
+Next let $H$ be a subgroup of $\Z$ with $m,n\in H$. Let $a\in d\Z$, with
+$a<m\leq n$ by construction we have $a=dq$ for some $q$.
+%TODO need to finish this one. 
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1225,7 +1231,16 @@ or not the subset is a subgroup of $G .$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+Let $A=\{\sigma \in \operatorname{Sym}(S) | \sigma(a)=a\}$
+\begin{itemize}[align=left]
+\Invs{
+    By proposition 2.1.7 in the text we have inverses.
+  }
+\Clos{
+    Let $\sigma,\varphi \in A$, consider the composition of these two functions
+    around $a$, $\pof{\sof{a}}=\pof{a}=a$ showing closure, as desired.
+  }
+\end{itemize}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1233,21 +1248,29 @@ or not the subset is a subgroup of $G .$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-12. For each of the following groups, find all elements of finite order. 
+12. For each of the following groups, find all elements of finite order.
 \begin{itemize}
-   \item []{
- (a) $\mathbf{R}^{\times}$
-   }
-   \item []{
- (b) $\mathbf{C}^{\times}$
-   }
+\item []{
+    (a) $\mathbf{R}^{\times}$
+  }
+\item []{
+    (b) $\mathbf{C}^{\times}$
+  }
 \end{itemize}
 
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+\begin{itemize}[align=left]
+\item [(a)]{
+    1 and $\m 1$ are the only elements of finite order.
+  }d
+\item [(b)]{
+    $1,\m 1 ,\m i$, and $i$ are the only elements of
+    finite order.
+  }
+\end{itemize}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1255,13 +1278,43 @@ or not the subset is a subgroup of $G .$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-13. Let $G$ be an abelian group, such that the operation on $G$ is denoted additively. Show that $\{a \in G | 2 a=0\}$ is a subgroup of $G .$ Compute this subgroup for $G=\mathbf{Z}_{12}$
+13. Let $G$ be an abelian group, such that the operation on $G$
+is denoted additively.
+Show that $\{a \in G | 2 a=0\}$ is a subgroup of $G .$
+Compute this subgroup for $G=\mathbf{Z}_{12}$
 
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+Let $S=\{a \in G | 2 a=0\}$
+\begin{itemize}[align=left]
+\Invs{
+    Let $a\in S$, by transitive proof $2a=0\rightarrow a+a=0\rightarrow a=-a$
+  }
+\Clos{
+    Let $a,b\in S$, by transitive proof,
+    \begin{align*}
+    2a=0 &\rightarrow 2a+2b=0+0\\
+    &\rightarrow 2(a+b)=0\\
+    \end{align*}
+    showing closure of $S$.
+  }
+\end{itemize}
+next we let $G=\Z_{12}$ we can calculate $a+a$ for all $a\in \Z_{12}$
+\begin{align*}
+0+0 &= 0\\
+1+1 &= 2\\
+2+2 &= 4\\
+3+3 &= 6\\
+4+4 &= 8\\
+5+5 &=10\\
+6+6 &= 0\\
+7+7 &= 2\\
+8+8 &= 4\\
+9+9 &= 6\\
+10+10&= 8\\
+\end{align*}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1270,15 +1323,56 @@ or not the subset is a subgroup of $G .$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
 14. Let $G$ be an abelian group, and let $H$ be the set of all elements of $G$ of finite order.
-(a) Show that $H$ is a subgroup of $G .$
-(b) For a fixed positive integer $k$, show that $\{a \in G |   ext { o( } a   ext { ) is a divisor of } k\}$ is a subgroup of $H$
-(c) For a fixed positive integer $k$, is $\{a \in G | o(a) \leq k\}$ a subgroup of $H ?$ Either give a proof or give a counterexample.
+\begin{itemize}
+\item[]{
+    (a) Show that $H$ is a subgroup of $G .$}
+\item[]{
+    (b) For a fixed positive integer $k$, show that $\{a \in G | o(a) \text{is a divisor of } k\}$ is a subgroup of $H$
+  }
+\item[]{
+    (c) For a fixed positive integer $k$, is $\{a \in G | o(a) \leq k\}$ a subgroup of $H ?$ Either give a proof or give a counterexample.
+  }
+\end{itemize}
 
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+\begin{itemize}[align=left]
+\item[(a) ]{
+    \begin{itemize}[align=left]
+    \Invs{
+        Let $a\in H$, since $a$ is of finite order we have $a^n=1$ for some
+        $n\in \Z$. We observe that $aa^{n-1}=1$, now considering $a^{n-1}$, 
+        we take this to the nth power $\lrp{a^{n-1}}^n=\lrp{a^n}^{n-1}=1$ 
+        showing existence of inverses in $H$.
+      }
+    \Clos{
+        Let $a,b\in H $, we consider $ab$ if we know $a^n=1$ and $b^m=1$ for
+        some $m,n\in \Z$, if we take $a^{mn}b^{mn}=\lrp{a^n}^m\lrp{b^m}^n=1$.
+      }
+    \end{itemize}
+  }
+\item[(b)]{
+    Let $A=\{a \in G | o(a) \text{is a divisor of } k\}$
+    \begin{itemize}[align=left]
+    \Invs{
+        Let $a\in A$ we observe that since $k \vert \ord{a}$ we have $a^{kq}=1$ 
+        for some $kq\in \Z$ meaning $a^{kq-1}a=1$ now considering $a^{n-1}$, 
+        we take this to the nth power $\lrp{a^{kq-1}}^{kq}=\lrp{a^{kq}}^{kq-1}=1$ 
+        showing existence of inverses in $A$.
+      }
+    \Clos{
+        Let $a,b\in A $, we consider $ab$ if we know $a^{kn}=1$ and $b^{km}=1$ for
+        some $m,n\in \Z$, if we take $a^{kmn}b^{kmn}=\lrp{a^kn}^m\lrp{b^km}^n=1$.
+      }
+    \end{itemize}
+  }
+\item[(c)]{
+  Let $G=\Z_{10}^+$, and $k=5$, this makes $A=\lrs{2,\ 4,\ 5,\ 6,\ 8}$ if we 
+  take $2+5=7$ we can see $A$ is not closed under addition. 
+  }
+\end{itemize}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1291,7 +1385,10 @@ or not the subset is a subgroup of $G .$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+Let $G$ be a cyclic group generated by $g$, select $a,b\in G$, we consider 
+$ab\inv{a}\inv{b}$. We observe $a=g^k$ and $\inv{a}=g^{k-1}$ for some $k$, 
+similarly for $b$ and some $h$. Now rewriting 
+$ab\inv{a}\inv{b}=g^kg^hg^{k-1}g^{h-1}=1$ showing $G$ abelian. 
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1305,7 +1402,8 @@ or not the subset is a subgroup of $G .$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+Select $G$ with the given property. Let $H$
+%TODO This is the next one. 
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
