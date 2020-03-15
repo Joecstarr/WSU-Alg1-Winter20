@@ -43,6 +43,7 @@
 \newcommand{\lrb}[1]{\left[#1\right]}
 \newcommand{\lrp}[1]{\left(#1\right)}
 \newcommand{\lrs}[1]{\left\{#1\right\}}
+\newcommand{\lra}[1]{\left<#1\right>}
 \newcommand{\gof}[1]{g\lrp{#1}}
 \newcommand{\fof}[1]{f\lrp{#1}}
 \newcommand{\kof}[1]{k\lrp{#1}}
@@ -210,42 +211,48 @@
 \begin{document}
 
 %Compile the title and jump to new page
-\input{title}
+\input{Chapters/Title/title.tex}
 \newpage
 \tableofcontents
 \newpage
 \setcounter{page}{3}
 %Compile Chapter 1
-\input{chapter1}
-\clearpage
+\input{Chapters/1/chapter1.tex}
+%\clearpage
 %Compile Chapter 2
-\input{chapter2}
+\input{Chapters/2/chapter2.tex}
 \clearpage
-%Compile Chapter 3
-\input{chapter3}
+%%Compile Chapter 3
+\input{Chapters/3/Section1.tex}
+\clearpage
+%%Compile Chapter 3
+\input{Chapters/3/Section2.tex}
+\clearpage
+%%Compile Chapter 3
+\input{Chapters/3/Section3.tex}
 \clearpage
 %Compile Chapter 4
-\input{chapter5}
+\input{Chapters/4/chapter4.tex}
 \clearpage
 %Compile Chapter 5
-\input{chapter5}
+\input{Chapters/5/chapter5.tex}
 \clearpage
 %Compile Chapter 6
-\input{chapter6}
+\input{Chapters/6/chapter6.tex}
 \clearpage
 %Compile Chapter 7
-\input{chapter7}
+\input{Chapters/7/chapter7.tex}
 \clearpage
 %Compile Chapter 8
-\input{chapter8}
+\input{Chapters/8/chapter8.tex}
 \clearpage
 %Compile Chapter 9
-\input{chapter9}
+\input{Chapters/9/chapter9.tex}
 \clearpage
 %Compile Chapter 10
-\input{chapter10}
+\input{Chapters/10/chapter10.tex}
 \clearpage
 %Compile Chapter 10
-\input{GeneralProofs}
+\input{Chapters/appendix/GeneralProofs.tex}
 \clearpage
 \end{document}
