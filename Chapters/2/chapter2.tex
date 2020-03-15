@@ -1,0 +1,556 @@
+
+\section{Functions}
+\subsection{Functions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  1.   In each of the following parts, determine whether the given function is
+  1:1 and whether it is onto.
+  \begin{itemize}
+    \item [(a)]{
+          $f:\R\to \R; \fof{x}=x+3$
+          }
+    \item [(b)]{
+          $f:\C\to \C; \fof{x}=x^2+2x+1$
+          }
+    \item [(c]{
+          $f:\Z_n\to \Z_n; \fof{\lrb{x}_n}=\lrb{mx+b}_n, \text{where} m,b\in \Z$
+          }
+    \item [(d)]{
+          $f:\R^+\to \R; \fof{x}=\ln x$
+          }
+  \end{itemize}
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  \begin{itemize}
+    \item [(a)]{ We can see that $\fof{x}=x+3$ then $\fofinv{x}=x-3$,
+          $\fof{\fofinv{x}}=\lrp{x-3}+3=x$. Showing $f$ is a bijection.
+          }
+    \item [(b)]{
+          \begin{itemize}
+            \item[1:1:]{\hspace{.5in}\newline
+                  Assume $\fof{x}=25=\fof{y}$, we can see that if $x=4$, $\fof{x}=25$,
+                  and $y=-6$, $\fof{y}=25$, showing $f$ not injective.
+                  }
+            \item[onto:]{\hspace{.5in}\newline
+                  Let $y\in \C$ we must now show there exists a $x \in \C$ such that
+                  $\fof{x}=y$. Consider $x=\sqrt{y}-1$, we can then take:
+                  \begin{align*}
+                    \fof{x} & = x^2+2x+1                               \\
+                            & = \lrp{\sqrt{y}-1}^2+2\lrp{\sqrt{y}-1}+1 \\
+                            & = \lrp{\sqrt{y}-1}^2+2\sqrt{y}-2+1       \\
+                            & = 1 - 2 \sqrt{y} + y+2\sqrt{y}-1         \\
+                            & =  y                                     \\
+                  \end{align*}
+                  showing $f$ surjective.
+                  }
+          \end{itemize}
+          }
+    \item [(c)]{
+          Consider $\fofinv{x}=\lrb{\lrp{y-b}m^{-1}}_n$, now taking
+          $\fof{\fofinv{x}}$
+          \begin{align*}
+            \fof{\fofinv{x}} & = \lrb{m\lrp{x-b}m^{-1}+b}_n \\
+                             & = \lrb{\lrp{x-b}+b}_n        \\
+                             & = \lrb{x}_n                  \\
+          \end{align*}
+          showing $f$ a bijection.
+          }
+    \item [(d)]{
+          $f:\R^+\to \R; \fof{x}=\ln x$
+          If we take $\fofinv{x}=e^x$, $\fof{\fofinv{x}}=\ln e^x = x$, showing $f$
+          a bijection.
+          }
+  \end{itemize}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  3.   For each 1:1 and onto function in Exercise 1, find the inverse of the
+  function
+  \begin{itemize}
+    \item [(a)]{
+          $f:\R\to \R; \fof{x}=x+3$
+          }
+    \item [(b)]{
+          $f:\C\to \C; \fof{x}=x^2+2x+1$
+          }
+    \item [(c]{
+          $f:\Z_n\to \Z_n; \fof{\lrb{x}_n}=\lrb{mx+b}_n, \text{where} m,b\in \Z$
+          }
+    \item [(d)]{
+          $f:\R^+\to \R; \fof{x}=\ln x$
+          }
+  \end{itemize}
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item [(a)]{
+            see question 1
+            }
+      \item [(b)]{
+            not a bijection
+            }
+      \item [(c]{
+            see question 1
+            }
+      \item [(d)]{
+            see question 1
+            }
+    \end{itemize}
+  \end{multicols}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  4.   For each 1:1 and onto function in Exercise 2, find the inverse of the
+  function
+  \begin{itemize}
+    \item [(a)]{
+          $f:\R\to \R; \fof{x}=x^2$
+          }
+    \item [(b)]{
+          $f:\C\to \C; \fof{x}=x^2$
+          }
+    \item [(c]{
+          $f:\R^+\to \R^+; \fof{x}=x^2$
+          }
+    \item [(d)]{
+          $f:\R^+\to \R^+; \fof{x}=
+            \begin{cases}
+              x   & \text{if }x\text{ is rational}   \\
+              x^2 & \text{if }x\text{ is irrational} \\
+            \end{cases}$
+          }
+  \end{itemize}
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  \begin{itemize}
+    \item [(a)]{
+          Not a bijection
+          }
+    \item [(b)]{
+          Not a bijection
+          }
+    \item [(c]{
+          $\fofinv{x}=+\sqrt{x}$
+          }
+    \item [(d)]{
+          $f:\R^+\to \R^+; \fofinv{x}=
+            \begin{cases}
+              x         & \text{if }x\text{ is rational}   \\
+              +\sqrt{x} & \text{if }x\text{ is irrational} \\
+            \end{cases}$
+          }
+  \end{itemize}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  13. Let $f:A\to B$ be a function, and let $\fof{A}=\lrs{\fof{a}\vert a\in A}$
+  be the image of $f$. Show that $f$is onto if and only if $\fof{A}=B$.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  Let $\fof{A}=B$, select $y\in B$, since $y\in B$ we have $y\in \fof{A}$, that
+  means there exists $a\in A$ such that $\fof{a}=y$. Showing $f$ surjective.
+  Let $\fof{A}\neq B$, let $y\in B$, such that $y\notin B \cap \fof{A}$. Since
+  we
+  have $y\notin \fof{A}$ we have no $a\in A$ that maps to $y$ showing $f$ not
+  surjective, as desired.
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  15. Let $f:A\to B$ and $g:B\to C$ be functions. Prove that if $g\circ f$ is
+  1:1, then $f$ is 1:1, and that if $g\circ f$ is onto $g$ is onto.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  Let $g\circ f$ be injective, but $f$ not injective. Since $f$ is not injective
+  $\exists a,x\in A$ such tha $a\neq x$ but $\fof{x}=\fof{a}$. We consider
+  $g\circ f\lrp{a}$ and $g\circ f\lrp{x}$, since $\fof{x}=\fof{a}$ it must be
+  that $\gof{\fof{x}}=\gof{\fof{a}}$. This means that with $a\neq b$,
+  $\gof{\fof{x}}=\gof{\fof{a}}$, making $g\circ f$ not injective a contradiction
+  so $f$ injective.
+
+  Let $g\circ f$ be surjective, but $g$ not surjective. Since $g$ not surjective
+  there exists some $c\in C$ such that $\gof{b}\neq c$ for all $b\in B$. However
+  since $g\circ f$ surjective there exists $g\circ f\lrp{a}=c$ a contradiction,
+  making $g$ surjective.
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  17. Let $f:A\to B$ be a function. Prove that $f$ is onto if and only if
+  $h\circ f = k \circ f$ implies $h=k$, for every set $C$ and all choices of
+  functions $h:B\to C$ and $k:B\to C$.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  Assume $f$ is surjective, that is for all $y\in B$ there exists $x\in A$ such
+  that $\fof{x}=y$. We know $\hof{\fof{x}}=\kof{\fof{x}}$, so
+  $\hof{y}=\kof{y}$ for all $y$ in the domain of $f$ as desired.
+
+  Next assume $f$ is not surjective, then for some $y\in B$ there exists no $x$
+  such that $\fof{x}=y$. We can select $C=\lrs{a,b}$. We say that $\hof{c}=a$
+  now we construct $k$,
+  $$\kof{x}=\begin{cases}
+      b & \text{if }x=y     \\
+      a & \text{if }x\neq y \\
+    \end{cases}$$
+  from here we have that when the input of $h$ and $k$ are in the domain of $f$
+  $h\neq k$, as desired.
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  19. Let $f:A\to B$ be a function. Prove that $f$ is 1:1 if and only if
+  $f\circ h=f\circ k$ implies $h=k$, for every set $C$ and all choices of
+  functions $h:C\to A$ and $k:C\to A$.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  Assume that $f$ is injective, this means that $\fof{x}=\fof{y}$ implies $x=y$.
+  Also assume $f\circ h=f\circ k$ for some $h,k$. We assume $h\neq k$ for some
+  $c\in C$. Since we know $f$ is injective we have
+  $\fof{\hof{c}}\neq \fof{\kof{c}}$, a contradiction from our assumption that
+  $f\circ h=f\circ k$ meaning $h=k$ as desired.
+
+  Assume $f\circ h=f\circ k$ implies $h=k$. suppose $f$ be not injective, this means
+  that there exists some $x,y$ such that $\fof{x}=\fof{y}$ but $x\neq y$.
+  We can select $C=\lrs{a,b}$, and define $h$, $k$:
+  \begin{align*}
+    \kof{a}=x & \hspace{.5in}  \hof{a}=y \\
+    \kof{b}=y & \hspace{.5in} \hof{b}=x
+  \end{align*}
+  We can see from here we have that for $\fof{\hof{a}}=\fof{\kof{a}}$ but
+  $h\neq k$ a contradiction making $f$ injective as desired.
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Equivalence Relations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Permutations} %1,2,3,4,5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  1. Consider the following Permutations in $S_7$.
+  \begin{multicols}{2}
+    $\sigma=
+      \begin{pmatrix}
+        1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+        3 & 2 & 5 & 4 & 6 & 1 & 7 \\
+      \end{pmatrix}$
+    $\tau=
+      \begin{pmatrix}
+        1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+        2 & 1 & 5 & 7 & 4 & 6 & 3 \\
+      \end{pmatrix}$
+  \end{multicols}
+  \vspace{.25in}
+  \begin{multicols}{4}
+    \begin{itemize}
+      \item [(a)]{$\sigma\tau$
+
+            }
+      \item [(b)]{$\tau\sigma$
+
+            }
+      \item [(c)]{$\tau^2\sigma$
+
+            }
+      \item [(d)]{$\sigma^{-1}$
+
+            }
+      \item [(e)]{$\sigma\tau\sigma^{-1}$
+
+            }
+      \item [(f)]{$\tau^{-1}\sigma\tau$
+
+            }
+    \end{itemize}
+  \end{multicols}
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item [(a)]{
+            $\sigma\tau=
+              \begin{pmatrix}
+                1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+                2 & 3 & 6 & 7 & 4 & 1 & 5 \\
+              \end{pmatrix}$
+            }
+      \item [(b)]{
+            $\tau\sigma=
+              \begin{pmatrix}
+                1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+                5 & 1 & 4 & 7 & 6 & 2 & 3 \\
+              \end{pmatrix}$
+            }
+      \item [(c)]{
+            $\tau^2\sigma=
+              \begin{pmatrix}
+                1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+                4 & 2 & 7 & 3 & 6 & 1 & 5 \\
+              \end{pmatrix}$
+            }
+      \item [(d)]{
+            $\sigma^{-1}=
+              \begin{pmatrix}
+                1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+                6 & 2 & 1 & 4 & 3 & 5 & 7 \\
+              \end{pmatrix}$
+            }
+      \item [(e)]{
+            $\sigma\tau\sigma^{-1}=
+              \begin{pmatrix}
+                1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+                1 & 3 & 2 & 7 & 6 & 4 & 5 \\
+              \end{pmatrix}$
+            }
+      \item [(f)]{
+            $\tau^{-1}\sigma\tau=
+              \begin{pmatrix}
+                1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+                3 & 2 & 5 & 4 & 6 & 1 & 7 \\
+
+                %tau inv 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+                %        2 & 1 & 7 & 5 & 3 & 6 & 4 \\
+              \end{pmatrix}$
+            }
+    \end{itemize}
+  \end{multicols}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  2. Write each of the permutations $\sigma\tau, \tau\sigma, \tau^2\sigma,
+    \sigma^{-1}, \sigma\tau\sigma^{-1}, \text{ and } \tau^{-1}\sigma\tau$ in
+  Exercise 1 as a product of disjoint cycles. Write $\sigma$ and $\tau$ as
+  products of transpositions.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item [(a)]{
+            $\sigma\tau=\lrp{1236}\lrp{475}$
+            }
+      \item [(b)]{
+            $\tau\sigma=\lrp{1562}\lrp{347}$
+
+            }
+      \item [(c)]{
+            $\tau^2\sigma=\lrp{143756}$
+
+            }
+      \item [(d)]{
+            $\sigma^{-1}=\lrp{1653}$
+
+            }
+      \item [(e)]{
+            $\sigma\tau\sigma^{-1}=\lrp{23}\lrp{4756}$
+
+            }
+      \item [(f)]{
+            $\tau^{-1}\sigma\tau=\lrp{1356}$
+            }
+      \item [($\sigma$)]{
+            $\sigma=\lrp{13}\lrp{35}\lrp{56}$
+            }
+      \item [($\tau$)]{
+            $\tau=\lrp{12}\lrp{35}\lrp{54}\lrp{47}\lrp{73}$
+            }
+    \end{itemize}
+  \end{multicols}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  3. Write
+  $\begin{pmatrix}
+      1 & 2 & 3  & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+      3 & 4 & 10 & 5 & 7 & 8 & 2 & 6 & 9 & 1  \\
+    \end{pmatrix}$ as the product of disjoint cycles and as a product of
+  transpositions. Construct its associated diagram, find its inverse, and find
+  it's order.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  \begin{itemize}[align=left]
+    \item [Disjoint cycles:]{\hspace{.5in}\newline
+          $\lrp{1,3,10}\lrp{2,4,5,7}\lrp{6,8}$
+          }
+    \item [Transpositions:]{\hspace{.5in}\newline
+          $\lrp{1,3}\lrp{3,10}\lrp{2,4}\lrp{4,5}\lrp{5,7}\lrp{6,8}$
+          }
+    \item [Diagrams:]{\hspace{.5in}\newline
+          \begin{tikzpicture}[node distance=2cm]
+            % nodes
+            \node (A1) at (0, 0) {1};
+            \node (B1) at (-1, -2) {3};
+            \node (C1) at (1, -2) {10};
+
+            \node (A2) at (3, 0) {2};
+            \node (B2) at (5, 0) {4};
+            \node (C2) at (5, -2) {5};
+            \node (D2) at (3, -2) {7};
+
+            \node (A3) at (7, 0) {6};
+            \node (B3) at (9, -2) {8};
+
+
+            \draw[->]
+            (A1) edge (B1) (B1) edge (C1) (C1) edge (A1);
+            \draw[->]
+            (A2) edge (B2) (B2) edge (C2) (C2) edge (D2) (D2) edge (A2);
+            \draw[->, to path={-| (\tikztotarget)}]
+            (A3) edge (B3) (B3) edge (A3);
+          \end{tikzpicture}
+          }
+    \item [Inverse:]{\hspace{.5in}\newline\hspace{.5in}\newline
+          $\begin{pmatrix}
+              1  & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+              10 & 7 & 1 & 2 & 4 & 8 & 5 & 6 & 9 & 3  \\
+            \end{pmatrix}$
+          }
+    \item [Order:]{\hspace{.5in}\newline
+          $\lrp{1,3,10}=3, \lrp{2,4,5,7}=4 \lrp{6,8}=2$
+          order is $12$
+          }
+  \end{itemize}
+  \begin{multicols}{3}
+  \end{multicols}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  4. Find the oder of each of the following permutations.
+  \begin{itemize}
+    \item [(a)] {
+          $\begin{pmatrix}
+              1 & 2 & 3 & 4 & 5 & 6 \\
+              6 & 4 & 5 & 3 & 2 & 1 \\
+            \end{pmatrix}$
+          }
+    \item [(b)] {
+          $\begin{pmatrix}
+              1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+              4 & 6 & 7 & 5 & 1 & 8 & 2 & 3 \\
+            \end{pmatrix}$
+          }
+    \item [(c)] {
+          $\begin{pmatrix}
+              1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+              5 & 9 & 8 & 7 & 3 & 4 & 6 & 1 & 2 \\
+            \end{pmatrix}$
+          }
+    \item [(d)] {
+          $\begin{pmatrix}
+              1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+              8 & 4 & 9 & 6 & 5 & 2 & 3 & 1 & 7 \\
+            \end{pmatrix}$
+          }
+  \end{itemize}
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  \begin{itemize}
+    \item [(a)] {
+          $\lrp{1,6}\lrp{2,4,2,5}$
+          order is 4
+          }
+    \item [(b)] {
+          $\lrp{1,4,5}\lrp{2,6,8,3,7}$
+          order 15
+          }
+    \item [(c)] {
+          $\lrp{1,5,3,8}\lrp{2,9}\lrp{4,7,6}$
+          order 12
+          }
+    \item [(d)] {
+          $\lrp{1,8}\lrp{2,4,6}\lrp{3,9,7}$
+          order 6
+          }
+  \end{itemize}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+  5. Let $3\leq m\leq n$. Calculate $\sigma\tau^{-1}$ for cycles
+  $\sigma= \lrp{1,2,\dots , m-1}$ and \\ $\tau= \lrp{1,2,\dots,m-1,m}$ in $S_n$.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+  We begin with finding $\tau^{-1}$. We take $\tau$ of, $\lrb{1,2,\dots,m-1,m}$,
+  we get $\lrb{2,3,\dots,m,1}$. If we now apply
+  $\tau^{-1}=\lrp{m,1,2,\dots, m-1}$, we get $\lrb{1,2,\dots,m-1,m}$.
+
+  We can now compose $\tau^{-1}$ and $\sigma$ yielding
+  $\lrp{m,m-1,1,2,\dots,m-3,m-2}$.
+\end{mdframed}
+\newpage

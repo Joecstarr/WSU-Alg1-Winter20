@@ -1,0 +1,822 @@
+\subsection{Subgroups}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+1. In $\mathrm{GL}_{2}(\mathbf{R}),$ find the order of each of the following elements.
+\begin{multicols}{4}
+\begin{itemize}
+\item[]{
+    (a)$\dagger\left[\begin{array}{rr}1 & \m 1 \\
+          1 & 0\end{array}\right]$}
+\item[]{
+    (b) $\left[\begin{array}{rr}0 & 1 \\
+          \m 1 & 0\end{array}\right]$}
+\item[]{
+    $\dagger(\mathrm{c})\left[\begin{array}{ll}1 & 1 \\
+          0 & 1\end{array}\right]$}
+\item[]{
+    (d) $\left[\begin{array}{rr}\m 1 & 1 \\
+          0 & 1\end{array}\right]$}
+\end{itemize}
+\end{multicols}
+\vspace{.5cm}
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+\begin{multicols}{2}
+\begin{itemize}
+\item[(a)]{
+    $$\begin{bmatrix}1 & \m 1 \\
+      1 & 0 \\
+      \end{bmatrix}^2=\begin{bmatrix}0 & \m 1 \\
+      1 & \m 1\\
+      \end{bmatrix}$$
+    $$\begin{bmatrix}1 & \m 1 \\
+      1 & 0 \\
+      \end{bmatrix}^3=\begin{bmatrix}\m 1 & 0 \\
+      0 & \m 1\\
+      \end{bmatrix}$$
+    $$\begin{bmatrix}1 & \m 1 \\
+      1 & 0 \\
+      \end{bmatrix}^6=\begin{bmatrix}1 & 0 \\
+      0 & 1\\
+      \end{bmatrix}$$
+  }
+\item[(b)]{
+    $$\begin{bmatrix}0 & 1 \\
+      \m 1 & 0 \\
+      \end{bmatrix}^2=\begin{bmatrix}\m 1 & 0 \\
+      0 & \m 1\\
+      \end{bmatrix}$$
+    $$\begin{bmatrix}0 & 1 \\
+      \m 1 & 0 \\
+      \end{bmatrix}^4=\begin{bmatrix}1 & 0 \\
+      0 & 1\\
+      \end{bmatrix}$$}
+\end{itemize}
+\end{multicols}
+\begin{multicols}{2}
+\begin{itemize}
+\item[(c)]{
+    $$\begin{bmatrix}1 & 1 \\
+      0 & 1 \\
+      \end{bmatrix}^2=\begin{bmatrix}1 & 2 \\
+      0 & 1 \\
+      \end{bmatrix}$$
+    Infinite order.
+  }
+\item[(d)]{
+    $$\begin{bmatrix}\m 1 & 1 \\
+      0 & 1 \\
+      \end{bmatrix}^2=\begin{bmatrix}1 & 0 \\
+      0 & 1 \\
+      \end{bmatrix}$$}
+\end{itemize}
+\end{multicols}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+2. Let $A=\left[\begin{array}{rr}1 & \m 1 \\
+      \m 1 & 0\end{array}\right] \in \mathrm{GL}_{2}(\mathrm{R})$.
+Show that $A$ has infinite order by proving that
+$A^{n}=\left[\begin{array}{cc}F_{n+1} & -F_{n} \\
+      -F_{n} & F_{n-1}\end{array}\right],$
+for $n \geq 1,$ where $F_{0}=0, F_{1}=1,$ and $F_{n+1}=$
+$F_{n}+F_{n-1}$ is the Fibonacci sequence.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+We will proceed with induction:
+\begin{itemize}[align=left]
+\item[Base Case:]{ Consider $1$ for the basecase.
+    $\begin{bmatrix}F_{n+1} & \m F_{n} \\
+      \m F_{n} & F_{n-1} \\
+      \end{bmatrix}=\begin{bmatrix}1 & \m 1 \\
+      \m 1 & 0 \\
+      \end{bmatrix}$ showing the base case to be true.
+  }
+\item[Inductive Case:]{ Assume that it's ture for the nth power we will show
+    this implies the $n+1$th case to be true.
+    $$A^{n+1}=A^nA^1=\begin{bmatrix}F_{n+1} & \m F_{n} \\
+      \m F_{n} & F_{n-1} \\
+      \end{bmatrix}\begin{bmatrix}1 & \m 1 \\
+      \m 1 & 0 \\
+      \end{bmatrix}=\begin{bmatrix}F_{n+2} & \m F_{n+1} \\
+      \m F_{n+1} & F_{n} \\
+      \end{bmatrix}$$ showing the Inductive case to be true, and $A$ of infinite
+    order.
+  }
+\end{itemize}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+3. Prove that the set of all rational numbers of the form $m / n$, where $m, n \in \mathbf{Z}$ and $n$ is square-free, is a subgroup of Q (under addition).
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+\begin{itemize}[align=left]
+\Invs{Let $m,n \in \Z$ with the given properties. Take $\frac{\m m}{n}$
+    and consider \\$\frac{m}{n}+\frac{\m m}{n}=\frac{m-m}{n}=0$ as desired.
+  }
+\Clos{
+    Let $m,n,a,b\in \Z$ with the given properties. Take
+    $\frac{m}{n}+\frac{a}{b}=\frac{mb+an}{bn}$, since $b$ and $n$ are square
+    free $bn$ is also square free.
+  }
+\end{itemize}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+4. Show that $\{\ (1),\ (1,2)(3,4),\ (1,3)(2,4),\ (1,4)(2,3)\ \}$ is a subgroup
+of $S_{4}$
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+We begin by labeling each permutation
+$$A=(1,2)(3,4)=$$$$B=(1,3)(2,4)$$$$C=(1,4)(2,3)$$
+\begin{itemize}[align=left]
+\Invs{
+    $$AA=(1,2)(3,4)(1,2)(3,4)=(1)$$
+    $$BB=(1,3)(2,4)(1,3)(2,4)=(1)$$
+    $$CC=(1,4)(2,3)(1,4)(2,3)=(1)$$
+  }
+\Clos{
+    $$AB= (1,4)(2,3)$$
+    $$BA= (1,4)(2,3)$$
+    $$AC= (1,3)(2,4)$$
+    $$CA= (1,3)(2,4)$$
+    $$CB= (1,2)(3,4)$$
+    $$BC= (1,2)(3,4)$$
+  }
+\end{itemize}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+\begin{itemize}[align=left]
+\item [(a)] {
+    Show that
+    $T=\lrs{\begin{bmatrix}
+          a & 0 \\
+          c & d\\
+          \end{bmatrix}
+          \vert a d \neq 0}$ is a subgroup of $G$.
+  }
+\item [(b)] {
+    Show that
+    $D=\lrs{\begin{bmatrix}
+          a & 0 \\
+          0 & d\\
+          \end{bmatrix} \vert a d \neq 0}$
+    is a subgroup of $G$.
+  }
+\end{itemize}
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+\begin{itemize}[align=left]
+\item [(a)]{
+    \begin{itemize}[align=left]
+    \Invs{We know by construction of $G$ there exist an inverse of the form $\begin{bmatrix}
+          \frac{1}{a} & 0\\
+          \frac{\m c}{ad} & \frac{1}{d}\\
+          \end{bmatrix}$, by taking $\frac{1}{a}\frac{1}{d}$ that this is not $0$
+        so the inverse is in $T$.
+      }
+    \Clos{
+        If we take $A,B\in T$ $$AB=\begin{bmatrix}
+          a & 0\\
+          c & d\\
+          \end{bmatrix}\begin{bmatrix}
+          w & 0\\
+          y & z\\
+          \end{bmatrix}=\begin{bmatrix}
+          aw & 0\\
+          cw+dy & zd\\
+          \end{bmatrix}$$
+        since both $ad\neq0$ and $wz\neq 0$ it holds $adwz\neq 0$.
+      }
+    \end{itemize}
+  }
+\item [(b)]{
+    \begin{itemize}[align=left]
+    \Invs{We know by construction of $G$ there exist an inverse of the form $\begin{bmatrix}
+          \frac{1}{a} & 0\\
+          0 & \frac{1}{d}\\
+          \end{bmatrix}$, by taking $\frac{1}{a}\frac{1}{d}$ that this is not $0$
+        so the inverse is in $T$.
+      }
+    \Clos{
+        If we take $A,B\in T$ $$AB=\begin{bmatrix}
+          a & 0\\
+          0 & d\\
+          \end{bmatrix}\begin{bmatrix}
+          w & 0\\
+          0 & z\\
+          \end{bmatrix}=\begin{bmatrix}
+          aw & 0\\
+          0 & zd\\
+          \end{bmatrix}$$
+        since both $ad\neq0$ and $wz\neq 0$ it holds $adwz\neq 0$.
+      }
+    \end{itemize}
+  }
+\end{itemize}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+7. Let $G=\mathrm{GL}_{2}(\mathrm{R})$.
+Show that the subset $S$ of $G$ defined by
+$S=\left\{\left[\begin{array}{ll}a & b \\
+      c & d\end{array}\right] | b=c\right\}$ of symmetric $2   \times 2$ matrices does not form a subgroup of $G .$
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+Consider $$\begin{bmatrix}
+  1 & 3\\
+  3 & 5\\
+  \end{bmatrix}\begin{bmatrix}
+  1 & 3\\
+  3 & 1\\
+  \end{bmatrix}=\begin{bmatrix}
+  10 & 6\\
+  18 & 14\\
+  \end{bmatrix}$$ showing this set is not closed.
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+8. Let $G=\mathrm{GL}_{2}(\mathrm{R}) .$ For each of the following subsets of $M_{2}(\mathbf{R}),$ determine whether
+or not the subset is a subgroup of $G .$
+\begin{itemize}[align=left]
+
+\item []{(a) $A=\left\{\left[\begin{array}{ll}a & b \\ 0 & 0\end{array}\right] | a b \neq 0\right\}$}
+\item []{(b) $B=\left\{\left[\begin{array}{ll}0 & b \\ c & 0\end{array}\right] | b c \neq 0\right\}$}
+\item []{(c) $C=\left\{\left[\begin{array}{ll}1 & 0 \\ 0 & c\end{array}\right] | c \neq 0\right\}$}
+
+\end{itemize}
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+\begin{itemize}[align=left]
+\item [(a)]{This set doesn't contain the identity so can not be a subgroup}
+\item [(b)]{This set doesn't contain the identity so can not be a subgroup}
+\item [(c)]{
+    \begin{itemize}[align=left]
+    \Invs{Let $\begin{bmatrix}
+          1 & 0\\
+          0 & c\\
+          \end{bmatrix}$ with the given properties. We consider the inverse of $\begin{bmatrix}
+          1 & 0\\
+          0 & c\\
+          \end{bmatrix}$ which is $\begin{bmatrix}
+          1 & 0\\
+          0 & \frac{1}{c}\\
+          \end{bmatrix}$ which is in $C$;}
+    \Clos{Let $\begin{bmatrix}
+          1 & 0\\
+          0 & c\\
+          \end{bmatrix}$ and Let $\begin{bmatrix}
+          1 & 0\\
+          0 & a\\
+          \end{bmatrix}$ with the given properties. Consider
+        $$\begin{bmatrix}
+          1 & 0\\
+          0 & c\\
+          \end{bmatrix}\begin{bmatrix}
+          1 & 0\\
+          0 & a\\
+          \end{bmatrix}=\begin{bmatrix}
+          1 & 0\\
+          0 & ca\\
+          \end{bmatrix}$$ We observe that $a\neq0$ and $c\neq 0$, consequently $ac\neq0$.
+      }
+    \end{itemize}
+  }
+\end{itemize}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+9. Let $G=\mathrm{GL}_{3}(\mathbf{R}) .$ Show that $H=\left\{\left[\begin{array}{lll}1 & 0 & 0 \\ a & 1 & 0 \\ b & c & 1\end{array}\right]\right\}$ is a subgroup of $G .$
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+\begin{itemize}[align=left]
+\Invs{Let $\begin{bmatrix}
+      1 & 0 & 0 \\
+      a & 1 & 0 \\
+      b & c & 1 \\
+      \end{bmatrix}$ with the given properties. We consider the inverse of $\begin{bmatrix}
+      1 & 0 & 0 \\
+      a & 1 & 0 \\
+      b & c & 1 \\
+      \end{bmatrix}$ which is $\begin{bmatrix}
+      1 & 0 & 0 \\
+      \m a & 1 & 0 \\
+      ac-b & \m c & 1 \\
+      \end{bmatrix}$ which is in $H$;}
+\Clos{Let $\begin{bmatrix}
+      1 & 0 & 0 \\
+      a & 1 & 0 \\
+      b & c & 1 \\
+      \end{bmatrix}$ and Let $\begin{bmatrix}
+      1 & 0 & 0 \\
+      x & 1 & 0 \\
+      y & z & 1 \\
+      \end{bmatrix}$ with the given properties. Consider
+    $$\begin{bmatrix}
+      1 & 0 & 0 \\
+      a & 1 & 0 \\
+      b & c & 0 \\
+      \end{bmatrix}\begin{bmatrix}
+      1 & 0 & 0 \\
+      x & 1 & 0 \\
+      y & z & 1 \\
+      \end{bmatrix}=\begin{bmatrix}
+      1 & 0 & 0 \\
+      a+x & 1 & 0 \\
+      b+cx+y & c+z & 1 \\
+      \end{bmatrix}$$
+  }
+\end{itemize}
+\end{mdframed}
+\newpage%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+10. Let $m$ and $n$ be nonzero integers, with ( $m, n$ ) = $d$. Show that $m$ and $n$ belong to $d \mathbf{Z},$ and that if $H$ is any subgroup of $\mathbf{Z}$ that contains both $m$ and $n,$ then $d \mathbf{Z} \subseteq H$
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+We will first show that $m$ and $n$ are in $d\Z$. Let $m,n\in \Z$ with the given
+properties. Since $\gcd\lrp{m,n}=d$ we observe that $dq_1=m$ and $dq_2=n$
+making $m,n\in d\Z$ as desired.
+
+Next let $H$ be a subgroup of $\Z$ with $m,n\in H$. Let $a\in d\Z$, with
+$a<m\leq n$ by construction we have $a=dq$ for some $q$.
+%TODO need to finish this one. 
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+11. Let $S$ be a set, and let $a$ be a fixed element of $S .$ Show that $\{\sigma \in \operatorname{Sym}(S) | \sigma(a)=a\}$ is a subgroup of $\operatorname{Sym}(S)$
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+Let $A=\{\sigma \in \operatorname{Sym}(S) | \sigma(a)=a\}$
+\begin{itemize}[align=left]
+\Invs{
+    By proposition 2.1.7 in the text we have inverses.
+  }
+\Clos{
+    Let $\sigma,\varphi \in A$, consider the composition of these two functions
+    around $a$, $\pof{\sof{a}}=\pof{a}=a$ showing closure, as desired.
+  }
+\end{itemize}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+12. For each of the following groups, find all elements of finite order.
+\begin{itemize}
+\item []{
+    (a) $\mathbf{R}^{\times}$
+  }
+\item []{
+    (b) $\mathbf{C}^{\times}$
+  }
+\end{itemize}
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+\begin{itemize}[align=left]
+\item [(a)]{
+    1 and $\m 1$ are the only elements of finite order.
+  }d
+\item [(b)]{
+    $1,\m 1 ,\m i$, and $i$ are the only elements of
+    finite order.
+  }
+\end{itemize}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+13. Let $G$ be an abelian group, such that the operation on $G$
+is denoted additively.
+Show that $\{a \in G | 2 a=0\}$ is a subgroup of $G .$
+Compute this subgroup for $G=\mathbf{Z}_{12}$
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+Let $S=\{a \in G | 2 a=0\}$
+\begin{itemize}[align=left]
+\Invs{
+    Let $a\in S$, by transitive proof $2a=0\rightarrow a+a=0\rightarrow a=-a$
+  }
+\Clos{
+    Let $a,b\in S$, by transitive proof,
+    \begin{align*}
+    2a=0 &\rightarrow 2a+2b=0+0\\
+    &\rightarrow 2(a+b)=0\\
+    \end{align*}
+    showing closure of $S$.
+  }
+\end{itemize}
+next we let $G=\Z_{12}$ we can calculate $a+a$ for all $a\in \Z_{12}$
+\begin{align*}
+0+0 &= 0\\
+1+1 &= 2\\
+2+2 &= 4\\
+3+3 &= 6\\
+4+4 &= 8\\
+5+5 &=10\\
+6+6 &= 0\\
+7+7 &= 2\\
+8+8 &= 4\\
+9+9 &= 6\\
+10+10&= 8\\
+\end{align*}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+14. Let $G$ be an abelian group, and let $H$ be the set of all elements of $G$ of finite order.
+\begin{itemize}
+\item[]{
+    (a) Show that $H$ is a subgroup of $G .$}
+\item[]{
+    (b) For a fixed positive integer $k$, show that $\{a \in G | o(a) \text{is a divisor of } k\}$ is a subgroup of $H$
+  }
+\item[]{
+    (c) For a fixed positive integer $k$, is $\{a \in G | o(a) \leq k\}$ a subgroup of $H ?$ Either give a proof or give a counterexample.
+  }
+\end{itemize}
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+\begin{itemize}[align=left]
+\item[(a) ]{
+    \begin{itemize}[align=left]
+    \Invs{
+        Let $a\in H$, since $a$ is of finite order we have $a^n=1$ for some
+        $n\in \Z$. We observe that $aa^{n-1}=1$, now considering $a^{n-1}$,
+        we take this to the nth power $\lrp{a^{n-1}}^n=\lrp{a^n}^{n-1}=1$
+        showing existence of inverses in $H$.
+      }
+    \Clos{
+        Let $a,b\in H $, we consider $ab$ if we know $a^n=1$ and $b^m=1$ for
+        some $m,n\in \Z$, if we take $a^{mn}b^{mn}=\lrp{a^n}^m\lrp{b^m}^n=1$.
+      }
+    \end{itemize}
+  }
+\item[(b)]{
+    Let $A=\{a \in G | o(a) \text{is a divisor of } k\}$
+    \begin{itemize}[align=left]
+    \Invs{
+        Let $a\in A$ we observe that since $k \vert \ord{a}$ we have $a^{kq}=1$
+        for some $kq\in \Z$ meaning $a^{kq-1}a=1$ now considering $a^{n-1}$,
+        we take this to the nth power $\lrp{a^{kq-1}}^{kq}=\lrp{a^{kq}}^{kq-1}=1$
+        showing existence of inverses in $A$.
+      }
+    \Clos{
+        Let $a,b\in A $, we consider $ab$ if we know $a^{kn}=1$ and $b^{km}=1$ for
+        some $m,n\in \Z$, if we take $a^{kmn}b^{kmn}=\lrp{a^kn}^m\lrp{b^km}^n=1$.
+      }
+    \end{itemize}
+  }
+\item[(c)]{
+    Let $G=\Z_{10}^+$, and $k=5$, this makes $A=\lrs{2,\ 4,\ 5,\ 6,\ 8}$ if we
+    take $2+5=7$ we can see $A$ is not closed under addition.
+  }
+\end{itemize}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+15. Prove that any cyclic group is abelian.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+Let $G$ be a cyclic group generated by $g$, select $a,b\in G$, we consider
+$ab\inv{a}\inv{b}$. We observe $a=g^k$ and $\inv{a}=g^{k-1}$ for some $k$,
+similarly for $b$ and some $h$. Now rewriting
+$ab\inv{a}\inv{b}=g^kg^hg^{k-1}g^{h-1}=1$ showing $G$ abelian.
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+16. Prove or disprove this statement. If $G$ is a group in which every proper subgroup is cyclic, then $G$ is cyclic.
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+Select $G$ with the given property. Let $H$
+
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+17. Prove that the intersection of any collection of subgroups of a group is again a subgroup.
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+Let $H$ and $K$ be subgroups of a group $G$, consider $a\in H\cap K$. Since
+both $K$ and $H$ are groups $\inv{a} \in H$ and $\inv{a} \in K$ putting it in
+the intersection. Next we consider $a,b\in H\cap K$, since
+both $K$ and $H$ are groups $ab \in H$ and $ab \in K$ putting it in
+the intersection. Showing $ H\cap K$ a subgroup.
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+18. Let $G$ be the group of rational numbers, under addition, and let $H, K$ be subgroups
+of $G .$ Prove that if $H \neq\{0\}$ and $K \neq\{0\}$, then $H \cap K \neq\{0\}$.
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+We have previously shown that the intersection of two subgroups is a subgroup.
+Since neither $H$ nor $K $ are the trivial subgroup we have $\frac{a}{b}\in H$
+and $\frac{m}{n}\in K$, $a,\ b,\ m,\ n$ with the usual properties. We observe
+$b\frac{a}{b}\in H$ and $n\frac{m}{n}\in K$, we then can add these $m$ and
+$a$ times respectively, yielding $bm\frac{a}{b}=ma$ and $na\frac{m}{n}=ma$
+putting $ma\in H\cap K$.
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+19. Let $G$ be a group, and let $a \in G .$ The set
+$C(a)=\{x \in G | x a=a x\}$ of all elements of $G$ that commute with $a$ is
+called the centralizer of $a .$
+\begin{itemize}
+\item[]{(a) Show that  $C(a)$ is a subgroup of $G$}
+\item[]{(b) Show that $\langle a\rangle \subseteq C(a)$}
+\item[]{(c) Compute $C(a)$ if $G=S_{3}$ and $a=(1,2,3)$}
+\item[]{(d) Compute $C(a)$ if $G=S_{3}$ and $a=(1,2)$}
+\end{itemize}
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+\begin{multicols}{2}
+\begin{itemize}[align=left]
+\item[(a)]{
+    \begin{itemize}[align=left]
+    \Invs{
+        Let $x\in C\lrp{a}$, by construction we know $xa=ax$, by transitive proof
+        \begin{align*}
+        xa=ax &\rightarrow \inv{x}xa=\inv{x}ax\\
+        &\rightarrow a\inv{x}=\inv{x}ax\inv{x}\\
+        &\rightarrow a\inv{x}=\inv{x}a
+        \end{align*}
+        putting $\inv{x}\in C\lrp{a}$. 
+      }
+    \Clos{
+        let $x,\ y\in C\lrp{a}$, by construction we know $xa=ax$ and $ya=ay$. 
+        if we take $xa=ax$ and multiply by $y$ on the left we get $yxa=yax$ 
+        then by commutativity we have $yxa=ayx$ putting $yx\in C\lrp{a}$ 
+        similarly for $xy$. 
+      }
+    \end{itemize}}
+\item[(b)]{
+    \begin{itemize}[align=left]
+    \Invs{
+          If we consider $a\in \lra{a}$
+      }
+    \Clos{
+
+      }
+    \end{itemize}}
+\item[(c)]{
+    \begin{itemize}[align=left]
+    \Invs{
+
+      }
+    \Clos{
+
+      }
+    \end{itemize}}
+\item[(d)]{
+    \begin{itemize}[align=left]
+    \Invs{
+
+      }
+    \Clos{
+
+      }
+    \end{itemize}}
+\end{itemize}
+\end{multicols}
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+20. Compute the centralizer in $\mathrm{GL}_{2}$ ( $\mathbf{R}$ ) of the matrix $\left[\begin{array}{ll}1 & 1 \\ 0 & 1\end{array}\right]$
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+22. Show that if a group $G$ has a unique element $a$ of order $2,$ then $a \in Z(G)$
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+23. If the group $G$ is not abelian, show that its center $Z(G)$ is a proper subgroup of an abelian subgroup of $G .$
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+26. Let $G$ be a group with $a, b \in G$.
+(a) Show that $o\left(a^{-1}\right)=o(a)$
+(b) Show that $o(a b)=o(b a)$
+(c) Show that $o\left(a b a^{-1}\right)=o(b)$
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+27. Let $G$ be a finite group, let $n>2$ be an integer, and let $S$ be the set of elements of
+$G$ that have order $n .$ Show that $S$ has an even number of elements.
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+28. Let $G$ be a group with $a, b \in G$. Assume that $o(a)$ and $o(b)$ are finite and relatively prime, and that $a b=b a$. Show that $o(a b)=o(a) o(b)$
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+29. Find an example of a group $G$ and elements $a, b \in G$ such that $a$ and $b$ each have finite order but $a b$ does not.
+
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+
+\end{mdframed}
+%TODO: Section 3.3
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+2.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+
+\end{mdframed}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkQuesion]
+2.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
+
+\end{mdframed}
