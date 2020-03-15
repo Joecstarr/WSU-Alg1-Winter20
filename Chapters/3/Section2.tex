@@ -641,7 +641,6 @@ called the centralizer of $a .$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-\begin{multicols}{2}
 \begin{itemize}[align=left]
 \item[(a)]{
     \begin{itemize}[align=left]
@@ -652,44 +651,24 @@ called the centralizer of $a .$
         &\rightarrow a\inv{x}=\inv{x}ax\inv{x}\\
         &\rightarrow a\inv{x}=\inv{x}a
         \end{align*}
-        putting $\inv{x}\in C\lrp{a}$. 
+        putting $\inv{x}\in C\lrp{a}$.
       }
     \Clos{
-        let $x,\ y\in C\lrp{a}$, by construction we know $xa=ax$ and $ya=ay$. 
-        if we take $xa=ax$ and multiply by $y$ on the left we get $yxa=yax$ 
-        then by commutativity we have $yxa=ayx$ putting $yx\in C\lrp{a}$ 
-        similarly for $xy$. 
+        let $x,\ y\in C\lrp{a}$, by construction we know $xa=ax$ and $ya=ay$.
+        if we take $xa=ax$ and multiply by $y$ on the left we get $yxa=yax$
+        then by commutativity we have $yxa=ayx$ putting $yx\in C\lrp{a}$
+        similarly for $xy$.
       }
     \end{itemize}}
 \item[(b)]{
-    \begin{itemize}[align=left]
-    \Invs{
-          If we consider $a\in \lra{a}$
-      }
-    \Clos{
-
-      }
-    \end{itemize}}
-\item[(c)]{
-    \begin{itemize}[align=left]
-    \Invs{
-
-      }
-    \Clos{
-
-      }
-    \end{itemize}}
+    If we consider $x\in \lra{a}$, observe by construction $x=a^n$ for
+    some $n$. If we take $xa=a^na=a^{n+1}=aa^n=ax$ putting $x\in C\lrp{a}$.
+  }
+\item[(c)]{Since $a$ is the identity element $C\lrp{a}=S_3$}
 \item[(d)]{
-    \begin{itemize}[align=left]
-    \Invs{
-
-      }
-    \Clos{
-
-      }
-    \end{itemize}}
+          $C\lrp{a}=\lrs{\lrp{1,2,3},\ \lrp{1,2}}$
+  }
 \end{itemize}
-\end{multicols}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -703,7 +682,30 @@ called the centralizer of $a .$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-
+We can calculate $\begin{bmatrix}
+  a & b\\
+  c & d\\
+\end{bmatrix}\begin{bmatrix}
+  1 & 1\\
+  0 & 1\\
+\end{bmatrix}=\begin{bmatrix}
+  a & a+b\\
+  c & c+d\\
+\end{bmatrix}$
+and $\begin{bmatrix}
+  1 & 1\\
+  0 & 1\\
+\end{bmatrix}\begin{bmatrix}
+  a & b\\
+  c & d\\
+\end{bmatrix}=\begin{bmatrix}
+  a+c & b+d\\
+  c & d\\
+\end{bmatrix}$. From here we observe that for a matrix to commute it must 
+satisfy $c=c,\ a+c=a,\ d+b=a+b,\ c+d=d$ making it of the form $\begin{bmatrix}
+  a & d-a\\
+  0 & d\\
+\end{bmatrix}$.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
