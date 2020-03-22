@@ -193,7 +193,7 @@ $$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  7. thet $F$ be a field. Compute the center of $\mathrm{GL}_{2}(F)$
+  7. Let $F$ be a field. Compute the center of $\mathrm{GL}_{2}(F)$
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
@@ -209,7 +209,9 @@ $$
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-   %TODO 3.3 Q8 not done yet
+ Let $\lrp{a,b},\ \lrp{x,y}\in G_{1} \times G_{2}$ we Consider
+  $\lrp{a,b}\lrp{x,y}=\lrp{ax,by}=\lrp{xa,yb}=\lrp{x,y}\lrp{a,b}$ showing 
+  the group is abelian. 
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -221,7 +223,25 @@ $$
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-   %TODO 3.3 Q9 not done yet
+   Consider $Z_3^+\times Z_8^{\times}$ 
+ $$  
+ \begin{matrix}
+     \left(0,1\right)&
+     \left(0,3\right)&
+     \left(0,5\right)\\ \hspace{.5in} \\
+     \left(0,7\right)&
+     \left(1,1\right)&
+     \left(1,3\right)\\ \hspace{.5in} \\
+     \left(1,5\right)&
+     \left(1,7\right)&
+     \left(2,1\right)\\ \hspace{.5in} \\
+     \left(2,3\right)&
+     \left(2,5\right)&
+     \left(2,7\right)\\ \hspace{.5in} \\
+  \end{matrix}
+   $$
+  by proposition 3.3.4 we can see this is not cyclic.
+  Let since both $Z_3^+$ and $ Z_8^{\times}$ are abelian the group is abelian. 
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -229,11 +249,31 @@ $$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  10 . F Construct a group of order 12 that is not abelian.
+  10 . Construct a group of order 12 that is not abelian.
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-   %TODO 3.3 Q10 not done yet
+  Consider $Z_2^+\times S_3$ 
+  $$  
+  \begin{matrix}
+      \left(0,\lrp{}\right)&
+      \left(0,\lrp{1,\ 2}\right)&
+      \left(0,\lrp{1,\ 3}\right)\\ \hspace{.5in} \\
+      \left(0,\lrp{2,\ 3}\right)&
+      \left(0,\lrp{1,\ 2,\ 3}\right)&
+      \left(0,\lrp{1,\ 3,\ 2}\right)\\ \hspace{.5in} \\
+      \left(1,\lrp{}\right)&
+      \left(1,\lrp{1,\ 2}    \right)&
+      \left(1,\lrp{1,\ 3}    \right)\\ \hspace{.5in} \\
+      \left(1,\lrp{2,\ 3}    \right)&
+      \left(1,\lrp{1,\ 2,\ 3}\right)&
+      \left(1,\lrp{1,\ 3,\ 2}\right)
+   \end{matrix}
+    $$
+   Let $\lrp{a,\lrp{1,\ 2}},\ \lrp{x,\lrp{2,\ 3}}\in Z_3^+\times S_3$ we Consider \\
+   $$\lrp{a,\lrp{1,\ 2}}\lrp{x,\lrp{2,\ 3}}=\lrp{a+x,\lrp{1,\ 2,\ 3}}$$
+   $$\lrp{x,\lrp{2,\ 3}}\lrp{a,\lrp{1,\ 2}}=\lrp{x+a,\lrp{1,\ 3,\ 2}}$$
+     the group is not abelian. 
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -245,7 +285,21 @@ $$
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-   %TODO 3.3 Q13 not done yet
+  We will use $S_3$ as an example calculating $X$ yields:
+  $$
+  \begin{matrix}
+    \lrp{\lrp{},\ \lrp{}    }&
+    \lrp{\lrp{},\ \lrp{2,\ 3}    }&
+    \lrp{\lrp{1,\ 2},\ \lrp{1,\ 2,\ 3}    }\\ \hspace{.5in} \\
+    \lrp{\lrp{1,\ 3},\ \lrp{1,\ 3,\ 2}    }&
+    \lrp{\lrp{2,\ 3},\ \lrp{}    }&
+    \lrp{\lrp{1,\ 2,\ 3},\  \lrp{1,\ 2}   }\\ \hspace{.5in} \\
+    \lrp{\lrp{1,\ 3,\ 2},\  \lrp{1,\ 3}   }&
+  \end{matrix}
+  $$
+  if we consider the inverse of $\lrp{\lrp{1,\ 3,\ 2},\  \lrp{1,\ 3}}$, which is 
+  $\lrp{\lrp{1,\ 2,\ 3},\  \lrp{1,\ 3}   }$ we see this not in $X$ showing 
+  $X$ not a subgroup. 
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -260,7 +314,7 @@ $$
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-   %TODO 3.3 Q17 not done yet
+   Let $G$ be of order $n$. 
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -268,9 +322,15 @@ $$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-20. thet $G$ be a group of order $6,$ and suppose that $a, b \in G$ with $a$ of order 3 and $b$ of order $2 .$ Show that either $G$ is cyclic or $a b \neq b a$
+20. Let $G$ be a group of order $6,$ and suppose that $a, b \in G$ with $a$ of order 3 and $b$ of order $2 .$ Show that either $G$ is cyclic or $a b \neq b a$
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-   %TODO 3.3 Q20 not done yet
+  First assume $ab=ba$ for $a,\ b\in G$ with the given properties. We observe 
+  that $\lrp{ab}^6=1$ making $G=\lra{ab}$. 
+
+  \nd
+  Next assume that $ab\neq ba$, for $a,\ b\in G$ with the given properties. 
+  Since $G$ is not abelian by question 15 from section 3.2 $G$ is not cyclic.    
+
 \end{mdframed}
