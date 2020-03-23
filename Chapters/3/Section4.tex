@@ -4,11 +4,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  1. FShow that the multiplicative group $\mathbf{Z}_{10}^{\times}$ is isomorphic to the additive group $\mathbf{Z}_{4}$. Hint: Find a generator $[a]_{10}$ of $\mathbf{Z}_{10}^{\mathrm{x}}$ and define $\phi: \mathbf{Z}_{4} \rightarrow \mathbf{Z}_{10}^{\times}$ by $\phi\left([n]_{4}\right)=[a]_{10}^{n}$
+1. Show that the multiplicative group $\mathbf{Z}_{10}^{\times}$ is isomorphic to the additive group $\mathbf{Z}_{4}$. Hint: Find a generator $[a]_{10}$ of $\mathbf{Z}_{10}^{\mathrm{x}}$ and define $\phi: \mathbf{Z}_{4} \rightarrow \mathbf{Z}_{10}^{\times}$ by $\phi\left([n]_{4}\right)=[a]_{10}^{n}$
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+We begin by considering $\mathbf{\Z}_{10}^{\times}=\lrs{1, 3, 7, 9}$, observe
+$3=3,\ 3^2=9,\ 3^3=7,\ 3^4=1$ showing $\mathbf{Z}_{10}^{\times}=\lra{3}$. We
+can then let $\varphi:\Z_4\to \Z_{10}^\times$ be $\pof{n}=3^n$ we can construct
+$\pofinv{3^n}=n$ and observe $\pof{\pofinv{3^n}}=\pof{n}=3^n$ showing
+$\varphi$ a bijection. We will now show $\varphi$ is a homomorphism.
+Let $n,k\in \Z_4$, and $\pof{n+k}=3^{n+k}=3^{n}3^{n}=\pof{n}\pof{k}$, showing
+$\varphi$ an isomorphism.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -16,11 +22,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2. Show that the multiplicative group $\mathbf{Z}_{7}^{\times}$ is isomorphic to the additive group $\mathbf{Z}_{6}$.
+2. Show that the multiplicative group $\mathbf{Z}_{7}^{\times}$ is isomorphic to the additive group $\mathbf{Z}_{6}$.
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+We begin by considering $\mathbf{\Z}_{7}^{\times}=\lrs{1,2, 3,4,5,6}$, observe
+$3=3,\ 3^2=2,\ 3^3=6,\ 3^4=4,\ 3^5=5,\ 3^6=1$ showing $\mathbf{\Z}_{7}^{\times}=\lra{3}$. We
+can then let $\varphi:\Z_6\to \Z_{7}^\times$ be $\pof{n}=3^n$ we can construct
+$\pofinv{3^n}=n$ and observe $\pof{\pofinv{3^n}}=\pof{n}=3^n$ showing
+$\varphi$ a bijection. We will now show $\varphi$ is a homomorphism.
+Let $n,k\in \Z_6$, and $\pof{n+k}=3^{n+k}=3^{n}3^{n}=\pof{n}\pof{k}$, showing
+$\varphi$ an isomorphism.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -28,11 +40,40 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  3. $+$ Show that the multiplicative group $\mathbf{Z}_{8}^{\times}$ is isomorphic to the group $\mathbf{Z}_{2} \times \mathbf{Z}_{2}$
+3. Show that the multiplicative group $\mathbf{Z}_{8}^{\times}$ is isomorphic to the group $\mathbf{Z}_{2} \times \mathbf{Z}_{2}$
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+We let $\varphi: \mathbf{Z}_{8}^{\times} \to \mathbf{Z}_{2} \times \mathbf{Z}_{2}$
+ by  
+ \begin{equation}
+  \pof{a}=
+  \begin{cases}
+      \lrp{0,0}  & \text{ For } a=1\\
+      \lrp{0,1}  & \text{ For } a=3\\
+      \lrp{1,0}  & \text{ For } a=5\\
+      \lrp{1,1}  & \text{ For } a=7
+  \end{cases}
+\end{equation}
+observe the tables for the two groups: 
+$$\vbox{\tabskip0.5em\offinterlineskip
+      \halign{\strut$#$\hfil\ \tabskip1em\vrule&&$#$\hfil\cr
+          \cdot      & \lrp{0,0}  & \lrp{0,1}   & \lrp{1,0}   & \lrp{1,1}  \cr
+          \noalign{\hrule}\vrule height 12pt width 0pt
+          \lrp{0,0}  & \lrp{0,0}  & \lrp{0,1}   & \lrp{1,0}   & \lrp{1,1}    \cr
+          \lrp{0,1}  & \lrp{0,1}  & \lrp{0,0}   & \lrp{1,1}   & \lrp{1,0}    \cr
+          \lrp{1,0}  & \lrp{1,0}  & \lrp{1,1}   & \lrp{0,0}   & \lrp{0,1}    \cr
+          \lrp{1,1}  & \lrp{1,1}  & \lrp{1,0}   & \lrp{0,1}   & \lrp{0,0}    \cr
+        }}$$
+        $$\vbox{\tabskip0.5em\offinterlineskip
+      \halign{\strut$#$\hfil\ \tabskip1em\vrule&&$#$\hfil\cr
+          \cdot      & 1  & 3   & 5   & 7  \cr
+          \noalign{\hrule}\vrule height 12pt width 0pt
+          1  & 1  & 3   & 5   & 7    \cr
+          3  & 3  & 1   & 7   & 5    \cr
+          5  & 5  & 7   & 1   & 3    \cr
+          7  & 7  & 5   & 3   & 1    \cr
+        }}$$
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -40,11 +81,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  4. Show that $\mathbf{Z}_{5}^{\times}$ is not isomorphic to $\mathbf{Z}_{8}^{\times}$ by showing that the first group has an element of order 4 but the second group does not.
+4. Show that $\mathbf{Z}_{5}^{\times}$ is not isomorphic to $\mathbf{Z}_{8}^{\times}$ by showing that the first group has an element of order 4 but the second group does not.
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+%TODO not done yet
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -52,11 +93,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  6.t Is the additive group $\mathbf{C}$ of complex numbers isomorphic to the multiplicative group $\mathbf{C}^{\times}$ of nonzero complex numbers?
+6.t Is the additive group $\mathbf{C}$ of complex numbers isomorphic to the multiplicative group $\mathbf{C}^{\times}$ of nonzero complex numbers?
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+%TODO not done yet
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -64,11 +105,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  7. Let $G_{1}$ and $G_{2}$ be groups. Show that $G_{2} \times G_{1}$ is isomorphic to $G_{1} \times G_{2}$
+7. Let $G_{1}$ and $G_{2}$ be groups. Show that $G_{2} \times G_{1}$ is isomorphic to $G_{1} \times G_{2}$
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+%TODO not done yet
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,11 +117,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  8. Let $G$ be a group. Show that the group $(G, *)$ defined in Exercise 3 of Section 3.1 is isomorphic to $G .$
+8. Let $G$ be a group. Show that the group $(G, *)$ defined in Exercise 3 of Section 3.1 is isomorphic to $G .$
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+%TODO not done yet
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -88,11 +129,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  9. Prove that any group with three elements must be isomorphic to $\mathbf{Z}_{3}$.
+9. Prove that any group with three elements must be isomorphic to $\mathbf{Z}_{3}$.
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+%TODO not done yet
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -100,11 +141,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  13. Let $G$ be the set of all matrices in $\mathrm{GL}_{2}\left(\mathbf{Z}_{3}\right)$ of the form $\left[\begin{array}{ll}1 & 0 \\ c & d\end{array}\right] .$ That is, $c, d \in \mathbf{Z}_{3}$ and $d \neq[0]_{3} .$ Show that $G$ is isomorphic to $S_{3}$
+13. Let $G$ be the set of all matrices in $\mathrm{GL}_{2}\left(\mathbf{Z}_{3}\right)$ of the form $\left[\begin{array}{ll}1 & 0 \\ c & d\end{array}\right] .$ That is, $c, d \in \mathbf{Z}_{3}$ and $d \neq[0]_{3} .$ Show that $G$ is isomorphic to $S_{3}$
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+%TODO not done yet
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -112,13 +153,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  15. Let $C_{2}$ be the subgroup $\{\pm 1\}$ of the multiplicative group 
-  $\mathbf{R}^{\times} .$ Show that $\mathbf{R}^{\times}$ is isomorphic to 
-  $\mathbf{R}^{+} \times C_{2}$
+15. Let $C_{2}$ be the subgroup $\{\pm 1\}$ of the multiplicative group
+$\mathbf{R}^{\times} .$ Show that $\mathbf{R}^{\times}$ is isomorphic to
+$\mathbf{R}^{+} \times C_{2}$
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+%TODO not done yet
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -126,12 +167,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  17. Let $G$ be any group, and let $a$ be a fixed element of $G .$ Define a function $\phi_{a}: G \rightarrow G$
-  by $\phi_{a}(x)=a x a^{-1},$ for all $x \in G .$ Show that $\phi_{a}$ is an isomorphism.
+17. Let $G$ be any group, and let $a$ be a fixed element of $G .$ Define a function $\phi_{a}: G \rightarrow G$
+by $\phi_{a}(x)=a x a^{-1},$ for all $x \in G .$ Show that $\phi_{a}$ is an isomorphism.
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+%TODO not done yet
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -139,13 +180,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  18. Let $G$ be any group. Define $\phi: G \rightarrow G$ by $\phi(x)=x^{-1},$ for all $x \in G$
-  (a) Prove that $\phi$ is one-to-one and onto.
-  (b) Prove that $\phi$ is an isomorphism if and only if $G$ is abelian.
+18. Let $G$ be any group. Define $\phi: G \rightarrow G$ by $\phi(x)=x^{-1},$ for all $x \in G$
+(a) Prove that $\phi$ is one-to-one and onto.
+(b) Prove that $\phi$ is an isomorphism if and only if $G$ is abelian.
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+%TODO not done yet
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -153,11 +194,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  22. Let $G_{1}$ and $G_{2}$ be groups. Show that $G_{1}$ is isomorphic to the subgroup of the direct product $G_{1} \times G_{2}$ defined by $\left\{\left(x_{1}, x_{2}\right) | x_{2}=e\right\}$
+22. Let $G_{1}$ and $G_{2}$ be groups. Show that $G_{1}$ is isomorphic to the subgroup of the direct product $G_{1} \times G_{2}$ defined by $\left\{\left(x_{1}, x_{2}\right) | x_{2}=e\right\}$
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+%TODO not done yet
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -165,11 +206,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  23. Prove that if $m, n$ are positive integers such that $\operatorname{gcd}(m, n)=1,$ then $\mathbf{Z}_{m n}^{\times}$ is isomorphic to $\mathbf{Z}_{m}^{\times} \times \mathbf{Z}_{n}^{\times}$
- \end{mdframed}
+23. Prove that if $m, n$ are positive integers such that $\operatorname{gcd}(m, n)=1,$ then $\mathbf{Z}_{m n}^{\times}$ is isomorphic to $\mathbf{Z}_{m}^{\times} \times \mathbf{Z}_{n}^{\times}$
+\end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+%TODO not done yet
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -177,11 +218,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  30. Let $G_{1}$ and $G_{2}$ be groups. A function from $G_{1}$ into $G_{2}$ that preserves products but
-  is not necessarily a one-to-one correspondence will be called a group homomorphism, from the Greek word homos meaning same. Show that $\phi: \mathrm{GL}_{2}(\mathbf{R}) \rightarrow \mathbf{R}^{\times}$ defined by $\phi(A)=\operatorname{det}(A)$ for all matrices $A \in \mathrm{GL}_{2}(\mathbf{R})$ is a group homomorphism.
+30. Let $G_{1}$ and $G_{2}$ be groups. A function from $G_{1}$ into $G_{2}$ that preserves products but
+is not necessarily a one-to-one correspondence will be called a group homomorphism, from the Greek word homos meaning same. Show that $\phi: \mathrm{GL}_{2}(\mathbf{R}) \rightarrow \mathbf{R}^{\times}$ defined by $\phi(A)=\operatorname{det}(A)$ for all matrices $A \in \mathrm{GL}_{2}(\mathbf{R})$ is a group homomorphism.
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- %TODO not done yet
+%TODO not done yet
 \end{mdframed}
 \newpage
