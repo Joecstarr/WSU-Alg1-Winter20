@@ -85,7 +85,12 @@ $$\vbox{\tabskip0.5em\offinterlineskip
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO not done yet
+  We first consider $2^{1}=2,\ 2^{2}=4,\ 2^{3}=3,\ 2^{4}=1$ showing $\lra{2}$ is of
+  order $4$. We can then observe the order of the elements of 
+  $\mathbf{Z}_{8}^{\times}$, $3^2=1,\ 5^2=1,\ 7^2=1$ since none of the elements 
+  of $\mathbf{Z}_{8}^{\times}$ have order $4$ it cant me that 
+  $\mathbf{Z}_{8}^{\times}$ and $\mathbf{Z}_{5}^{\times}$ are isomorphic. 
+
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,7 +98,7 @@ $$\vbox{\tabskip0.5em\offinterlineskip
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-6.t Is the additive group $\mathbf{C}$ of complex numbers isomorphic to the multiplicative group $\mathbf{C}^{\times}$ of nonzero complex numbers?
+6. Is the additive group $\mathbf{C}$ of complex numbers isomorphic to the multiplicative group $\mathbf{C}^{\times}$ of nonzero complex numbers?
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
@@ -109,7 +114,19 @@ $$\vbox{\tabskip0.5em\offinterlineskip
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO not done yet
+Let $\varphi:G_{2} \times G_{1} \to G_{1} \times G_{2}$ be 
+$\pof{\lrp{a,b}}=\lrp{b,a}$ and $\pofinv{\lrp{b,a}}=\lrp{a,b}$. We first 
+establish $\varphi$ as a bijection, 
+$\pof{\pofinv{(b,a)}}=\pof{\lrp{a,b}}=\lrp{b,a}$. Now we will establish $\varphi$
+as a homomorphism, let $\lrp{a,b},\lrp{x,y}\in G_{2} \times G_{1}$
+consider 
+\begin{align*}
+  \pof{\lrp{a,b}\lrp{x,y}}&=\pof{\lrp{ax,by}}\\
+  &=\lrp{by,ax}\\
+  &=\lrp{b,a}\lrp{y,x}\\
+  &=\pof{\lrp{a,b}}\pof{\lrp{x,y}}\\
+\end{align*}
+showing the groups to be isomorphic. 
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -121,7 +138,11 @@ $$\vbox{\tabskip0.5em\offinterlineskip
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO not done yet
+  Let $\grp{G}{\cdot}$ be a group. Define a new binary operation $\ast$ on
+  $G$ by the formula $a \ast b=b\cdot a$, for all $a,b\in G$. Define 
+  $\varphi:(G, \cdot)\to(G, *) $, with $\pof{a}=a$ the trivial map is a bijection. 
+  Next we will show $\varphi$ to be a homomorphism let $a,b\in G$, observe 
+  $\pof{a\cdot b}= a\cdot b=b\ast a=\pof{b}\ast\pof{a}$.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,7 +154,38 @@ $$\vbox{\tabskip0.5em\offinterlineskip
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO not done yet
+Let $G$ be a group of three elements. Since $G$ is a group there exists an 
+identity element $e$ in $G$. This makes $a,b\in G$ with $a\neq b \neq e$ and WOLG
+we are left with two options either $aa=e$ or $ab=e$. If $aa=e$ we get the table
+$$\vbox{\tabskip0.5em\offinterlineskip
+\halign{\strut$#$\hfil\ \tabskip1em\vrule&&$#$\hfil\cr
+    \cdot      & e  & a   & b   \cr
+    \noalign{\hrule}\vrule height 12pt width 0pt
+    e  & e  & a   & b      \cr
+    a  & a  & e   & b      \cr
+    b  & b  & b   & e      \cr
+  }}$$
+observe $a\cdot\lrp{b\cdot b}=a$ but $\lrp{a\cdot b}\cdot b=e$ showing this is 
+not a group under $\cdot$. 
+Leaving us with one option given by the table below, which by comparison is 
+isomorphic to $\Z_3$
+$$\vbox{\tabskip0.5em\offinterlineskip
+\halign{\strut$#$\hfil\ \tabskip1em\vrule&&$#$\hfil\cr
+    \cdot      & e  & a   & b   \cr
+    \noalign{\hrule}\vrule height 12pt width 0pt
+    e  & e  & a   & b      \cr
+    a  & a  & b   & e      \cr
+    b  & b  & e   & a      \cr
+  }}$$
+
+$$\vbox{\tabskip0.5em\offinterlineskip
+\halign{\strut$#$\hfil\ \tabskip1em\vrule&&$#$\hfil\cr
+    \cdot      & 0  & 1   & 2   \cr
+    \noalign{\hrule}\vrule height 12pt width 0pt
+    0  & 0  & 1   & 2      \cr
+    1  & 1  & 2   & 0      \cr
+    2  & 2  & 0   & 1      \cr
+  }}$$
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -145,8 +197,77 @@ $$\vbox{\tabskip0.5em\offinterlineskip
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO not done yet
+$$\begin{matrix}
+  I=\begin{bmatrix}
+    1 & 0 \\ 0 & 1 
+  \end{bmatrix} & 
+  A=\begin{bmatrix}
+    1 & 0 \\ 1 & 1 
+  \end{bmatrix} &
+  B=\begin{bmatrix}
+    1 & 0 \\ 1 & 2 
+  \end{bmatrix} \\
+  C=\begin{bmatrix}
+    1 & 0 \\ 0 & 2 
+  \end{bmatrix} & 
+  D=\begin{bmatrix}
+    1 & 0 \\ 2 & 1 
+  \end{bmatrix} &
+  E=\begin{bmatrix}
+    1 & 0 \\ 2 & 2 
+  \end{bmatrix} \\
+\end{matrix}$$
 \end{mdframed}
+$$\vbox{\tabskip0.5em\offinterlineskip
+      \halign{\strut$#$\hfil\ \tabskip1em\vrule&&$#$\hfil\cr
+          \cdot        & \lrp{}       & \lrp{1,2}   & \lrp{2,3}   & \lrp{1,3}   & \lrp{1,2,3}  & \lrp{1,3,2}  \cr
+          \noalign{\hrule}\vrule height 12pt width 0pt
+          \lrp{}       & \lrp{}       & \lrp{1,2}   & \lrp{2,3}   & \lrp{1,3}   & \lrp{1,2,3}  & \lrp{1,3,2} \cr
+          \lrp{1,2}    & \lrp{1,2}    & \lrp{}      & \lrp{1,2,3} & \lrp{1,3,2} & \lrp{2,3}    & \lrp{1,3} \cr
+          \lrp{2,3}    & \lrp{2,3}    & \lrp{1,3,2} & \lrp{}      & \lrp{1,2,3} & \lrp{1,3}    & \lrp{1,2} \cr
+          \lrp{1,3}    & \lrp{1,3}    & \lrp{1,2,3} & \lrp{1,3,2} & \lrp{}      & \lrp{1,2}    & \lrp{2,3} \cr
+          \lrp{1,2,3}  & \lrp{1,2,3}  & \lrp{1,3}   & \lrp{1,2}   & \lrp{2,3}   & \lrp{1,3,2}  & \lrp{}    \cr
+          \lrp{1,3,2}  & \lrp{1,3,2}  & \lrp{2,3}   & \lrp{1,3}   & \lrp{1,2}   & \lrp{}       & \lrp{1,2,3} \cr
+        }}$$
+$$\begin{matrix}
+  I \times I = I &
+  I \times A = A &
+  I \times B = B &
+  I \times C = C \\ \hspace{.5in} \\
+  I \times D = D &
+  I \times E = E &
+  A \times I = A &
+  A \times A = D \\ \hspace{.5in} \\
+  A \times B = E &
+  A \times C = B &
+  A \times D = I &
+  A \times E = C \\ \hspace{.5in} \\
+  B \times I = B &
+  B \times A = C &
+  B \times B = I &
+  B \times C = A \\ \hspace{.5in} \\
+  B \times D = E &
+  B \times E = D &
+  C \times I = C &
+  C \times A = E \\ \hspace{.5in} \\
+  C \times B = D &
+  C \times C = I &
+  C \times D = B &
+  C \times E = A \\ \hspace{.5in} \\
+  D \times I = D &
+  D \times A = I &
+  D \times B = C &
+  D \times C = E \\ \hspace{.5in} \\
+  D \times D = A &
+  D \times E = B &
+  E \times I = E &
+  E \times A = B \\ \hspace{.5in} \\
+  E \times B = A &
+  E \times C = D &
+  E \times D = C &
+  E \times E = I \\ \hspace{.5in} \\
+\end{matrix}$$
+%TODO finish this
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -159,7 +280,12 @@ $\mathbf{R}^{+} \times C_{2}$
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO not done yet
+Let $\pof{\lrp{x,a}}=ae^x$, and $\pofinv{ae^x}=\lrp{x,a}$ observe 
+$\pof{\pofinv{ae^x}}=\pof{\lrp{x,a}}=ae^x$.
+
+Next consider $\pof{\lrp{x,a}\lrp{y,b}}= \lrp{x+y,ab}=abe^{x+y}
+=ae^xbe^y=\pof{\lrp{x,a}}\pof{\lrp{y,b}}$ as desired. 
+
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -172,7 +298,9 @@ by $\phi_{a}(x)=a x a^{-1},$ for all $x \in G .$ Show that $\phi_{a}$ is an isom
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO not done yet
+Define $\pofinv{x}=\inv{a}xa$, consider $\pofinv{\pof{x}}=\pofinv{a x a^{-1}}=\inv{a}a x \inv{a}a=x$.
+
+Next consider $\pof{xy}= a xy \inv{a}=ax\inv{a}ay\inv{a}=\pof{x}\pof{y}$.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -186,7 +314,13 @@ by $\phi_{a}(x)=a x a^{-1},$ for all $x \in G .$ Show that $\phi_{a}$ is an isom
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO not done yet
+We've shown uniqueness of inverses, and since $G$ is a group $\varphi$ is a 
+bijection. 
+$G$ is abelian: \\
+$\pof{ab}=\inv{ab}=\inv{a}\inv{b}=\pof{a}\pof{b}$
+$G$ is non-abelian:\\
+$\pof{ab}=\inv{ab}\neq\inv{a}\inv{b}$ so is not a homomorphism. 
+
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -198,7 +332,10 @@ by $\phi_{a}(x)=a x a^{-1},$ for all $x \in G .$ Show that $\phi_{a}$ is an isom
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO not done yet
+  Define $\pof{a}=\lrp{a,e}$, and $\pofinv{\lrp{a,e}}=a$, consider 
+  $\pofinv{\pof{a}}=\pofinv{\lrp{a,e}}=a$. 
+  
+  Now consider $\pof{ab}=\lrp{ab,e}=\lrp{a,e}\lrp{b,e}=\pof{a}\pof{b}$
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
