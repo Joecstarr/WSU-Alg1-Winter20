@@ -12,8 +12,10 @@
       "rulerColour": "#CC5500"
   },
   "workbench.colorCustomizations": {
-    "activityBar.background": "#500D57",
-    "titleBar.activeBackground": "#711279",
-    "titleBar.activeForeground": "#FEFCFF"
+    "statusBar.background": "#0c5449",
+    "statusBar.foreground": "#ffcc33",
+    "activityBar.background": "#0c5449",
+    "titleBar.activeBackground": "#0c5449",
+    "titleBar.activeForeground": "#ffcc33"
   }
 }
