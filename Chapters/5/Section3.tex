@@ -1,15 +1,14 @@
-\subsection{Constructing Examples}
+\subsection{Ideals and Factor Rings}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  1. $\dagger$ Find $H K$ in $\mathbf{Z}_{16}^{\times}$, if $H=\langle[3]\rangle$ and $K=\langle[5]\rangle$
+  
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-  We begin by calculating $H=\lrs{1,\ 3,\ 9,\ 11}$ and $K=\lrs{1,\ 5,\ 9,\ 13}$. 
-  now by observing $(3\cdot13)\%16=7$ and $(3\cdot5)\%16=15$ we get $\Z_{16}^\times$.
+%TODO Question not started
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -17,25 +16,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  2. Find $H K$ in $\mathbf{Z}_{21}^{\times},$ if $H=\{[1],[8]\}$ and $K=\{[1],[4],[10],[13],[16],[19]\}$
+  
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-  \begin{align*}
-    \lrp{1\cdot1 }\% 21 &=1\\
-\lrp{1\cdot4 }\% 21 &=4\\
-\lrp{1\cdot10}\% 21 &= 10\\
-\lrp{1\cdot13}\% 21 &= 13\\
-\lrp{1\cdot16}\% 21 &= 16\\
-\lrp{1\cdot19}\% 21 &= 19\\
-\lrp{8\cdot1 }\% 21 &=8\\
-\lrp{8\cdot4 }\% 21 &=11\\
-\lrp{8\cdot10}\% 21 &= 17\\
-\lrp{8\cdot13}\% 21 &= 20\\
-\lrp{8\cdot16}\% 21 &= 2\\
-\lrp{8\cdot19}\% 21 &= 5
-  \end{align*}
-  $H=\lrs{1,\ 2,\ 4,\ 5,\ 8,\ 10,\ 11,\ 13,\ 16,\ 17,\ 19,\ 20}$
+%TODO Question not started
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -43,17 +28,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  3.  Find an example of two subgroups $H$ and $K$ of $S_{3}$ for which $H K$ is not a subgroup.
-
+  
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-  Let $H=\lrs{\lrp{\ },\ \lrp{1,2}}$ and 
-  $K=\lrs{\lrp{\ },\ \lrp{1,2,3},\ \lrp{1,3,2}}$ we then
-  take \\
-  $HK= \lrs{\lrp{\ },\ \lrp{1,2},\ \lrp{2,3},\ 
-            \lrp{1,3},\ \lrp{1,2,3},\ \lrp{1,3,2}}$
-  we observe this isn't a proper subgroup of $S_3$.
+%TODO Question not started
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -61,277 +40,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  4 Show that the list of elements of $\mathrm{GL}_{2}\left(\mathbf{Z}_{2}\right)$ given in Example 3.3.6 is correct.
+  
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-$$
-\begin{matrix}
-a=\begin{bmatrix}0&0\\0&0\end{bmatrix}&
-b=\begin{bmatrix}0&0\\0&1\end{bmatrix}&
-c=\begin{bmatrix}0&0\\1&0\end{bmatrix}&
-d=\begin{bmatrix}0&0\\1&1\end{bmatrix}\\ \hspace{.5in} \\
-e=\begin{bmatrix}0&1\\0&0\end{bmatrix}&
-f=\begin{bmatrix}0&1\\0&1\end{bmatrix}&
-g=\begin{bmatrix}0&1\\1&0\end{bmatrix}&
-h=\begin{bmatrix}0&1\\1&1\end{bmatrix}\\ \hspace{.5in} \\
-i=\begin{bmatrix}1&0\\0&0\end{bmatrix}&
-j=\begin{bmatrix}1&0\\0&1\end{bmatrix}&
-k=\begin{bmatrix}1&0\\1&0\end{bmatrix}&
-l=\begin{bmatrix}1&0\\1&1\end{bmatrix}\\ \hspace{.5in} \\
-m=\begin{bmatrix}1&1\\0&0\end{bmatrix}&
-n=\begin{bmatrix}1&1\\0&1\end{bmatrix}&
-o=\begin{bmatrix}1&1\\1&0\end{bmatrix}&
-p=\begin{bmatrix}1&1\\1&1\end{bmatrix}\\ \hspace{.5in} \\
-\end{matrix}
-  $$
-  Det of a is $  0$\\
-  Det of b is $  0$\\
-  Det of c is $  0$\\
-  Det of d is $  0$\\
-  Det of e is $  0$\\
-  Det of f is $  0$\\
-  Det of g is $\m1$\\
-  Det of h is $\m1$\\
-  Det of i is $  0$\\
-  Det of j is $  1$\\
-  Det of k is $  0$\\
-  Det of l is $  1$\\
-  Det of m is $  0$\\
-  Det of n is $  1$\\
-  Det of o is $\m1$\\
-  Det of p is $  0$\\
+%TODO Question not started
 \end{mdframed}
 \newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-  5 Find $\left|\mathrm{GL}_{2}\left(\mathbf{Z}_{3}\right)\right|$
-\end{mdframed}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-  $$
-\begin{matrix}
-\text{det}\lrp{\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 0 & 1 \\ 1 & 1 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 0 & 1 \\ 1 & 2 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 0 & 1 \\ 2 & 0 \end{bmatrix}}= 1 \\ \hspace{.5in} \\
-\text{det}\lrp{\begin{bmatrix} 0 & 1 \\ 2 & 1 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 0 & 1 \\ 2 & 2 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 0 & 2 \\ 1 & 0 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 0 & 2 \\ 1 & 1 \end{bmatrix}}= 1 \\ \hspace{.5in} \\
-\text{det}\lrp{\begin{bmatrix} 0 & 2 \\ 1 & 2 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 0 & 2 \\ 2 & 0 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 0 & 2 \\ 2 & 1 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 0 & 2 \\ 2 & 2 \end{bmatrix}}= 2 \\ \hspace{.5in} \\
-\text{det}\lrp{\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 1 & 0 \\ 0 & 2 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 1 & 0 \\ 1 & 1 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 1 & 0 \\ 1 & 2 \end{bmatrix}}= 2 \\ \hspace{.5in} \\
-\text{det}\lrp{\begin{bmatrix} 1 & 0 \\ 2 & 1 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 1 & 0 \\ 2 & 2 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 1 & 1 \\ 0 & 2 \end{bmatrix}}= 2 \\ \hspace{.5in} \\
-\text{det}\lrp{\begin{bmatrix} 1 & 1 \\ 1 & 0 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 1 & 1 \\ 1 & 2 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 1 & 1 \\ 2 & 0 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 1 & 1 \\ 2 & 1 \end{bmatrix}}= 2 \\ \hspace{.5in} \\
-\text{det}\lrp{\begin{bmatrix} 1 & 2 \\ 0 & 1 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 1 & 2 \\ 0 & 2 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 1 & 2 \\ 1 & 0 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 1 & 2 \\ 1 & 1 \end{bmatrix}}= 2 \\ \hspace{.5in} \\
-\text{det}\lrp{\begin{bmatrix} 1 & 2 \\ 2 & 0 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 1 & 2 \\ 2 & 2 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 2 & 0 \\ 0 & 2 \end{bmatrix}}= 1 \\ \hspace{.5in} \\
-\text{det}\lrp{\begin{bmatrix} 2 & 0 \\ 1 & 1 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 2 & 0 \\ 1 & 2 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 2 & 0 \\ 2 & 1 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 2 & 0 \\ 2 & 2 \end{bmatrix}}= 1 \\ \hspace{.5in} \\
-\text{det}\lrp{\begin{bmatrix} 2 & 1 \\ 0 & 1 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 2 & 1 \\ 0 & 2 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 2 & 1 \\ 1 & 0 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 2 & 1 \\ 1 & 1 \end{bmatrix}}= 1 \\ \hspace{.5in} \\
-\text{det}\lrp{\begin{bmatrix} 2 & 1 \\ 2 & 0 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 2 & 1 \\ 2 & 2 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 2 & 2 \\ 0 & 1 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 2 & 2 \\ 0 & 2 \end{bmatrix}}= 1 \\ \hspace{.5in} \\
-\text{det}\lrp{\begin{bmatrix} 2 & 2 \\ 1 & 0 \end{bmatrix}}= 1 &
-\text{det}\lrp{\begin{bmatrix} 2 & 2 \\ 1 & 2 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 2 & 2 \\ 2 & 0 \end{bmatrix}}= 2 &
-\text{det}\lrp{\begin{bmatrix} 2 & 2 \\ 2 & 1 \end{bmatrix}}= 1 \\ \hspace{.5in} \\
-\end{matrix}
-$$
-$\left|\mathrm{GL}_{2}\left(\mathbf{\Z}_{3}\right)\right|=48$
-\end{mdframed}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-  6. Find the cyclic subgroup generated by $\left[\begin{array}{ll}2 & 1 \\ 0 & 2\end{array}\right]$ in $\mathrm{GL}_{2}\left(\mathbf{Z}_{3}\right)$
-\end{mdframed}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-  $$
-\begin{matrix}
-a^{ 1 }=\lrp{\begin{bmatrix}2 & 1 \\ 0 & 2\end{bmatrix}}&
-a^{ 2 }=\lrp{\begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}}&
-a^{ 3 }=\lrp{\begin{bmatrix} 2 & 0 \\ 0 & 2 \end{bmatrix}}\\ \hspace{.5in} \\
-a^{ 4 }=\lrp{\begin{bmatrix} 1 & 2 \\ 0 & 1 \end{bmatrix}}&
-a^{ 5 }=\lrp{\begin{bmatrix} 2 & 2 \\ 0 & 2 \end{bmatrix}}&
-a^{ 6 }=\lrp{\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}}&
-\end{matrix}
-$$
-\end{mdframed}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-  7. Let $F$ be a field. Compute the center of $\mathrm{GL}_{2}(F)$
-\end{mdframed}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-  %TODO 3.3 Q7 not done yet
-\end{mdframed}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-  8. Prove that if $G_{1}$ and $G_{2}$ are abelian groups, then the direct product $G_{1} \times G_{2}$ is abelian.
-\end{mdframed}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
- Let $\lrp{a,b},\ \lrp{x,y}\in G_{1} \times G_{2}$ we Consider
-  $\lrp{a,b}\lrp{x,y}=\lrp{ax,by}=\lrp{xa,yb}=\lrp{x,y}\lrp{a,b}$ showing 
-  the group is abelian. 
-\end{mdframed}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-  9. Construct an abelian group of order 12 that is not cyclic.
-\end{mdframed}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-   Consider $Z_3^+\times Z_8^{\times}$ 
- $$  
- \begin{matrix}
-     \left(0,1\right)&
-     \left(0,3\right)&
-     \left(0,5\right)\\ \hspace{.5in} \\
-     \left(0,7\right)&
-     \left(1,1\right)&
-     \left(1,3\right)\\ \hspace{.5in} \\
-     \left(1,5\right)&
-     \left(1,7\right)&
-     \left(2,1\right)\\ \hspace{.5in} \\
-     \left(2,3\right)&
-     \left(2,5\right)&
-     \left(2,7\right)\\ \hspace{.5in} \\
-  \end{matrix}
-   $$
-  by proposition 3.3.4 we can see this is not cyclic.
-  Let since both $Z_3^+$ and $ Z_8^{\times}$ are abelian the group is abelian. 
-\end{mdframed}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-  10 . Construct a group of order 12 that is not abelian.
-\end{mdframed}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-  Consider $Z_2^+\times S_3$ 
-  $$  
-  \begin{matrix}
-      \left(0,\lrp{}\right)&
-      \left(0,\lrp{1,\ 2}\right)&
-      \left(0,\lrp{1,\ 3}\right)\\ \hspace{.5in} \\
-      \left(0,\lrp{2,\ 3}\right)&
-      \left(0,\lrp{1,\ 2,\ 3}\right)&
-      \left(0,\lrp{1,\ 3,\ 2}\right)\\ \hspace{.5in} \\
-      \left(1,\lrp{}\right)&
-      \left(1,\lrp{1,\ 2}    \right)&
-      \left(1,\lrp{1,\ 3}    \right)\\ \hspace{.5in} \\
-      \left(1,\lrp{2,\ 3}    \right)&
-      \left(1,\lrp{1,\ 2,\ 3}\right)&
-      \left(1,\lrp{1,\ 3,\ 2}\right)
-   \end{matrix}
-    $$
-   Let $\lrp{a,\lrp{1,\ 2}},\ \lrp{x,\lrp{2,\ 3}}\in Z_3^+\times S_3$ we Consider \\
-   $$\lrp{a,\lrp{1,\ 2}}\lrp{x,\lrp{2,\ 3}}=\lrp{a+x,\lrp{1,\ 2,\ 3}}$$
-   $$\lrp{x,\lrp{2,\ 3}}\lrp{a,\lrp{1,\ 2}}=\lrp{x+a,\lrp{1,\ 3,\ 2}}$$
-     the group is not abelian. 
-\end{mdframed}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-  13. Let $n>2$ be an integer, and let $X \subseteq S_{n} \times S_{n}$ be the set $X=\{(\sigma, \tau) | \sigma(1)=\tau(1)\}$ Show that $X$ is not a subgroup of $S_{n} \times S_{n}$
-\end{mdframed}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-  We will use $S_3$ as an example calculating $X$ yields:
-  $$
-  \begin{matrix}
-    \lrp{\lrp{},\ \lrp{}    }&
-    \lrp{\lrp{},\ \lrp{2,\ 3}    }&
-    \lrp{\lrp{1,\ 2},\ \lrp{1,\ 2,\ 3}    }\\ \hspace{.5in} \\
-    \lrp{\lrp{1,\ 3},\ \lrp{1,\ 3,\ 2}    }&
-    \lrp{\lrp{2,\ 3},\ \lrp{}    }&
-    \lrp{\lrp{1,\ 2,\ 3},\  \lrp{1,\ 2}   }\\ \hspace{.5in} \\
-    \lrp{\lrp{1,\ 3,\ 2},\  \lrp{1,\ 3}   }&
-  \end{matrix}
-  $$
-  if we consider the inverse of $\lrp{\lrp{1,\ 3,\ 2},\  \lrp{1,\ 3}}$, which is 
-  $\lrp{\lrp{1,\ 2,\ 3},\  \lrp{1,\ 3}   }$ we see this not in $X$ showing 
-  $X$ not a subgroup. 
-\end{mdframed}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-  17. Let $G$ be a finite group, and let $H, K$ be subgroups of $G .$ Prove that
-$$
-|H K|=\frac{|H||K|}{|H \cap K|}
-$$ 
-\end{mdframed}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-   Let $G$ be of order $n$. 
-   %TODO not done
-\end{mdframed}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkQuesion]
-20. Let $G$ be a group of order $6,$ and suppose that $a, b \in G$ with $a$ of order 3 and $b$ of order $2 .$ Show that either $G$ is cyclic or $a b \neq b a$
-\end{mdframed}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-  First assume $ab=ba$ for $a,\ b\in G$ with the given properties. We observe 
-  that $\lrp{ab}^6=1$ making $G=\lra{ab}$. 
-
-  \nd
-  Next assume that $ab\neq ba$, for $a,\ b\in G$ with the given properties. 
-  Since $G$ is not abelian by question 15 from section 3.2 $G$ is not cyclic.    
-
-\end{mdframed}
