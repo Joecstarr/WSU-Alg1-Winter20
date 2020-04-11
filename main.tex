@@ -48,13 +48,13 @@
 \newcommand{\fof}[1]{f\lrp{#1}}
 \newcommand{\kof}[1]{k\lrp{#1}}
 \newcommand{\hof}[1]{h\lrp{#1}}
-\newcommand{\pof}[1]{\varphi\lrp{#1}}
+\newcommand{\pof}[1]{\phi\lrp{#1}}
 \newcommand{\sof}[1]{\sigma\lrp{#1}}
 \newcommand{\Zof}[1]{Z\lrp{#1}}
 \newcommand{\gofinv}[1]{g^{\m1}\lrp{#1}}
 \newcommand{\fofinv}[1]{f^{\m1}\lrp{#1}}
 \newcommand{\Zofinv}[1]{Z^{\m1}\lrp{#1}}
-\newcommand{\pofinv}[1]{\varphi^{\m1}\lrp{#1}}
+\newcommand{\pofinv}[1]{\phi^{\m1}\lrp{#1}}
 \newcommand{\nmod}[2]{#1\,\left(\text{mod}\,#2\right)}
 \newcommand{\ngcd}[2]{\text{gcd}\left(#1\,,\,#2\right)}
 \newcommand{\nlcm}[2]{\text{lcm}\left(#1\,,\,#2\right)}
@@ -79,8 +79,9 @@
 \newcommand{\Zmx}[1]{\mathbb{Z}_{#1}^{\times}}
 \newcommand{\Zp}{\mathbb{Z}_p}
 \newcommand{\numb}[1]{\noindent{\bf #1)}}
+\newcommand{\bigslant}[2]{{\raisebox{.2em}{$#1$}\left/\raisebox{-.2em}{$#2$}\right.}}
 \newcommand{\inv}[1]{#1^{\m1}}
-\newcommand{\totient}[1]{\phi\left(#1\right)} 
+\newcommand{\totient}[1]{\varphi\left(#1\right)} 
 \newcommand{\vhalfpg}{\vspace{5in}}
 \newcommand{\vthirdpg}{\vspace{3in}}
 \newcommand{\vquartpg}{\vspace{2in}}
@@ -108,7 +109,7 @@
 
 
 %Control layout of itemize, enumerate, description (https://ctan.org/pkg/enumitem?lang=en)
-\usepackage{enumitem}
+\usepackage[shortlabels]{enumitem}
 
 % Header and footer formatting options
 \usepackage{fancyhdr}
