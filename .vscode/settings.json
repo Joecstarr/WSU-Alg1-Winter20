@@ -11,6 +11,17 @@
       "iconColour": "#CC5500",
       "rulerColour": "#CC5500"
   },
+  "todo-tree.highlights.customHighlight":{
+    "OLD-QESTION":{
+      "icon": "watch",
+      "type": "text-and-comment",
+      "foreground": "grey",
+      "background": "#f5d442",
+      "opacity": 50,
+      "iconColour": "#f5d442",
+      "rulerColour": "#f5d442"
+    }
+  },
   "workbench.colorCustomizations": {
     "statusBar.background": "#0c5449",
     "statusBar.foreground": "#ffcc33",

@@ -9,7 +9,13 @@ is a homomorphism.
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO Question not started
+Consider $a+bi, c+di\in \mathbf{C}^{\times}$, if we take 
+\begin{align*}
+  \pof{\lrp{a+bi} \lrp{c+di}}&=\lrp{a c- b d}^2 +  \lrp{a d +  b c}^2\\
+  &=a^2 c^2 + b^2 c^2 + a^2 d^2 + b^2 d^2\\
+  &=(a^2 + b^2) (c^2 + d^2)\\
+  &=\pof{\lrp{a+bi}} \pof{\lrp{c+di}}
+\end{align*}
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -29,7 +35,15 @@ is a homomorphism.
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO Question not started
+  \begin{enumerate}[(a)]
+  \item{yes}
+  \item{yes}
+  \item{yes}
+  \item{no}
+  \item{no}
+  \item{yes}
+  \end{enumerate}
+
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -42,7 +56,16 @@ is a homomorphism.
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO Question not started
+by transitive proof let $a,b\in G_1$:
+\begin{align*}
+  \theta\lrp{\pof{ab}}&=\theta\lrp{\pof{a}\pof{b}}\\
+  &=\theta\lrp{\pof{a}}\theta\lrp{\pof{b}}\\
+\end{align*}
+making $\theta\phi$ a homomorphism. 
+
+We let $k\in \krn{\phi}$, that means $\pof{k}=e_{G_2}$, so 
+$\theta\lrp{\pof{k}}=\theta\lrp{e_{G_2}}=e_{G_3}$ putting 
+$k\in \krn{\theta\phi}$.
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -51,12 +74,13 @@ is a homomorphism.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
   13. Let $G$ be a group, and let $H$ be a normal subgroup of G. Show that for 
-  each $f\in G$ and $h\in H$ there exist $h_1$ and $h_2$ in $H$ with $gh=h_1g$
+  each $g\in G$ and $h\in H$ there exist $h_1$ and $h_2$ in $H$ with $gh=h_1g$
   and $hg=gh_2$.
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO Question not started
+Since $H$ is normal we have $gh\inv{g}=h_1\in H$ and $\inv{g}hg=h_2\in H$. 
+We can then multiply by $g$, $gh=h_1g$ and $hg=gh_2$ as desired. 
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -64,12 +88,38 @@ is a homomorphism.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkQuesion]
-  15. Show that the only proper nontrivail normal subgroup of $S_3$ in the 
+  15. Show that the only proper nontrivial normal subgroup of $S_3$ in the 
   subgroup with three elements. 
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO Question not started
+  We observe that the multiplication table for $S_3$ is:
+  $$\vbox{\tabskip0.5em\offinterlineskip
+  \halign{\strut$#$\hfil\ \tabskip1em\vrule&&$#$\hfil\cr
+  \cdot   &()&(1, 2)&(2, 3)&(1, 3)&(1, 2, 3)&(1, 3, 2)  \cr
+      \noalign{\hrule}\vrule height 12pt width 0pt
+      ()&()&(1, 2)&(2, 3)&(1, 3)&(1, 2, 3)&(1, 3, 2)     \cr
+      (1, 2)&(1, 2)&()&(1, 2, 3)&(1, 3, 2)&(2, 3)&(1, 3)     \cr
+      (2, 3)&(2, 3)&(1, 3, 2)&()&(1, 2, 3)&(1, 3)&(1, 2)     \cr
+      (1, 3)&(1, 3)&(1, 2, 3)&(1, 3, 2)&()&(1, 2)&(2, 3)     \cr
+      (1, 2, 3)&(1, 2, 3)&(1, 3)&(1, 2)&(2, 3)&(1, 3, 2)&()     \cr
+      (1, 3, 2)&(1, 3, 2)&(2, 3)&(1, 3)&(1, 2)&()&(1, 2, 3)     \cr
+    }}$$
+We know by lagrange that the subgroups of $S_3$ are of order $1,2,3,6$. 
+We observe from the table above that the subgroups of order two are the 
+subgroups of the identity and a transposition. If we take a transposition $a$ and
+another $b$ and calculate $ba\inv{b}=c$ where c is the third transposition. 
+Showing the subgroups of order $2$ not normal. However if we take the subgroup 
+of order 3, $\lrs{\lrp{\ },\ (1, 2, 3),\ (1, 3, 2)}$, and calculate
+\begin{align*}
+  (1,2)(1, 2, 3)(1,2)&=(1,3,2)\\
+  (1,3)(1, 2, 3)(1,3)&=(1,3,2)\\
+  (2,3)(1, 2, 3)(2,3)&=(1,3,2)\\
+  (1,2)(1, 3, 2)(1,2)&=(1, 2, 3)\\
+  (1,3)(1, 3, 2)(1,3)&=(1, 2, 3)\\
+  (2,3)(1, 3, 2)(2,3)&=(1, 2, 3)\\
+\end{align*}
+showing the subgroup of three elements to be normal. 
 \end{mdframed}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -83,6 +133,8 @@ Prove that the center of any group is a normal subgroup.
 \end{mdframed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[style=darkAnswer,frametitle={Joe Starr}]
-%TODO Question not started
+We let $C$ be the center of $G$. We take $g\in G$ and $x\in C$, by construction
+we have $xg=gx$ by multiplying on the left by $\inv{g}$ we have $\inv{g}xg=x$ 
+showing $C$ a normal subgroup.
 \end{mdframed}
 \newpage
