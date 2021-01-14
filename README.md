@@ -1,6 +1,6 @@
 # WSU-Alg1-Winter20
 
-Repo for solutions to the HW in Algebra I MAT5420 at WSU. 
+Repo for solutions to the HW in Algebra I MAT5420 and Algebra II MAT5430 at WSU. 
 
 Please place questions and solutions into the correct chapter file. 
 
